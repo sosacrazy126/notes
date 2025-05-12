@@ -1,0 +1,25 @@
+{
+  "resultsCount": 6,
+  "khojUrl": "https://app.khoj.dev",
+  "khojApiKey": "kk-cRj1HdsZXMLbEPEDso6DYba57ezTstdmymuq1Ca8jo8",
+  "connectedToBackend": true,
+  "autoConfigure": true,
+  "lastSync": {},
+  "syncFileType": {
+    "markdown": true,
+    "images": true,
+    "pdf": true
+  },
+  "userInfo": {
+    "email": "ashmomba@gmail.com",
+    "username": "ashmomba@gmail.com",
+    "photo": "https://lh3.googleusercontent.com/a/ACg8ocJt-Xz64TKkJBeE8_a04A9j0kvA7jrVySssRWvjFAsTBdi5HA=s96-c",
+    "is_active": true,
+    "has_documents": false,
+    "khoj_version": "1.41.0"
+  },
+  "syncFolders": [
+    "ai-notes"
+  ],
+  "syncInterval": 60
+}

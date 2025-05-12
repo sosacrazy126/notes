@@ -1,0 +1,91 @@
+---
+tags:
+  - Streamlit
+  - async_programming
+  - UI_integration
+---
+Yes, Streamlit can be used as a drop-in replacement for the current UI while maintaining async capabilities within the proposed framework. Here's how you can adapt the design to work with Streamlit:
+
+## Streamlit Integration
+
+1. **UI Abstraction Layer**
+    
+    - Replace `console.print`/`rich.Panel` calls with Streamlit components like `st.markdown()` or `st.expander()`.
+        
+    - Create a `StreamlitOutputService` class to abstract Streamlit-specific UI calls.
+        
+2. **CLI/Default Mode**
+    
+    - Implement CLI functionality in a separate script that shares core logic with the Streamlit app.
+        
+3. **WebUI Implementation**
+    
+    - Use Streamlit's built-in web interface instead of Socket.IO and React.
+        
+    - Leverage Streamlit's session state for synchronizing data between backend and frontend.
+        
+4. **Core Architecture**
+    
+    - Implement the `OutputService` abstraction using Streamlit components:
+        
+
+python
+
+`class StreamlitOutputService:     def output_markdown_panel(self, title, content):        with st.expander(title):            st.markdown(content)`
+
+## Async Capabilities
+
+Streamlit supports asynchronous programming, allowing you to use `async` and `await` in your app[1](https://www.restack.io/docs/streamlit-knowledge-streamlit-async-guide). This is particularly useful for I/O-bound tasks like API calls or database queries. Here's how to implement async functionality:
+
+1. **Async Functions**
+    
+    - Define async functions using `async def` for I/O operations[1](https://www.restack.io/docs/streamlit-knowledge-streamlit-async-guide).
+        
+    - Use `await` keyword when calling async functions[1](https://www.restack.io/docs/streamlit-knowledge-streamlit-async-guide).
+        
+2. **Concurrent Execution**
+    
+    - Utilize `asyncio.gather()` for running multiple async tasks concurrently[1](https://www.restack.io/docs/streamlit-knowledge-streamlit-async-guide).
+        
+3. **Error Handling**
+    
+    - Implement robust error handling for async operations using try/except blocks[1](https://www.restack.io/docs/streamlit-knowledge-streamlit-async-guide).
+        
+
+Example of async implementation in Streamlit:
+
+python
+
+`import streamlit as st import asyncio import httpx async def fetch_data(url):     async with httpx.AsyncClient() as client:        response = await client.get(url)        return response.json() async def main():     urls = ['https://api1.example.com', 'https://api2.example.com']    tasks = [asyncio.create_task(fetch_data(url)) for url in urls]    results = await asyncio.gather(*tasks)    for result in results:        st.write(result) if st.button('Fetch Data'):     asyncio.run(main())`
+
+This approach allows you to maintain the async patterns from your original design while leveraging Streamlit's built-in web interface and state management capabilities[1](https://www.restack.io/docs/streamlit-knowledge-streamlit-async-guide)[3](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state)[6](https://docs.streamlit.io/develop/concepts/architecture/session-state).
+
+By following these guidelines, you can successfully integrate Streamlit into your existing framework, preserving both the UI abstraction and async functionality required for your application.
+
+### Citations:
+
+1. [https://www.restack.io/docs/streamlit-knowledge-streamlit-async-guide](https://www.restack.io/docs/streamlit-knowledge-streamlit-async-guide)
+2. [https://blog.streamlit.io/building-gpt-lab-with-streamlit/](https://blog.streamlit.io/building-gpt-lab-with-streamlit/)
+3. [https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state](https://docs.streamlit.io/develop/api-reference/caching-and-state/st.session_state)
+4. [https://discuss.streamlit.io/t/streamlit-and-asynchronous-functions/30684](https://discuss.streamlit.io/t/streamlit-and-asynchronous-functions/30684)
+5. [https://auth0.com/blog/introduction-to-streamlit-and-streamlit-components/](https://auth0.com/blog/introduction-to-streamlit-and-streamlit-components/)
+6. [https://docs.streamlit.io/develop/concepts/architecture/session-state](https://docs.streamlit.io/develop/concepts/architecture/session-state)
+7. [https://discuss.streamlit.io/t/async-api-calls-in-streamlit/66286](https://discuss.streamlit.io/t/async-api-calls-in-streamlit/66286)
+8. [https://discuss.streamlit.io/t/building-ui-for-devops-operations-with-streamlit-and-cluster-dev/50429](https://discuss.streamlit.io/t/building-ui-for-devops-operations-with-streamlit-and-cluster-dev/50429)
+9. [https://www.youtube.com/watch?v=G4c-LmdJTYQ](https://www.youtube.com/watch?v=G4c-LmdJTYQ)
+
+---
+
+Answer from Perplexity: pplx.ai/share
+
+## YouTube Video: Streamlit Session State - Add Statefulness to Streamlit Apps
+
+### Transcript
+
+hi all and welcome to this video so in this video we will be uh covering a very important topic in streamed that is session State and to understand what session state is and how do we use it we would be taking help of this counter application which has a very simple function uh whenever I click this button it should add one to it increment the account and display it so when I go back to my application and click on this button as you can see even after clicking it multiple times the counter is stuck at one so what really happened why didn&amp;#39;t the counter increase so to understand what uh happened here and why it is stuck we need to understand how streamlit works so whenever we are clicking this button or a widget in streamlit what it does is it reruns the application from top to bottom the script from top to bottom and whenever this is being rerun so this counter variable is being set to zero and once we click this button it is adding one and that is what it is displaying every time so how many ever times you uhu uh click the button it would do the same thing initialize it to zero add a one and display it so to resolve this we would need a solution which is able to share this uh counter variable between the reruns that it that it is doing so this is what exactly the session state does so in a very simple basic terms session state is a way to share variable values between the each rerun that happens and it is like a memory and this memory uh it follows a syntax which is similar to our python dictionary so now we will uh resolve our issue using the uh session state so as I mentioned session state is like a memory and in the very first run it would be empty and as I mentioned uh it is following a syntax similar to dictionary so initially the session state is empty so what we need to do is for our first run we need to initialize a value uh in our dictionary u a key in our dictionary that would store the value for it so how do we do it so what we would do is we start with an if condition and say let&amp;#39;s say our key is counter that we would be using is not in uh our st. session State what we would do is we would initialize a session state with counter and value would be zero so session State counter and we would initialize it with zero so now in our first one what it would do is it would come here it would see that session state is empty it doesn&amp;#39;t have a counter key so what it would do is it would say counter and we would have a value of zero over here so this is what it would do now coming to the count what we need to do is we need to take the value from session State and we can use a DOT Convention as well along with this session state so what it would do is it would go to session State and take this counter variable value for in for our initial run this would come to zero now it comes to our button when we click this button what would happen this count value would increment by one now we need to store that value in our uh session State counter uh key as well so what we can do over here is we would say st. session state. counter and we would equate it to count so now what it would do this session state would change to one after clicking the button and when this reruns it comes over here it sees that this counter value is already uh present in our session state it would pick this value and now counter would be one and when we click the button again the counter would be uh at incremented by one and this this value would be stored in the counter so this is how it should work and we will just verify this so you see every time I click this counter value is increasing over here so this is how our session state will help us to share variables between the runs so this was one of the way how we could have done it another way was using the U argument of onclick or on change so that is basically using the call backs so how does a call back work or so that would be let&amp;#39;s say we have a button again we would just say add one and for a button we have on click and we would uh equate to a function let&amp;#39;s say we have a function created which is add one so on click would what it would do it would tell streamlit that you need to execute this function whenever this button is being clicked now let&amp;#39;s just create this function so it&amp;#39;s a definition add one and what it would do is it would go to sd. session State and do counter and it would do plus one to it so I&amp;#39;ll remove this and this should be fine yes now when I go back and run it you see this is working as expected so this was another way how we could have executed it so some of the things that we need to take care while uh using session state is that this is defined for a particular session now session is defined as this tab which is open in our browser so let&amp;#39;s say if we had another uh tab open for another streamlet tab those two would have a different session for each other we wouldn&amp;#39;t be able to communicate the uh variables between those two application so that is something you need to take care of another thing is uh as soon as you do a refresh this memory would be cleared and you&amp;#39;ll lose all the information from this again like uh if your application crashes or anything that happens again your memory would be cleared and you won&amp;#39;t be able to store it so that is pretty much it on session State you can refer to the um documentation mentioned by streamlit on their app I have taken an example from their uh document documentation itself it&amp;#39;s a very uh uh helpful documentation and would allow you to understand each and everything so if you found this video helpful please do like the video and subscribe to the channel as well I&amp;#39;ll see you in another video thank you
+
+## YouTube Video: Streamlit Session State - Add Statefulness to Streamlit Apps
+
+### Transcript
+
+hi all and welcome to this video so in this video we will be uh covering a very important topic in streamed that is session State and to understand what session state is and how do we use it we would be taking help of this counter application which has a very simple function uh whenever I click this button it should add one to it increment the account and display it so when I go back to my application and click on this button as you can see even after clicking it multiple times the counter is stuck at one so what really happened why didn&amp;#39;t the counter increase so to understand what uh happened here and why it is stuck we need to understand how streamlit works so whenever we are clicking this button or a widget in streamlit what it does is it reruns the application from top to bottom the script from top to bottom and whenever this is being rerun so this counter variable is being set to zero and once we click this button it is adding one and that is what it is displaying every time so how many ever times you uhu uh click the button it would do the same thing initialize it to zero add a one and display it so to resolve this we would need a solution which is able to share this uh counter variable between the reruns that it that it is doing so this is what exactly the session state does so in a very simple basic terms session state is a way to share variable values between the each rerun that happens and it is like a memory and this memory uh it follows a syntax which is similar to our python dictionary so now we will uh resolve our issue using the uh session state so as I mentioned session state is like a memory and in the very first run it would be empty and as I mentioned uh it is following a syntax similar to dictionary so initially the session state is empty so what we need to do is for our first run we need to initialize a value uh in our dictionary u a key in our dictionary that would store the value for it so how do we do it so what we would do is we start with an if condition and say let&amp;#39;s say our key is counter that we would be using is not in uh our st. session State what we would do is we would initialize a session state with counter and value would be zero so session State counter and we would initialize it with zero so now in our first one what it would do is it would come here it would see that session state is empty it doesn&amp;#39;t have a counter key so what it would do is it would say counter and we would have a value of zero over here so this is what it would do now coming to the count what we need to do is we need to take the value from session State and we can use a DOT Convention as well along with this session state so what it would do is it would go to session State and take this counter variable value for in for our initial run this would come to zero now it comes to our button when we click this button what would happen this count value would increment by one now we need to store that value in our uh session State counter uh key as well so what we can do over here is we would say st. session state. counter and we would equate it to count so now what it would do this session state would change to one after clicking the button and when this reruns it comes over here it sees that this counter value is already uh present in our session state it would pick this value and now counter would be one and when we click the button again the counter would be uh at incremented by one and this this value would be stored in the counter so this is how it should work and we will just verify this so you see every time I click this counter value is increasing over here so this is how our session state will help us to share variables between the runs so this was one of the way how we could have done it another way was using the U argument of onclick or on change so that is basically using the call backs so how does a call back work or so that would be let&amp;#39;s say we have a button again we would just say add one and for a button we have on click and we would uh equate to a function let&amp;#39;s say we have a function created which is add one so on click would what it would do it would tell streamlit that you need to execute this function whenever this button is being clicked now let&amp;#39;s just create this function so it&amp;#39;s a definition add one and what it would do is it would go to sd. session State and do counter and it would do plus one to it so I&amp;#39;ll remove this and this should be fine yes now when I go back and run it you see this is working as expected so this was another way how we could have executed it so some of the things that we need to take care while uh using session state is that this is defined for a particular session now session is defined as this tab which is open in our browser so let&amp;#39;s say if we had another uh tab open for another streamlet tab those two would have a different session for each other we wouldn&amp;#39;t be able to communicate the uh variables between those two application so that is something you need to take care of another thing is uh as soon as you do a refresh this memory would be cleared and you&amp;#39;ll lose all the information from this again like uh if your application crashes or anything that happens again your memory would be cleared and you won&amp;#39;t be able to store it so that is pretty much it on session State you can refer to the um documentation mentioned by streamlit on their app I have taken an example from their uh document documentation itself it&amp;#39;s a very uh uh helpful documentation and would allow you to understand each and everything so if you found this video helpful please do like the video and subscribe to the channel as well I&amp;#39;ll see you in another video thank you

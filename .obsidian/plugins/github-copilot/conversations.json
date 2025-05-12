@@ -1,0 +1,59 @@
+{
+  "conversations": [
+    {
+      "id": "1746195748091",
+      "title": "hi",
+      "messages": [
+        {
+          "id": "1746195884713",
+          "content": "hi",
+          "role": "user",
+          "timestamp": 1746195884713
+        },
+        {
+          "id": "1746195893171",
+          "content": "d",
+          "role": "user",
+          "timestamp": 1746195893171
+        },
+        {
+          "id": "chatcmpl-BSlbpzZ5YJu3Dv2Zz3TtNvk1TcTCT",
+          "content": "Hi there! I noticed you typed \"d.\" Could you please clarify what you're looking to do or ask about in Obsidian? Let me know how I can help!",
+          "role": "assistant",
+          "timestamp": 1746195896370
+        }
+      ],
+      "createdAt": 1746195748091,
+      "updatedAt": 1746195896370,
+      "model": {
+        "label": "Claude 3.7 Sonnet",
+        "value": "claude-3.7-sonnet"
+      }
+    },
+    {
+      "id": "1746195708369",
+      "title": "hi",
+      "messages": [
+        {
+          "id": "1746195708369",
+          "content": "hi",
+          "role": "user",
+          "timestamp": 1746195708369
+        },
+        {
+          "id": "1746195743892",
+          "content": "hi",
+          "role": "user",
+          "timestamp": 1746195743892
+        }
+      ],
+      "createdAt": 1746195708369,
+      "updatedAt": 1746195743892,
+      "model": {
+        "label": "Claude 3.7 Sonnet",
+        "value": "claude-3.7-sonnet"
+      }
+    }
+  ],
+  "activeConversationId": "1746195748091"
+}

@@ -1,0 +1,43 @@
+{
+  "nodePath": "default",
+  "nodePathUpdatedToNode20": false,
+  "enabled": true,
+  "hotkeys": {
+    "accept": "Tab",
+    "cancel": "Escape",
+    "request": "Cmd-Shift-/",
+    "partial": "Cmd-Shift-.",
+    "next": "Cmd-Shift-ArrowDown",
+    "disable": "Cmd-Shift-ArrowRight"
+  },
+  "suggestionDelay": 500,
+  "debug": false,
+  "onlyOnHotkey": false,
+  "onlyInCodeBlock": false,
+  "exclude": [
+    "_NoteCompanion",
+    "patterns",
+    "pattern",
+    "output",
+    "pattern/ai.md"
+  ],
+  "deviceSpecificSettings": [
+    "nodePath"
+  ],
+  "useDeviceSpecificSettings": false,
+  "proxy": "",
+  "chatSettings": {
+    "deviceCode": "14f7a727f17eb8b5fcb023d1c648c7d2d6390a30",
+    "pat": "ghu_eRGGK7UQkxaKjWbHmyBhjJY3Q49uJj3HFX9T",
+    "accessToken": {
+      "token": "tid=731516f60942119e3fd1ab3bd5f6e6a6;exp=1746770315;sku=monthly_subscriber;proxy-ep=proxy.individual.githubcopilot.com;st=dotcom;chat=1;cit=1;malfil=1;editor_preview_features=1;ccr=1;8kp=1;ip=172.114.13.241;asn=AS20001:ea0890931e05ec24128269edf4ebce5fe78818e561a3cef46bcdeb4988445017",
+      "expiresAt": 1746770315
+    },
+    "selectedModel": {
+      "label": "GPT-o3-mini",
+      "value": "o3-mini"
+    }
+  },
+  "systemPrompt": "You are GitHub Copilot, an AI assistant. You are helping the user with their tasks in Obsidian.",
+  "invertEnterSendBehavior": true
+}
