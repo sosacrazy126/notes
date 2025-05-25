@@ -26,18 +26,18 @@ tags:
 
 ## 4. Structure  
 
-| Directory/File                 | Description                          |
-|-------------------------------|------------------------------------|
-| `src/core/ExtendedAgent.py`   | WebSocket-aware agent wrapper       |
-| `src/core/PhaseManager.py`    | Phase execution engine              |
-| `src/core/TaskSchema.py`      | Task state validation logic         |
-| `src/memory/MemorySaver.py`   | Phase/session logging engine        |
-| `src/web/WebSocketManager.py` | Socket connection/state manager     |
-| `src/web/message_protocol.py` | Message type validation             |
-| `src/dto/TaskState.py`        | Task status enumeration             |
-| `src/dto/PhaseResult.py`      | Standardized phase response format  |
-| `src/config/server_config.json` | WebSocket/server settings          |
-| `src/config/error_recovery.yaml` | Retry/rollback strategy rules     |
+| Directory/File                    | Description                          |
+|---------------------------------|------------------------------------|
+| `src/core/ExtendedAgent.py`      | WebSocket-aware agent wrapper       |
+| `src/core/PhaseManager.py`       | Phase execution engine              |
+| `src/core/TaskSchema.py`         | Task state validation logic         |
+| `src/memory/MemorySaver.py`      | Phase/session logging engine        |
+| `src/web/WebSocketManager.py`    | Socket connection/state manager     |
+| `src/web/message_protocol.py`    | Message type validation             |
+| `src/dto/TaskState.py`           | Task status enumeration             |
+| `src/dto/PhaseResult.py`         | Standardized phase response format  |
+| `src/config/server_config.json`  | WebSocket/server settings           |
+| `src/config/error_recovery.yaml` | Retry/rollback strategy rules       |
 
 ## 5. Detailed Explanation  
 - **ExtendedAgent.py**: Adapts legacy agent to send progress updates via WebSocket.  
@@ -50,62 +50,56 @@ tags:
 ## 6. Code
 
 ### ExtendedAgent.py  
-```python
-import legacy_agent
-from web.message_protocol import send_update
+    import legacy_agent
+    from web.message_protocol import send_update
 
-class ExtendedAgent:
-    def __init__(self, socket_id):
-        self._core_agent = legacy_agent.CiaynAgent()
-        self.socket_id = socket_id  # Connects to WebSocketManager
+    class ExtendedAgent:
+        def __init__(self, socket_id):
+            self._core_agent = legacy_agent.CiaynAgent()
+            self.socket_id = socket_id  # Connects to WebSocketManager
 
-    def execute_phase(self, task):
-        """Sends incremental updates during processing"""
-        for step in task.process():
+        def execute_phase(self, task):
+            """Sends incremental updates during processing"""
+            for step in task.process():
+                send_update(
+                    socket_id=self.socket_id,
+                    message=f"phase_update:{step.percent_complete}"
+                )
             send_update(
                 socket_id=self.socket_id,
-                message=f"phase_update:{step.percent_complete}"
+                message="phase_complete:YES"
             )
-        send_update(
-            socket_id=self.socket_id,
-            message="phase_complete:YES"
-        )
-```
 
 ### PhaseManager.py  
-```python
-from enum import Enum
+    from enum import Enum
 
-class Phase(Enum):
-    RESEARCH = 1
-    PLANNING = 2
-    IMPLEMENTATION = 3
+    class Phase(Enum):
+        RESEARCH = 1
+        PLANNING = 2
+        IMPLEMENTATION = 3
 
-class PhaseManager:
-    def run_task(self, task):
-        """Three-step workflow with error handling"""
-        try:
-            self._execute_phase(task, Phase.RESEARCH)
-            self._execute_phase(task, Phase.PLANNING)
-            self._execute_phase(task, Phase.IMPLEMENTATION)
-            task.mark_complete()
-        except Exception as e:
-            task.log_error(error=e)
-            raise
+    class PhaseManager:
+        def run_task(self, task):
+            """Three-step workflow with error handling"""
+            try:
+                self._execute_phase(task, Phase.RESEARCH)
+                self._execute_phase(task, Phase.PLANNING)
+                self._execute_phase(task, Phase.IMPLEMENTATION)
+                task.mark_complete()
+            except Exception as e:
+                task.log_error(error=e)
+                raise
 
-    def _execute_phase(self, task, phase):
-        task.set_phase(phase)
-        MemorySaver.save_intermediate(task)  # Persistence at each step
-```
+        def _execute_phase(self, task, phase):
+            task.set_phase(phase)
+            MemorySaver.save_intermediate(task)  # Persistence at each step
 
 ## 7. Setup  
-```bash
-#!/bin/bash
-mkdir -p src/{core,memory,web,dto,config}/
-touch src/{__init__.py,dto/__init__.py}
-cp example_config.json src/config/server_config_template.json
-pip install virtualenv websockets pydantic
-```
+    #!/bin/bash
+    mkdir -p src/{core,memory,web,dto,config}/
+    touch src/{__init__.py,dto/__init__.py}
+    cp example_config.json src/config/server_config_template.json
+    pip install virtualenv websockets pydantic
 
 ## 8. Takeaways  
 - **Real-time feedback** via WebSocket-driven asynchronous updates.  
@@ -126,4 +120,16 @@ pip install virtualenv websockets pydantic
 > [[_NoteCompanion/Backups/Enhanced Server with Real-Time WebSocket Updates_backup_20250419_003502.md | Link to original file]]
 
 ---
-[[_NoteCompanion/Backups/Enhanced Server with Real-Time WebSocket Updates_backup_20250509_164142.md | Link to original file]]
+
+> [[_NoteCompanion/Backups/Enhanced Server with Real-Time WebSocket Updates_backup_20250509_164142.md | Link to original file]]
+
+---
+
+> [[_NoteCompanion/Backups/Enhanced Server with Real-Time WebSocket Updates_backup_20250512_072804.md | Link to original file]]
+
+---
+
+> [[_NoteCompanion/Backups/Enhanced Server with Real-Time WebSocket Updates_backup_20250512_073214.md | Link to original file]]
+
+---
+[[_NoteCompanion/Backups/Enhanced Server with Real-Time WebSocket Updates_backup_20250512_074432.md | Link to original file]]

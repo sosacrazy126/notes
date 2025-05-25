@@ -3,6 +3,7 @@ tags:
   - system_design
   - cognitive_architecture
   - AI_workflow_system
+  - AI_reasoning_structure
 ---
 # Hemispheric Structure for AI Reasoning
 

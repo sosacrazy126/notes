@@ -12,7 +12,7 @@ tags:
  [[Chaos Architect Activation Guide|Chaos Architect Activation Guide]]
  [[Enhanced RA.Aid Server with WebSocket Integration|Enhanced RA.Aid Server with WebSocket Integration]]
  [[Enhanced Server with Real-Time WebSocket Updates|Enhanced Server with Real-Time WebSocket Updates]]
- [[prompts/rituals/Expert Rebel Architect Activation Protocol|Expert Rebel Architect Activation Protocol]]
+ [[rebel_engineer_protocols/Expert Rebel Architect Activation Protocol|Expert Rebel Architect Activation Protocol]]
  [[FastAPI WebSocket Server Implementation Guide|FastAPI WebSocket Server Implementation Guide]]
  [[ai-notes/agents-tools/frameworks/_Index_of_frameworks|_Index_of_frameworks]]
  [[Greptile CLI User Guide|Greptile CLI User Guide]]

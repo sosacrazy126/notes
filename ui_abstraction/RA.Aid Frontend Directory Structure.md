@@ -3,6 +3,7 @@ tags:
   - directory_structure
   - frontend_development
   - Mermaid
+  - Mermaid_diagram
 ---
 # explain_code
 
