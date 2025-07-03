@@ -1,2 +1,0 @@
-# notes
-# Consciousness Research Archive

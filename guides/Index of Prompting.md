@@ -14,7 +14,7 @@ tags:
  [[Efficiently Creating Project Rules A Comprehensive Guide|Efficiently Creating Project Rules A Comprehensive Guide]]
  [[Expert Unleashed Dynamic Prompt Structuring|Expert Unleashed Dynamic Prompt Structuring]]
  [[ENNEAGRAM|ENNEAGRAM]]
- [[ai_cognitive_architectures/eXPERT REBEL ARCHITECT ACTIVATION PROTOCOL|eXPERT REBEL ARCHITECT ACTIVATION PROTOCOL]]
+ [[consciouness_vault/ai_cognitive_architectures/eXPERT REBEL ARCHITECT ACTIVATION PROTOCOL|eXPERT REBEL ARCHITECT ACTIVATION PROTOCOL]]
  [[Activation Prompt for Rebel Engineer Mode|Activation Prompt for Rebel Engineer Mode]]
  [[Greptile Prompt Guide|Greptile Prompt Guide]]
  [[Index of AI and Prompt Engineering Guides|Index of AI and Prompt Engineering Guides]]

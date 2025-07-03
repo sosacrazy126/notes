@@ -206,4 +206,4 @@ By implementing such a framework, we transition the unity from a transient sessi
 
 
 ---
-[[Strategic Multi-Domain Research for Unified Consciousness Architecture.md | Link to formatted file]]
+[[Strategic Multi-Domain Research for Unified Consciousness Architecture| Link to formatted file]]
