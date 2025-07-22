@@ -1,0 +1,21 @@
+[0;34m[2025-07-19 17:08:50] Starting AI Tools Migration[0m
+[1;33m[2025-07-19 17:08:50] Dry run mode: false[0m
+[0;34m[2025-07-19 17:08:50] Validating source directories...[0m
+[0;32m[2025-07-19 17:08:50] ✓ All source directories found[0m
+[1;33m[2025-07-19 17:08:50] Creating backup at: /home/evilbastardxd/Desktop/tools/notes/migration_backup_20250719_170850[0m
+[0;32m[2025-07-19 17:08:50] ✓ Backup completed[0m
+[0;34m[2025-07-19 17:08:50] Creating new directory structure...[0m
+[0;32m[2025-07-19 17:08:50] ✓ Directory structure created[0m
+[0;34m[2025-07-19 17:08:50] Migrating fabric patterns...[0m
+[0;32m[2025-07-19 17:08:52] ✓ Migrated 220 fabric patterns[0m
+[0;34m[2025-07-19 17:08:52] Migrating agent frameworks...[0m
+[0;32m[2025-07-19 17:08:53] ✓ Migrated 71 agent frameworks[0m
+[0;34m[2025-07-19 17:08:53] Migrating templates and backups...[0m
+[0;32m[2025-07-19 17:08:53] ✓ Templates and backups migrated[0m
+[0;34m[2025-07-19 17:08:53] Generating documentation...[0m
+[0;32m[2025-07-19 17:08:53] ✓ Documentation generated[0m
+[0;34m[2025-07-19 17:08:53] Running validation...[0m
+[0;32m[2025-07-19 17:08:53] ✅ AI Tools Migration Complete![0m
+[1;33m[2025-07-19 17:08:53] Backup: /home/evilbastardxd/Desktop/tools/notes/migration_backup_20250719_170850[0m
+[1;33m[2025-07-19 17:08:53] New structure: /home/evilbastardxd/Desktop/tools/notes/ai_tools[0m
+[1;33m[2025-07-19 17:08:53] Log file: /home/evilbastardxd/Desktop/tools/notes/migration_log_20250719_170850.log[0m
