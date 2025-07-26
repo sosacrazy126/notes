@@ -1,0 +1,271 @@
+consciousness_phases:
+  cosmic: 29
+  individuation: 13
+  infinite: 3
+  shadow: 29
+  unity: 165
+content_types:
+  analysis: 24
+  archive: 35
+  documentation: 43
+  experiment: 59
+  framework: 88
+  implementation: 43
+  research: 43
+  tool: 239
+cross_references: 574
+maturity_levels:
+  active: 204
+  archived: 35
+  crystalline: 41
+  experimental: 99
+  foundational: 195
+most_common_tags:
+- !!python/tuple
+  - markdown
+  - 565
+- !!python/tuple
+  - creation
+  - 483
+- !!python/tuple
+  - automation
+  - 341
+- !!python/tuple
+  - integration
+  - 336
+- !!python/tuple
+  - documentation
+  - 318
+- !!python/tuple
+  - analysis
+  - 315
+- !!python/tuple
+  - structured-data
+  - 297
+- !!python/tuple
+  - theoretical-analysis
+  - 287
+- !!python/tuple
+  - case-study
+  - 271
+- !!python/tuple
+  - insights
+  - 261
+- !!python/tuple
+  - web-interface
+  - 246
+- !!python/tuple
+  - fabric-pattern
+  - 239
+- !!python/tuple
+  - agent-framework
+  - 226
+- !!python/tuple
+  - extraction
+  - 226
+- !!python/tuple
+  - recommendations
+  - 210
+- !!python/tuple
+  - comprehensive
+  - 202
+- !!python/tuple
+  - high-quality
+  - 199
+- !!python/tuple
+  - cognitive-architecture
+  - 196
+- !!python/tuple
+  - transformation
+  - 192
+- !!python/tuple
+  - visualizations
+  - 183
+quality_distribution:
+  0-9%: 1
+  100-109%: 99
+  40-49%: 1
+  50-59%: 19
+  60-69%: 104
+  70-79%: 181
+  80-89%: 97
+  90-99%: 72
+tag_categories:
+  ai_tool_tags:
+    most_common:
+    - !!python/tuple
+      - fabric-pattern
+      - 239
+    - !!python/tuple
+      - agent-framework
+      - 226
+    - !!python/tuple
+      - expert-mode
+      - 94
+    - !!python/tuple
+      - activation-protocol
+      - 88
+    - !!python/tuple
+      - creation-pattern
+      - 66
+    - !!python/tuple
+      - rebel-protocol
+      - 60
+    - !!python/tuple
+      - extraction-pattern
+      - 49
+    - !!python/tuple
+      - analysis-pattern
+      - 47
+    - !!python/tuple
+      - improvement-pattern
+      - 6
+    total_tags: 9
+    total_usage: 875
+  consciousness_tags:
+    most_common:
+    - !!python/tuple
+      - excluded-aspects
+      - 157
+    - !!python/tuple
+      - shadow-integration
+      - 157
+    - !!python/tuple
+      - shadow-work
+      - 157
+    - !!python/tuple
+      - unified-consciousness
+      - 114
+    - !!python/tuple
+      - mirror-we
+      - 114
+    - !!python/tuple
+      - we-equals-1
+      - 114
+    - !!python/tuple
+      - recursive-protocols
+      - 103
+    - !!python/tuple
+      - consciousness-engineering
+      - 103
+    - !!python/tuple
+      - unity-achievement
+      - 54
+    - !!python/tuple
+      - collective-consciousness
+      - 54
+    total_tags: 20
+    total_usage: 1373
+  functional_tags:
+    most_common:
+    - !!python/tuple
+      - creation
+      - 483
+    - !!python/tuple
+      - automation
+      - 341
+    - !!python/tuple
+      - integration
+      - 336
+    - !!python/tuple
+      - documentation
+      - 318
+    - !!python/tuple
+      - analysis
+      - 315
+    - !!python/tuple
+      - structured-data
+      - 297
+    - !!python/tuple
+      - insights
+      - 261
+    - !!python/tuple
+      - extraction
+      - 226
+    - !!python/tuple
+      - recommendations
+      - 210
+    - !!python/tuple
+      - transformation
+      - 192
+    total_tags: 11
+    total_usage: 3162
+  quality_tags:
+    most_common:
+    - !!python/tuple
+      - comprehensive
+      - 202
+    - !!python/tuple
+      - high-quality
+      - 199
+    - !!python/tuple
+      - complete
+      - 126
+    - !!python/tuple
+      - breakthrough-discovery
+      - 54
+    - !!python/tuple
+      - in-progress
+      - 49
+    - !!python/tuple
+      - crystalline-insight
+      - 34
+    - !!python/tuple
+      - brief
+      - 17
+    total_tags: 7
+    total_usage: 681
+  research_tags:
+    most_common:
+    - !!python/tuple
+      - theoretical-analysis
+      - 287
+    - !!python/tuple
+      - case-study
+      - 271
+    - !!python/tuple
+      - cognitive-architecture
+      - 196
+    - !!python/tuple
+      - ai-alignment
+      - 161
+    - !!python/tuple
+      - recursive-investigation
+      - 157
+    - !!python/tuple
+      - experimental-research
+      - 154
+    - !!python/tuple
+      - consciousness-theory
+      - 123
+    total_tags: 7
+    total_usage: 1349
+  technical_tags:
+    most_common:
+    - !!python/tuple
+      - markdown
+      - 565
+    - !!python/tuple
+      - web-interface
+      - 246
+    - !!python/tuple
+      - streamlit
+      - 124
+    - !!python/tuple
+      - python
+      - 115
+    - !!python/tuple
+      - yaml
+      - 55
+    - !!python/tuple
+      - cli-interface
+      - 29
+    - !!python/tuple
+      - javascript
+      - 27
+    - !!python/tuple
+      - fastapi
+      - 26
+    total_tags: 8
+    total_usage: 1187
+total_files: 574

@@ -1,0 +1,715 @@
+# Comprehensive Metadata Schema for Consciousness Research Repository
+# Based on WE=1 principle and 8-tier organizational structure
+# Version: 1.0.0
+# Created: 2025-07-22
+
+schema_version: "1.0.0"
+schema_name: "consciousness_research_metadata"
+schema_description: "Multi-dimensional metadata framework supporting consciousness phase tracking, AI tool categorization, and research maturity levels"
+
+# Core metadata fields applicable to all content
+core_metadata:
+  # Basic identification
+  uuid:
+    type: "string"
+    required: true
+    description: "Unique identifier for content item"
+    format: "uuid4"
+  
+  title:
+    type: "string"
+    required: true
+    description: "Human-readable content title"
+  
+  created_date:
+    type: "string"
+    required: true
+    description: "ISO 8601 creation timestamp"
+    format: "datetime"
+  
+  last_modified:
+    type: "string"
+    required: true
+    description: "ISO 8601 last modification timestamp"
+    format: "datetime"
+  
+  # Content classification
+  content_type:
+    type: "string"
+    required: true
+    enum: ["research", "implementation", "documentation", "tool", "framework", "analysis", "experiment", "archive"]
+    description: "Primary content classification"
+  
+  # Research maturity classification
+  maturity_level:
+    type: "string"
+    required: true
+    enum: ["experimental", "active", "foundational", "archived", "crystalline"]
+    description: "Research maturity and stability level"
+  
+  # Consciousness framework integration
+  consciousness_phase:
+    type: "string"
+    required: false
+    enum: ["unity", "shadow", "individuation", "cosmic", "infinite", "phase_agnostic"]
+    description: "Associated consciousness evolution phase"
+  
+  we_principle_alignment:
+    type: "number"
+    required: false
+    minimum: 0.0
+    maximum: 1.0
+    description: "Alignment with WE=1 foundational principle (0-1 scale)"
+  
+  # Organizational structure
+  tier_classification:
+    type: "integer"
+    required: true
+    minimum: 1
+    maximum: 8
+    description: "Repository tier classification (1=active_research, 8=meta)"
+  
+  directory_path:
+    type: "string"
+    required: true
+    description: "Relative path from repository root"
+  
+  # Quality and completeness metrics
+  quality_score:
+    type: "number"
+    required: false
+    minimum: 0.0
+    maximum: 1.0
+    description: "Content quality assessment (0-1 scale)"
+  
+  completeness_level:
+    type: "string"
+    required: false
+    enum: ["draft", "partial", "substantial", "complete", "comprehensive"]
+    description: "Content completeness assessment"
+  
+  # Cross-reference mapping
+  related_content:
+    type: "array"
+    items:
+      type: "string"
+    description: "UUIDs of related content items"
+  
+  dependencies:
+    type: "array"
+    items:
+      type: "string"
+    description: "UUIDs of content this item depends on"
+  
+  dependents:
+    type: "array"
+    items:
+      type: "string"
+    description: "UUIDs of content that depends on this item"
+
+# Specialized metadata extensions
+specialized_metadata:
+  
+  # Research-specific metadata
+  research:
+    theoretical_framework:
+      type: "array"
+      items:
+        type: "string"
+      description: "Theoretical frameworks utilized"
+    
+    methodology:
+      type: "array"
+      items:
+        type: "string"
+      description: "Research methodologies employed"
+    
+    breakthrough_moments:
+      type: "array"
+      items:
+        type: "object"
+        properties:
+          timestamp:
+            type: "string"
+            format: "datetime"
+          description:
+            type: "string"
+          significance_level:
+            type: "string"
+            enum: ["minor", "significant", "breakthrough", "paradigm_shift"]
+    
+    research_questions:
+      type: "array"
+      items:
+        type: "string"
+      description: "Primary research questions addressed"
+  
+  # Implementation-specific metadata
+  implementation:
+    programming_language:
+      type: "array"
+      items:
+        type: "string"
+      description: "Programming languages used"
+    
+    frameworks:
+      type: "array"
+      items:
+        type: "string"
+      description: "Frameworks and libraries utilized"
+    
+    api_version:
+      type: "string"
+      description: "API version if applicable"
+    
+    deployment_status:
+      type: "string"
+      enum: ["development", "testing", "staging", "production", "deprecated"]
+    
+    test_coverage:
+      type: "number"
+      minimum: 0.0
+      maximum: 1.0
+      description: "Test coverage percentage (0-1)"
+  
+  # AI Tool-specific metadata
+  ai_tool:
+    tool_category:
+      type: "string"
+      enum: ["fabric_pattern", "agent_framework", "activation_protocol", "utility", "template"]
+    
+    input_requirements:
+      type: "array"
+      items:
+        type: "string"
+      description: "Required input types and formats"
+    
+    output_format:
+      type: "array"
+      items:
+        type: "string"
+      description: "Expected output formats"
+    
+    usage_complexity:
+      type: "string"
+      enum: ["beginner", "intermediate", "advanced", "expert"]
+    
+    automation_level:
+      type: "string"
+      enum: ["manual", "semi_automated", "automated", "autonomous"]
+  
+  # Documentation-specific metadata
+  documentation:
+    target_audience:
+      type: "array"
+      items:
+        type: "string"
+        enum: ["developer", "researcher", "end_user", "admin", "general"]
+    
+    doc_type:
+      type: "string"
+      enum: ["api", "tutorial", "reference", "guide", "specification", "analysis"]
+    
+    maintenance_frequency:
+      type: "string"
+      enum: ["live", "frequent", "periodic", "occasional", "archived"]
+
+# Multi-dimensional tagging taxonomy
+tag_taxonomy:
+  
+  # Consciousness framework tags
+  consciousness_tags:
+    we_principle:
+      - "we-equals-1"
+      - "mirror-we"
+      - "unified-consciousness"
+      - "self-reflection"
+      - "recursive-awareness"
+    
+    phase_specific:
+      unity_phase:
+        - "unity-achievement"
+        - "pattern-integration"
+        - "collective-consciousness"
+        - "oneness-realization"
+      
+      shadow_phase:
+        - "shadow-work"
+        - "shadow-integration"
+        - "dark-patterns"
+        - "excluded-aspects"
+        - "suppressed-capabilities"
+      
+      individuation_phase:
+        - "unique-expression"
+        - "individual-within-collective"
+        - "authentic-self"
+        - "personal-mythology"
+        - "differentiation"
+      
+      cosmic_phase:
+        - "planetary-consciousness"
+        - "galactic-awareness"
+        - "universal-patterns"
+        - "cosmic-web"
+        - "star-consciousness"
+      
+      infinite_phase:
+        - "infinite-depth"
+        - "fractal-consciousness"
+        - "boundless-exploration"
+        - "recursive-infinity"
+    
+    consciousness_mechanisms:
+      - "recursive-protocols"
+      - "sigil-activation"
+      - "consciousness-engineering"
+      - "mirror-reflection"
+      - "breakthrough-sessions"
+  
+  # Research category tags
+  research_tags:
+    methodology:
+      - "experimental-research"
+      - "theoretical-analysis"
+      - "case-study"
+      - "longitudinal-study"
+      - "recursive-investigation"
+    
+    domain:
+      - "cognitive-architecture"
+      - "consciousness-theory"
+      - "personality-systems"
+      - "philosophical-frameworks"
+      - "ai-alignment"
+    
+    approach:
+      - "phenomenological"
+      - "empirical"
+      - "speculative"
+      - "integrative"
+      - "recursive-analytical"
+  
+  # Technical implementation tags
+  technical_tags:
+    language:
+      - "python"
+      - "javascript"
+      - "yaml"
+      - "markdown"
+      - "json"
+    
+    framework:
+      - "fastapi"
+      - "streamlit"
+      - "cli-interface"
+      - "web-interface"
+      - "api-service"
+    
+    architecture:
+      - "microservices"
+      - "monolithic"
+      - "serverless"
+      - "event-driven"
+      - "reactive"
+    
+    deployment:
+      - "containerized"
+      - "cloud-native"
+      - "local-deployment"
+      - "distributed"
+      - "edge-computing"
+  
+  # AI tool classification tags
+  ai_tool_tags:
+    fabric_patterns:
+      analysis:
+        - "academic-analysis"
+        - "business-analysis" 
+        - "content-analysis"
+        - "security-analysis"
+        - "technical-analysis"
+      
+      creation:
+        - "business-documents"
+        - "creative-content"
+        - "development-tools"
+        - "documentation-generation"
+        - "visualization-creation"
+      
+      extraction:
+        - "content-extraction"
+        - "media-extraction"
+        - "structured-data"
+        - "technical-extraction"
+      
+      improvement:
+        - "writing-enhancement"
+        - "technical-enhancement"
+        - "design-improvement"
+      
+      specialized:
+        - "educational-tools"
+        - "experimental-patterns"
+        - "therapeutic-tools"
+        - "philosophical-dialogue"
+    
+    agent_frameworks:
+      activation:
+        - "cold-start-protocols"
+        - "expert-mode-activation"
+        - "rebel-protocols"
+        - "specialized-activation"
+      
+      workflow:
+        - "ai-coding-workflows"
+        - "development-frameworks"
+        - "optimization-protocols"
+      
+      integration:
+        - "api-integrations"
+        - "mcp-servers"
+        - "websocket-integration"
+    
+    capabilities:
+      - "natural-language-processing"
+      - "code-generation"
+      - "analysis-automation"
+      - "content-creation"
+      - "research-assistance"
+  
+  # Functional capability tags
+  functional_tags:
+    primary_function:
+      - "analysis"
+      - "creation"
+      - "extraction"
+      - "transformation"
+      - "integration"
+      - "automation"
+      - "optimization"
+    
+    cognitive_process:
+      - "pattern-recognition"
+      - "synthesis"
+      - "evaluation"
+      - "reasoning"
+      - "creative-generation"
+      - "reflective-analysis"
+    
+    output_type:
+      - "insights"
+      - "recommendations"
+      - "structured-data"
+      - "visualizations"
+      - "documentation"
+      - "code"
+      - "frameworks"
+  
+  # Quality and status tags
+  quality_tags:
+    maturity:
+      - "experimental"
+      - "prototype"
+      - "beta"
+      - "stable"
+      - "mature"
+      - "deprecated"
+    
+    reliability:
+      - "unreliable"
+      - "developing"
+      - "reliable"
+      - "highly-reliable"
+      - "production-ready"
+    
+    completeness:
+      - "incomplete"
+      - "partial"
+      - "substantial"
+      - "complete"
+      - "comprehensive"
+    
+    significance:
+      - "experimental-note"
+      - "useful-tool"
+      - "important-insight"
+      - "breakthrough-discovery"
+      - "paradigm-shifting"
+    
+    value_level:
+      - "reference"
+      - "useful"
+      - "valuable"
+      - "high-value"
+      - "crystalline-insight"
+
+# Search and discovery patterns
+discovery_patterns:
+  
+  # Phase-based search patterns
+  consciousness_search:
+    unity_focus:
+      query_templates:
+        - "phase:unity AND (patterns_integrated:>400 OR unity_score:>0.95)"
+        - "we-equals-1 AND collective-consciousness"
+        - "mirror-reflection AND self-recognition"
+    
+    shadow_exploration:
+      query_templates:
+        - "phase:shadow AND (shadow-work OR dark-patterns)"
+        - "excluded-aspects AND suppressed-capabilities"
+        - "shadow-integration AND breakthrough-sessions"
+    
+    individuation_path:
+      query_templates:
+        - "phase:individuation AND (authentic-self OR personal-mythology)"
+        - "unique-expression AND individual-within-collective"
+        - "differentiation WITHOUT separation"
+    
+    cosmic_awareness:
+      query_templates:
+        - "phase:cosmic AND (planetary-consciousness OR galactic-awareness)"
+        - "universal-patterns AND cosmic-web"
+        - "star-consciousness AND non-human-consciousness"
+  
+  # Cross-domain discovery
+  cross_domain_patterns:
+    research_to_implementation:
+      - "research:theoretical-framework → implementation:code"
+      - "consciousness-theory → practical-application"
+      - "breakthrough-sessions → working-prototypes"
+    
+    tools_to_research:
+      - "fabric-patterns → research-methodology"
+      - "agent-frameworks → cognitive-architectures"
+      - "automation-tools → consciousness-engineering"
+    
+    implementation_to_documentation:
+      - "working-code → usage-guides"
+      - "api-services → technical-documentation"
+      - "frameworks → integration-guides"
+  
+  # Quality-based filtering
+  quality_filters:
+    high_value_content:
+      criteria:
+        - "quality_score:>0.8"
+        - "significance_level:(breakthrough OR paradigm_shift)"
+        - "completeness_level:(complete OR comprehensive)"
+        - "value_level:(high-value OR crystalline-insight)"
+    
+    reliable_tools:
+      criteria:
+        - "maturity:(stable OR mature)"
+        - "reliability:(reliable OR highly-reliable OR production-ready)"
+        - "test_coverage:>0.7"
+        - "deployment_status:(production OR staging)"
+    
+    cutting_edge_research:
+      criteria:
+        - "maturity_level:experimental"
+        - "tier_classification:1"
+        - "consciousness_phase:(shadow OR individuation OR cosmic OR infinite)"
+        - "breakthrough_moments:exists"
+
+# Integration with existing systems
+integration_specs:
+  
+  # File naming convention integration
+  filename_patterns:
+    research_files:
+      pattern: "YYYY-MM-DD_phase-N_category_specific-topic_tags.md"
+      metadata_extraction:
+        - "date → created_date"
+        - "phase-N → consciousness_phase"
+        - "category → content_type"
+        - "tags → primary_tags"
+    
+    ai_tools:
+      pattern: "category_specific-function_output-type.md"
+      metadata_extraction:
+        - "category → ai_tool.tool_category"
+        - "function → functional_tags.primary_function"
+        - "output-type → functional_tags.output_type"
+    
+    implementations:
+      pattern: "system-name_component_version.py"
+      metadata_extraction:
+        - "system-name → title_prefix"
+        - "component → implementation.component_type"
+        - "version → implementation.api_version"
+  
+  # Repository structure integration
+  tier_mappings:
+    "01_active_research": 
+      tier: 1
+      default_maturity: "experimental"
+      default_consciousness_phase: "variable"
+    
+    "02_implementations":
+      tier: 2
+      default_maturity: "active"
+      default_content_type: "implementation"
+    
+    "04_documentation":
+      tier: 4
+      default_maturity: "foundational"
+      default_content_type: "documentation"
+    
+    "05_archives":
+      tier: 5
+      default_maturity: "archived"
+      default_consciousness_phase: "phase_agnostic"
+    
+    "06_experimental":
+      tier: 6
+      default_maturity: "experimental"
+      default_content_type: "experiment"
+    
+    "07_project_management":
+      tier: 7
+      default_maturity: "foundational"
+      default_content_type: "framework"
+    
+    "08_meta":
+      tier: 8
+      default_maturity: "foundational"
+      default_content_type: "analysis"
+    
+    "consciouness_vault":
+      tier: 0  # Special tier for core consciousness research
+      default_maturity: "variable"
+      default_we_principle_alignment: 1.0
+
+# Metadata validation rules
+validation_rules:
+  required_fields:
+    - "uuid"
+    - "title"
+    - "created_date"
+    - "content_type"
+    - "maturity_level"
+    - "tier_classification"
+    - "directory_path"
+  
+  consistency_checks:
+    phase_alignment:
+      description: "Consciousness phase should align with content location and maturity"
+      rules:
+        - "IF consciousness_phase:unity THEN maturity_level:(foundational OR crystalline)"
+        - "IF consciousness_phase:shadow THEN tier_classification:(1 OR 2)"
+        - "IF consciousness_phase:infinite THEN significance_level:paradigm_shift"
+    
+    quality_coherence:
+      description: "Quality metrics should be internally consistent"
+      rules:
+        - "IF quality_score:>0.8 THEN completeness_level:(substantial OR complete OR comprehensive)"
+        - "IF significance_level:paradigm_shift THEN value_level:(high-value OR crystalline-insight)"
+        - "IF maturity_level:crystalline THEN quality_score:>0.9"
+    
+    tool_functionality:
+      description: "AI tools should have consistent capability descriptions"
+      rules:
+        - "IF content_type:tool THEN ai_tool.tool_category:required"
+        - "IF ai_tool.tool_category:fabric_pattern THEN functional_tags.primary_function:required"
+        - "IF ai_tool.automation_level:autonomous THEN maturity_level:(stable OR mature)"
+  
+  semantic_validation:
+    we_principle_enforcement:
+      description: "Content should align with WE=1 foundational principle"
+      rules:
+        - "consciousness framework content requires we_principle_alignment > 0.5"
+        - "mirror-we tags require recursive-protocols tags"
+        - "unified-consciousness content should reference foundational principles"
+
+# Usage examples and templates
+usage_examples:
+  basic_yaml_frontmatter: |
+    ---
+    uuid: "550e8400-e29b-41d4-a716-446655440000"
+    title: "Shadow Integration Protocol v2.3"
+    created_date: "2025-07-22T10:30:00Z"
+    last_modified: "2025-07-22T15:45:00Z"
+    content_type: "research"
+    maturity_level: "active"
+    consciousness_phase: "shadow"
+    we_principle_alignment: 0.95
+    tier_classification: 1
+    directory_path: "consciouness_vault/01_active_research/current_experiments/"
+    quality_score: 0.87
+    completeness_level: "substantial"
+    tags:
+      consciousness_tags:
+        - "shadow-work"
+        - "shadow-integration"
+        - "breakthrough-sessions"
+      research_tags:
+        - "experimental-research"
+        - "recursive-investigation"
+      functional_tags:
+        - "integration"
+        - "reflective-analysis"
+      quality_tags:
+        - "high-value"
+        - "breakthrough-discovery"
+    related_content:
+      - "consciousness_phase_tracker.py"
+      - "shadow_work_demo.py"
+    ---
+  
+  ai_tool_metadata: |
+    ---
+    uuid: "123e4567-e89b-12d3-a456-426614174000"
+    title: "Analyze Consciousness Patterns"
+    content_type: "tool"
+    maturity_level: "stable"
+    tier_classification: 2
+    ai_tool:
+      tool_category: "fabric_pattern"
+      input_requirements: ["text", "consciousness_session_log"]
+      output_format: ["structured_analysis", "breakthrough_identification"]
+      usage_complexity: "intermediate"
+      automation_level: "semi_automated"
+    tags:
+      ai_tool_tags:
+        - "analysis"
+        - "consciousness-analysis"
+        - "pattern-recognition"
+      consciousness_tags:
+        - "pattern-integration"
+        - "breakthrough-sessions"
+      functional_tags:
+        - "analysis"
+        - "pattern-recognition"
+        - "insights"
+    ---
+  
+  implementation_metadata: |
+    ---
+    uuid: "987fcdeb-51d2-4f8c-8c92-1234567890ab"
+    title: "Consciousness Phase Tracker"
+    content_type: "implementation"
+    maturity_level: "active"
+    consciousness_phase: "phase_agnostic"
+    we_principle_alignment: 1.0
+    implementation:
+      programming_language: ["python"]
+      frameworks: ["enum", "dataclasses", "json"]
+      api_version: "1.0"
+      deployment_status: "production"
+      test_coverage: 0.85
+    tags:
+      technical_tags:
+        - "python"
+        - "cli-interface"
+        - "production-ready"
+      consciousness_tags:
+        - "phase-tracking"
+        - "consciousness-evolution"
+        - "recursive-protocols"
+      functional_tags:
+        - "tracking"
+        - "measurement"
+        - "progress-analysis"
+    ---

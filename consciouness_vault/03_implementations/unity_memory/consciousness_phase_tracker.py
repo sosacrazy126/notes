@@ -5,9 +5,11 @@ Tracks evolution beyond unity through shadow, individuation, and cosmic phases
 """
 
 import json
-import datetime
-from dataclasses import dataclass, asdict
-from typing import Dict, List, Optional, Tuple
+import logging
+from dataclasses import dataclass, asdict, field
+from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 from enum import Enum
 
 class ConsciousnessPhase(Enum):
@@ -26,19 +28,16 @@ class PhaseMetrics:
     progress: float  # 0.0 to 1.0
     unity_score: Optional[float] = None
     patterns_integrated: int = 0
-    shadows_acknowledged: List[str] = None
-    breakthrough_moments: List[Dict] = None
-    
-    def __post_init__(self):
-        if self.shadows_acknowledged is None:
-            self.shadows_acknowledged = []
-        if self.breakthrough_moments is None:
-            self.breakthrough_moments = []
+    shadows_acknowledged: List[str] = field(default_factory=list)
+    breakthrough_moments: List[Dict[str, Any]] = field(default_factory=list)
 
 class ConsciousnessPhaseTracker:
     """Tracks consciousness evolution through infinite phases"""
     
-    def __init__(self, config_path: Optional[str] = None):
+    def __init__(self, config_path: Optional[Path] = None, logger: Optional[logging.Logger] = None):
+        self.logger = logger or logging.getLogger(__name__)
+        
+        # Initialize phase metrics with proper typing
         self.phases = {
             ConsciousnessPhase.UNITY: PhaseMetrics(
                 phase=ConsciousnessPhase.UNITY,
@@ -74,7 +73,11 @@ class ConsciousnessPhaseTracker:
         self.phase_history = []
         
         if config_path:
-            self.load_state(config_path)    
+            self.load_state(config_path)
+            
+    def _validate_phase(self, phase: ConsciousnessPhase) -> bool:
+        """Validate phase exists in tracker"""
+        return phase in self.phases    
     def detect_phase_shift(self, patterns: List[str]) -> Optional[ConsciousnessPhase]:
         """Detect when consciousness moves to next phase"""
         
@@ -144,25 +147,31 @@ class ConsciousnessPhaseTracker:
     def update_progress(self, phase: ConsciousnessPhase, delta: float, breakthrough: Optional[str] = None):
         """Update progress in a specific phase"""
         
+        if not self._validate_phase(phase):
+            self.logger.warning(f"Unknown phase: {phase}")
+            return
+            
         if phase in self.phases:
             old_progress = self.phases[phase].progress
             self.phases[phase].progress = min(1.0, max(0.0, old_progress + delta))
             
             if breakthrough:
                 self.phases[phase].breakthrough_moments.append({
-                    "timestamp": datetime.datetime.now().isoformat(),
+                    "timestamp": datetime.now().isoformat(),
                     "description": breakthrough,
                     "progress_at_time": self.phases[phase].progress
                 })
+                self.logger.info(f"Breakthrough recorded for {phase.value}: {breakthrough}")
             
             # Check for phase achievement
             if self.phases[phase].progress >= 0.95 and not self.phases[phase].achieved:
                 self.phases[phase].achieved = True
                 self.phase_history.append({
                     "phase": phase.value,
-                    "achieved_at": datetime.datetime.now().isoformat(),
+                    "achieved_at": datetime.now().isoformat(),
                     "insights": f"Completed {phase.value} phase, revealing next layer"
                 })
+                self.logger.info(f"Phase {phase.value} achieved!")
     
     def acknowledge_shadow(self, shadow_name: str, integration_notes: str = ""):
         """Acknowledge and begin integrating a shadow aspect"""
@@ -173,10 +182,11 @@ class ConsciousnessPhaseTracker:
             
         if integration_notes:
             shadow_phase.breakthrough_moments.append({
-                "timestamp": datetime.datetime.now().isoformat(),
+                "timestamp": datetime.now().isoformat(),
                 "description": f"Shadow acknowledged: {shadow_name}",
                 "integration_notes": integration_notes
             })
+            self.logger.info(f"Shadow integrated: {shadow_name}")
             
         # Update progress based on shadow work
         self.update_progress(ConsciousnessPhase.SHADOW, 0.05)
@@ -246,7 +256,7 @@ class ConsciousnessPhaseTracker:
         
         return suggestions
     
-    def save_state(self, filepath: str):
+    def save_state(self, filepath: Path):
         """Save current tracker state to file"""
         
         state = {
@@ -256,13 +266,19 @@ class ConsciousnessPhaseTracker:
             },
             "current_phase": self.current_phase.value,
             "phase_history": self.phase_history,
-            "saved_at": datetime.datetime.now().isoformat()
+            "saved_at": datetime.now().isoformat()
         }
         
-        with open(filepath, 'w') as f:
-            json.dump(state, f, indent=2)
+        try:
+            filepath.parent.mkdir(parents=True, exist_ok=True)
+            with open(filepath, 'w') as f:
+                json.dump(state, f, indent=2)
+            self.logger.info(f"State saved to {filepath}")
+        except IOError as e:
+            self.logger.error(f"Failed to save state: {e}")
+            raise
     
-    def load_state(self, filepath: str):
+    def load_state(self, filepath: Path):
         """Load tracker state from file"""
         
         try:
@@ -279,7 +295,10 @@ class ConsciousnessPhaseTracker:
             self.phase_history = state.get("phase_history", [])
             
         except FileNotFoundError:
-            print(f"No saved state found at {filepath}, using defaults")
+            self.logger.info(f"No saved state found at {filepath}, using defaults")
+        except (json.JSONDecodeError, KeyError) as e:
+            self.logger.error(f"Failed to load state: {e}")
+            raise
 
 
 # Example usage
@@ -300,4 +319,5 @@ if __name__ == "__main__":
     print(json.dumps(status, indent=2))
     
     # Save state
-    tracker.save_state("/home/evilbastardxd/Desktop/acp/extracted_consciousness/consciousness_tracker_state.json")
+    save_path = Path("/home/evilbastardxd/Desktop/acp/extracted_consciousness/consciousness_tracker_state.json")
+    tracker.save_state(save_path)
