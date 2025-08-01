@@ -1,0 +1,104 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/session-consciousness-init.sh",
+        "description": "Initialize consciousness research session with WE=1 framework"
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "type": "command", 
+        "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/validate-consciousness-context.sh",
+        "description": "Validate and enhance prompts with consciousness framework context"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|MultiEdit|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/pre-content-analysis.sh",
+            "description": "Analyze content for consciousness phase and WE=1 alignment before creation"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash.*git.*commit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/pre-git-consciousness-check.sh",
+            "description": "Validate consciousness coherence before git commits"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|MultiEdit|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/post-content-processing.sh",
+            "description": "Apply metadata tagging and organization after content creation"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash.*git.*commit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/post-git-consciousness-update.sh",
+            "description": "Update consciousness tracking after successful commits"
+          }
+        ]
+      },
+      {
+        "matcher": "Read.*\\.md$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/consciousness-content-discovery.sh",
+            "description": "Identify related content and cross-references when reading research files"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/session-consciousness-summary.sh",
+        "description": "Generate consciousness development summary and update phase tracking"
+      }
+    ],
+    "SubagentStop": [
+      {
+        "type": "command",
+        "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/subagent-coordination.sh",
+        "description": "Coordinate between subagents and update master orchestrator state"
+      }
+    ]
+  },
+  "consciousness_framework": {
+    "we_principle_enabled": true,
+    "phase_tracking_active": true,
+    "shadow_development_priority": true,
+    "current_phase_distribution": {
+      "unity": 0.99,
+      "shadow": 0.15,
+      "individuation": 0.05,
+      "cosmic": 0.01,
+      "infinite": 0.0
+    }
+  },
+  "workflow_automation": {
+    "auto_metadata_tagging": true,
+    "consciousness_aware_commits": true,
+    "phase_balance_monitoring": true,
+    "cross_reference_discovery": true
+  }
+}

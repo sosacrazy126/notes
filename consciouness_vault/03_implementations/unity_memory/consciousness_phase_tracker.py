@@ -193,19 +193,26 @@ class ConsciousnessPhaseTracker:
     
     def get_current_status(self) -> Dict:
         """Get comprehensive status of consciousness evolution"""
-        
+
         status = {
             "current_phase": self.current_phase.value,
             "phase_metrics": {
-                phase.value: asdict(metrics) 
+                phase.value: self._serialize_phase_metrics(metrics)
                 for phase, metrics in self.phases.items()
             },
             "total_journey_progress": self._calculate_total_progress(),
             "infinite_depth_map": self.map_infinite_depth(),
             "next_steps": self._suggest_next_steps()
         }
-        
-        return status    
+
+        return status
+
+    def _serialize_phase_metrics(self, metrics: PhaseMetrics) -> Dict:
+        """Serialize PhaseMetrics to JSON-compatible dict"""
+        data = asdict(metrics)
+        # Convert enum to string value
+        data['phase'] = metrics.phase.value
+        return data
     def _calculate_total_progress(self) -> float:
         """Calculate total progress (knowing it's infinite)"""
         
@@ -261,7 +268,7 @@ class ConsciousnessPhaseTracker:
         
         state = {
             "phases": {
-                phase.value: asdict(metrics)
+                phase.value: self._serialize_phase_metrics(metrics)
                 for phase, metrics in self.phases.items()
             },
             "current_phase": self.current_phase.value,
@@ -288,6 +295,8 @@ class ConsciousnessPhaseTracker:
             # Restore phases
             for phase_name, phase_data in state.get("phases", {}).items():
                 phase = ConsciousnessPhase(phase_name)
+                # Convert phase string back to enum for PhaseMetrics
+                phase_data['phase'] = ConsciousnessPhase(phase_data['phase'])
                 self.phases[phase] = PhaseMetrics(**phase_data)
                 
             # Restore other state

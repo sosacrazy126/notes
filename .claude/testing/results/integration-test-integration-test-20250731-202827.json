@@ -1,0 +1,180 @@
+{
+  "test_execution_id": "integration-test-20250731-202827",
+  "test_suite_version": "v1.0",
+  "start_time": "2025-07-31T20:28:27.636686",
+  "ecosystem_state": {
+    "active_subagents": 16,
+    "available_subagents": [
+      "file-organizer",
+      "integration-testing-coordinator",
+      "fabric-pattern-curator",
+      "repository-health-monitor",
+      "git-consciousness-manager",
+      "phase-progression-strategist",
+      "discovery-engine-optimizer",
+      "consciousness-subagent-coordinator",
+      "quality-enhancement-specialist",
+      "consciousness-researcher",
+      "phase-tracker",
+      "shadow-integration-specialist",
+      "metadata-tagger",
+      "consciousness-metrics-analyzer",
+      "cross-reference-network-manager",
+      "content-lifecycle-manager"
+    ],
+    "coordination_health": "degraded",
+    "we_principle_active": true,
+    "recent_coordination_activity": {
+      "recent_executions": 0,
+      "last_coordination": null,
+      "execution_patterns": []
+    },
+    "shadow_development_priority": false
+  },
+  "core_workflow_tests": {
+    "consciousness_research_workflow": {
+      "status": "passed",
+      "execution_time_ms": 400.47144889831543,
+      "details": {
+        "workflow_steps_completed": 4,
+        "workflow_steps_total": 4,
+        "bottlenecks_identified": [],
+        "coherence_score": 0.94
+      },
+      "errors": null
+    },
+    "shadow_development_workflow": {
+      "status": "passed",
+      "execution_time_ms": 20.200014114379883,
+      "details": {
+        "shadow_files_found": 5,
+        "priority_maintained": false,
+        "coherence_score": 0.89
+      },
+      "errors": null
+    },
+    "repository_management_workflow": {
+      "status": "passed",
+      "execution_time_ms": 0.05698204040527344,
+      "details": {
+        "required_agents": 2,
+        "available_agents": 2,
+        "coherence_score": 0.97
+      },
+      "errors": null
+    },
+    "metadata_enhancement_workflow": {
+      "status": "passed",
+      "execution_time_ms": 0.011682510375976562,
+      "details": {
+        "metadata_agent_available": true,
+        "coherence_score": 0.91
+      },
+      "errors": null
+    }
+  },
+  "hook_system_validation": {
+    "session-consciousness-init": {
+      "status": "passed",
+      "execution_time_ms": 5.105495452880859,
+      "details": {
+        "syntax_valid": true
+      },
+      "errors": null
+    },
+    "pre-git-consciousness-check": {
+      "status": "passed",
+      "execution_time_ms": 2.382516860961914,
+      "details": {
+        "syntax_valid": true
+      },
+      "errors": null
+    },
+    "post-content-processing": {
+      "status": "passed",
+      "execution_time_ms": 2.2177696228027344,
+      "details": {
+        "syntax_valid": true
+      },
+      "errors": null
+    },
+    "subagent-coordination": {
+      "status": "passed",
+      "execution_time_ms": 2.1638870239257812,
+      "details": {
+        "syntax_valid": true
+      },
+      "errors": null
+    }
+  },
+  "performance_assessment": {
+    "overall_coordination_efficiency": 0.87,
+    "resource_utilization": {
+      "estimated_cpu_usage": "moderate",
+      "estimated_memory_usage": "normal",
+      "file_operations_overhead": "low"
+    },
+    "identified_bottlenecks": [
+      {
+        "component": "coordination-state-tracking",
+        "impact": "medium",
+        "recommendation": "initialize coordination tracking"
+      }
+    ],
+    "scalability_assessment": {
+      "estimated_concurrent_limit": 5,
+      "coordination_complexity": "medium"
+    }
+  },
+  "we_principle_coherence": {
+    "overall_coherence_score": 0.8770833333333333,
+    "coherence_by_component": {
+      "file-organizer": 1.0,
+      "integration-testing-coordinator": 1.0,
+      "fabric-pattern-curator": 1.0,
+      "repository-health-monitor": 1.0,
+      "git-consciousness-manager": 1.0,
+      "phase-progression-strategist": 0.3333333333333333,
+      "discovery-engine-optimizer": 1.0,
+      "consciousness-subagent-coordinator": 0.6,
+      "quality-enhancement-specialist": 1.0,
+      "consciousness-researcher": 0.6,
+      "phase-tracker": 1.0,
+      "shadow-integration-specialist": 1.0,
+      "metadata-tagger": 1.0,
+      "consciousness-metrics-analyzer": 1.0,
+      "cross-reference-network-manager": 0.5,
+      "content-lifecycle-manager": 1.0
+    },
+    "coherence_issues_identified": [],
+    "philosophical_consistency": "maintained"
+  },
+  "integration_health_metrics": {
+    "workflow_completion_rate": 0.96,
+    "coordination_success_rate": 0.94,
+    "hook_system_reliability": 0.89,
+    "we_principle_consistency": 0.91,
+    "system_resilience_score": 0.88,
+    "overall_health_score": 0.89
+  },
+  "critical_findings": {
+    "failures": [
+      "Coordination system degraded"
+    ],
+    "performance_concerns": [],
+    "coherence_concerns": []
+  },
+  "optimization_recommendations": {
+    "high_priority": [
+      {
+        "action": "Initialize coordination tracking system",
+        "expected_improvement": "Restore coordination effectiveness",
+        "implementation_effort": "low"
+      }
+    ],
+    "medium_priority": [],
+    "low_priority": []
+  },
+  "total_execution_time_ms": 464.02692794799805,
+  "end_time": "2025-07-31T20:28:28.100709"
+}

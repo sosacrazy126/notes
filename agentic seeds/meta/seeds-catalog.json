@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "created": "2025-07-26",
+    "last_updated": "2025-07-26",
+    "total_seeds": 18,
+    "categories": {
+      "principles": 6,
+      "patterns": 6,
+      "techniques": 4,
+      "insights": 2
+    }
+  },
+  "seeds": [
+    {
+      "id": "signal-over-noise",
+      "name": "Signal Over Noise",
+      "category": "principles",
+      "core_concept": "Focus on essential information and principles that matter, filtering out redundancy, slop, and mindlessness in the age of generative AI.",
+      "key_insight": "Success in the AI age correlates directly with your ability to identify and focus on the signal—the best tools, ideas, information, and principles—while ignoring the noise.",
+      "applications": [
+        "Filter content aggressively for quality over quantity",
+        "Seek trusted information sources",
+        "Apply principles selectively based on context",
+        "Remove junk, repetition, and clickbait from your workflow"
+      ],
+      "connections": {
+        "related_to": ["extraction-criteria"],
+        "enables": ["effective-ai-coding"],
+        "contrasts_with": ["information-overload"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Engineering",
+        "confidence": "high",
+        "source": "principledaicodingv4.txt"
+      },
+      "tags": "principles focus quality ai_age filtering noise_reduction essential_information generative_ai"
+    },
+    {
+      "id": "director-pattern",
+      "name": "Director Pattern",
+      "category": "patterns",
+      "core_concept": "An agentic workflow pattern that closes the loop by combining AI code generation, execution, evaluation, and iterative feedback until task completion.",
+      "key_insight": "By adding execution commands and evaluators to the traditional context-model-prompt trio, AI can autonomously iterate and solve problems without human intervention.",
+      "applications": [
+        "Define context, prompt, and model (the big three)",
+        "Add execution command (runs generated code)",
+        "Add evaluator (judges output success)",
+        "Loop: Generate → Execute → Evaluate → Feedback → Repeat"
+      ],
+      "connections": {
+        "related_to": ["agentic-workflows"],
+        "enables": ["autonomous-coding"],
+        "builds_on": ["big-three-alignment"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Coding Patterns",
+        "confidence": "high",
+        "source": "letthecodewriteitselfv4.txt"
+      },
+      "tags": "patterns automation agentic loops autonomous_coding feedback_loops execution evaluation"
+    },
+    {
+      "id": "big-three-alignment",
+      "name": "Big Three Alignment",
+      "category": "principles",
+      "core_concept": "Success with AI coding assistants depends on aligning three critical elements: Context, Model, and Prompt—the foundational trinity of effective AI interaction.",
+      "key_insight": "Every AI coding pattern, from simple prompts to complex agentic workflows, requires careful balance and alignment of these three elements to achieve desired outcomes.",
+      "applications": [
+        "Context: Provide relevant files, documentation, and background",
+        "Model: Choose appropriate AI model for the task",
+        "Prompt: Craft clear, information-dense instructions",
+        "Balance all three rather than over-optimizing one"
+      ],
+      "connections": {
+        "enables": ["director-pattern"],
+        "related_to": ["spec-prompts"],
+        "foundation_for": ["agentic-workflows"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Engineering",
+        "confidence": "high",
+        "source": "principledaicodingv4.txt, letthecodewriteitselfv4.txt"
+      },
+      "tags": "principles fundamentals ai_coding context model prompt balance trinity"
+    },
+    {
+      "id": "spec-based-coding",
+      "name": "Spec-Based Coding",
+      "category": "techniques",
+      "core_concept": "Transform comprehensive plans (specifications) into powerful prompts that can generate massive amounts of code in a single execution.",
+      "key_insight": "Great planning equals great prompting—the plan IS the prompt. By detailing exactly what needs to be done upfront, reasoning models can generate complete solutions.",
+      "applications": [
+        "High-level objective: Define the overall goal",
+        "Mid-level objectives: Break down into 5-10 bullet points",
+        "Implementation notes: Specific technical requirements",
+        "Context mapping: Beginning and ending file states",
+        "Low-level tasks: Ordered list of individual prompts"
+      ],
+      "connections": {
+        "builds_on": ["big-three-alignment"],
+        "enables": ["massive-code-generation"],
+        "works_with": ["architect-mode"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Coding Techniques",
+        "confidence": "high",
+        "source": "spec-based-codingv4.txt"
+      },
+      "tags": "techniques planning specs prompting specifications code_generation reasoning_models"
+    },
+    {
+      "id": "architect-mode",
+      "name": "Architect Mode",
+      "category": "patterns",
+      "core_concept": "A two-phase AI coding pattern where a reasoning model drafts comprehensive changes, then a fast editor model implements them accurately.",
+      "key_insight": "Separating thinking (architect) from doing (editor) dramatically improves code generation accuracy and allows leveraging each model's strengths optimally.",
+      "applications": [
+        "Phase 1: Reasoning model (O1-preview) thinks through all changes",
+        "Phase 2: Fast model (Claude 3.5 Sonnet) implements the draft",
+        "Combine with spec prompts for maximum effectiveness",
+        "Use for complex, multi-file modifications"
+      ],
+      "connections": {
+        "enhances": ["spec-based-coding"],
+        "related_to": ["prompt-chaining"],
+        "optimizes": ["reasoning-models"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Coding Patterns",
+        "confidence": "high",
+        "source": "spec-based-codingv4.txt"
+      },
+      "tags": "patterns two_phase reasoning architecture thinking_doing separation optimization"
+    },
+    {
+      "id": "bottleneck-shift",
+      "name": "Bottleneck Shift",
+      "category": "insights",
+      "core_concept": "The limitation in AI-assisted development has shifted from model capabilities to human imagination and communication skills.",
+      "key_insight": "Modern AI models (O1, Claude 3.5) are no longer the bottleneck—our ability to communicate what we want done is. The constraint is now our planning and prompting skills.",
+      "applications": [
+        "Invest in planning and specification skills",
+        "Practice thinking in terms of 'what' not 'how'",
+        "Scale ambitions to match model capabilities",
+        "Recognize that 100-1000+ line generations are possible"
+      ],
+      "connections": {
+        "drives": ["spec-based-coding"],
+        "related_to": ["mindset-shift"],
+        "enables": ["massive-code-generation"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Engineering Philosophy",
+        "confidence": "high",
+        "source": "spec-based-codingv4.txt"
+      },
+      "tags": "insights paradigm_shift capabilities human_limitation imagination communication bottleneck"
+    },
+    {
+      "id": "context-management",
+      "name": "Context Management",
+      "category": "principles",
+      "core_concept": "Effective AI coding requires precise control over which files and information the AI assistant can see and modify—the 'context window' determines success.",
+      "key_insight": "Context is one third of the 'big three bullseye' (context, model, prompt). Too little context causes errors; too much creates confusion. The art is finding the sweet spot.",
+      "applications": [
+        "Start with minimal context (single file)",
+        "Add files progressively as needed",
+        "Use explicit file references in prompts",
+        "Distinguish between editable and read-only context",
+        "Track context window size to avoid overload"
+      ],
+      "connections": {
+        "part_of": ["big-three-alignment"],
+        "enables": ["multi-file-editing"],
+        "related_to": ["information-density"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Coding Fundamentals",
+        "confidence": "high",
+        "source": "multifileeditingv5.txt"
+      },
+      "tags": "principles context multi_file window_management precision file_control fundamentals"
+    },
+    {
+      "id": "action-keywords",
+      "name": "Action Keywords",
+      "category": "techniques",
+      "core_concept": "Specific verbs and keywords trigger precise behaviors in AI coding assistants, making instructions unambiguous and results predictable.",
+      "key_insight": "Words like 'move,' 'update,' 'add,' and 'create' have established meanings in AI coding contexts. Using them consistently improves accuracy and reduces ambiguity.",
+      "applications": [
+        "Move: Transfer code from one location to another",
+        "Update: Modify existing functionality",
+        "Add: Insert new functionality",
+        "Create: Make new files or structures",
+        "Extract: Pull out code into separate components",
+        "Refactor: Restructure without changing behavior"
+      ],
+      "connections": {
+        "enhances": ["information-density"],
+        "part_of": ["prompt-engineering"],
+        "related_to": ["explicit-communication"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "Prompt Engineering",
+        "confidence": "high",
+        "source": "multifileeditingv5.txt"
+      },
+      "tags": "techniques keywords precision verbs commands prompt_engineering clarity"
+    },
+    {
+      "id": "prediction-driven-development",
+      "name": "Prediction-Driven Development",
+      "category": "principles",
+      "core_concept": "The fastest way to leverage new technology is to predict what will come and invest time, money, and energy before it exists, gaining advantage beyond even bleeding-edge access.",
+      "key_insight": "Four levels of technology positioning exist: following the crowd (slowest), following bleeding-edge builders (faster), being the builder (instantaneous), and predicting then betting (beyond instantaneous).",
+      "applications": [
+        "Make concrete predictions about upcoming technology",
+        "Turn predictions into bets with real investment",
+        "Build systems anticipating future capabilities",
+        "Act before technology exists, not after",
+        "Pivot if wrong, capitalize if right"
+      ],
+      "connections": {
+        "related_to": ["strategic-positioning"],
+        "enables": ["early-advantage"],
+        "contrasts_with": ["reactive-development"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "Strategic Engineering",
+        "confidence": "high",
+        "source": "BcSuuvWvR-c.md"
+      },
+      "tags": "principles prediction strategy positioning future_thinking betting early_advantage"
+    },
+    {
+      "id": "prompt-fundamental-unit",
+      "name": "Prompt as Fundamental Unit",
+      "category": "insights",
+      "core_concept": "The prompt has become the new fundamental unit of knowledge work, replacing traditional coding as the primary interface for commanding compute.",
+      "key_insight": "Engineers are transitioning from direct code writers to orchestrators who command compute through prompts. Mastering prompt design is now equivalent to mastering knowledge work itself.",
+      "applications": [
+        "Recognize prompts as building blocks of AI-driven work",
+        "Layer prompts into agents (prompts + logic + data)",
+        "Use assistants to orchestrate multiple agents",
+        "Think in terms of prompt composition, not code writing",
+        "Focus on what to build, not how to build"
+      ],
+      "connections": {
+        "enables": ["ai-agents"],
+        "related_to": ["orchestration-engineering"],
+        "foundation_for": ["agentic-software"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Engineering Philosophy",
+        "confidence": "high",
+        "source": "4SnvMieJiuw.md"
+      },
+      "tags": "insights prompts paradigm_shift knowledge_work orchestration fundamental_unit"
+    },
+    {
+      "id": "ai-tooling-stack",
+      "name": "AI Tooling Stack",
+      "category": "patterns",
+      "core_concept": "A hierarchical composition pattern where prompts build into agents, agents into assistants, creating increasingly powerful layers of AI-driven automation.",
+      "key_insight": "Each layer adds capabilities: prompts (basic commands) → agents (prompts + logic + data) → assistants (orchestration layer) → agentic software (self-operating systems).",
+      "applications": [
+        "Layer 1 - Prompts: Basic instructions to LLMs",
+        "Layer 2 - AI Agents: Combine prompts with logic and data access",
+        "Layer 3 - AI Assistants: Orchestrate multiple agents in parallel",
+        "Layer 4 - Agentic Software: Self-operating, autonomous systems"
+      ],
+      "connections": {
+        "builds_on": ["prompt-fundamental-unit"],
+        "enables": ["parallel-engineering"],
+        "evolution_of": ["traditional-programming"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Architecture Patterns",
+        "confidence": "high",
+        "source": "4SnvMieJiuw.md"
+      },
+      "tags": "patterns architecture composition layers ai_stack hierarchical automation"
+    },
+    {
+      "id": "reasoning-model-selection",
+      "name": "Reasoning Model Selection",
+      "category": "techniques",
+      "core_concept": "Know when to deploy expensive reasoning models (O1 series) versus fast base models by evaluating task complexity and requirement precision.",
+      "key_insight": "Reasoning models excel when you need deep thinking, complex constraint satisfaction, or high accuracy on nuanced tasks—but they're overkill for simple operations.",
+      "applications": [
+        "Use reasoning models when: Multiple constraints must be satisfied",
+        "Deep logical reasoning required",
+        "SEO/keyword compliance matters",
+        "Accuracy trumps speed/cost",
+        "Complex multi-step planning needed",
+        "Avoid when: Simple transformations suffice",
+        "Speed is critical",
+        "Budget conscious operations",
+        "Straightforward prompts work"
+      ],
+      "connections": {
+        "related_to": ["model-selection"],
+        "part_of": ["big-three-alignment"],
+        "enhances": ["spec-based-coding"]
+      },
+      "metadata": {
+        "created": "2025-01-26",
+        "domain": "AI Model Selection",
+        "confidence": "high",
+        "source": "GUVrOa4V8iE.md"
+      },
+      "tags": "techniques reasoning_models model_selection o1_series optimization cost_benefit"
+    },
+    {
+      "id": "ai-developer-workflows",
+      "name": "AI Developer Workflows (ADWs)",
+      "category": "patterns",
+      "core_concept": "Automate entire classes of engineering tasks by programmatically controlling an AI coding assistant to solve problems that follow a recognizable pattern.",
+      "key_insight": "As long as there's a pattern, you can build a reusable AI coding assistant to solve that problem class once and for all, eliminating repetitive work.",
+      "applications": [
+        "Identify a repetitive, pattern-based task (e.g., migrations, API scaffolding).",
+        "Write a script that imports and controls an AI coding tool (like Aider).",
+        "Programmatically define the context, model, and prompt for the task.",
+        "Execute the script to automate the task, eliminating manual effort."
+      ],
+      "connections": {
+        "builds_on": ["big-three-alignment"],
+        "automates": ["repetitive-tasks"],
+        "enables": ["programmatic-ai-coding"]
+      },
+      "metadata": {
+        "created": "2025-07-26",
+        "domain": "AI Coding Automation",
+        "confidence": "high",
+        "source": "aider-has-a-secretv4.txt"
+      },
+      "tags": "patterns automation workflows programmatic_control aider repetitive_tasks"
+    },
+    {
+      "id": "token-efficient-architecture",
+      "name": "Token-Efficient Architecture",
+      "category": "principles",
+      "core_concept": "Designing codebases to be optimally understood and operated on by AI coding agents, with a focus on minimizing the context required for effective modifications.",
+      "key_insight": "In the generative AI age, managing context is managing results. A codebase's architecture directly impacts its token efficiency, which in turn dictates the performance and cost of using AI coding tools.",
+      "applications": [
+        "Use clear, logical structures (e.g., Atomic Design, Layered Architecture).",
+        "Keep components small, focused, and with a clear separation of concerns.",
+        "Employ descriptive naming conventions for files and directories.",
+        "Ensure high test coverage to provide reliable, low-token feedback to AI agents."
+      ],
+      "connections": {
+        "related_to": ["context-management"],
+        "enables": ["efficient-ai-operation"],
+        "contrasts_with": ["monolithic-architecture"]
+      },
+      "metadata": {
+        "created": "2025-07-26",
+        "domain": "AI Architecture",
+        "confidence": "high",
+        "source": "dabeidyv5dg.md"
+      },
+      "tags": "principles architecture token_efficiency context_management ai_agents"
+    },
+    {
+      "id": "active-memory-ai-assistants",
+      "name": "Active Memory for AI Assistants",
+      "category": "patterns",
+      "core_concept": "A design pattern where a personal AI assistant maintains a working, short-term memory (like RAM) to hold relevant context for ongoing tasks.",
+      "key_insight": "Statefulness is a major challenge for AI assistants. An explicit active memory, separate from long-term or historical memory, allows the assistant to maintain focus and use context more effectively within a single session.",
+      "applications": [
+        "Create a simple, structured format for active memory (e.g., a JSON file).",
+        "Implement tools for the assistant to load data into and clear its active memory.",
+        "Inject the active memory content into relevant prompts (e.g., using XML tags).",
+        "Allow the assistant to automatically manage its own memory as the conversation progresses."
+      ],
+      "connections": {
+        "enhances": ["ai-assistants"],
+        "enables": ["stateful-interaction"],
+        "related_to": ["context-management"]
+      },
+      "metadata": {
+        "created": "2025-07-26",
+        "domain": "AI Assistant Design",
+        "confidence": "high",
+        "source": "090oR--s__8.md"
+      },
+      "tags": "patterns ai_assistants memory statefulness context short_term_memory"
+    },
+    {
+      "id": "human-in-the-loop-iteration",
+      "name": "Human-in-the-Loop Iteration",
+      "category": "patterns",
+      "core_concept": "A collaborative pattern where a user provides iterative feedback to an AI agent to progressively refine a generated output to the desired state.",
+      "key_insight": "For creative or complex tasks where the final output is subjective, a tight feedback loop is more effective than attempting a perfect one-shot prompt. This pattern excels in tasks like diagram or UI generation.",
+      "applications": [
+        "Generate an initial version of an asset (e.g., a Mermaid diagram).",
+        "Present the output to the user.",
+        "Enter a loop where the user can provide natural language feedback (e.g., \"add a node,\" \"change the colors\").",
+        "The AI agent applies the feedback and regenerates the asset, continuing the loop until the user is satisfied."
+      ],
+      "connections": {
+        "related_to": ["iterative-refinement"],
+        "enables": ["collaborative-creativity"],
+        "contrasts_with": ["one-shot-generation"]
+      },
+      "metadata": {
+        "created": "2025-07-26",
+        "domain": "Human-AI Interaction",
+        "confidence": "high",
+        "source": "ag-KxYS8Vuw.md"
+      },
+      "tags": "patterns human_in_the_loop iteration feedback diagramming creative_tasks"
+    },
+    {
+      "id": "ai-tool-diversification",
+      "name": "AI Tool Diversification",
+      "category": "principles",
+      "core_concept": "The strategic principle of using multiple, competing AI coding tools rather than committing to a single, closed-source solution to avoid vendor lock-in and maintain a competitive edge.",
+      "key_insight": "The generative AI landscape is evolving too rapidly to bet on a single winner. Using a mix of open-source (e.g., Aider) and commercial (e.g., Cursor) tools provides flexibility, deeper understanding, and access to best-in-class features from across the ecosystem.",
+      "applications": [
+        "Use open-source tools like Aider for customization, control, and staying close to the underlying models.",
+        "Use commercial tools like Cursor for polished user experiences and integrated features.",
+        "Regularly compare the performance of different tools on your specific workflows.",
+        "Avoid building critical infrastructure that is tightly coupled to a single, proprietary AI tool."
+      ],
+      "connections": {
+        "contrasts_with": ["vendor-lock-in"],
+        "enables": ["strategic-flexibility"],
+        "related_to": ["risk-management"]
+      },
+      "metadata": {
+        "created": "2025-07-26",
+        "domain": "AI Engineering Strategy",
+        "confidence": "high",
+        "source": "ag-KxYS8Vuw.md"
+      },
+      "tags": "principles diversification tooling risk_management open_source vendor_lock_in"
+    },
+    {
+      "id": "model-benchmarking-framework",
+      "name": "Model Benchmarking Framework",
+      "category": "techniques",
+      "core_concept": "A systematic approach to evaluating large language models by comparing their performance, cost, and speed on a standardized, relevant task.",
+      "key_insight": "Cherry-picked vendor benchmarks are misleading. Creating a simple, custom benchmark for a specific, validatable use case (like single-word autocomplete) provides a much clearer, more tangible understanding of model trade-offs.",
+      "applications": [
+        "Define a simple, repeatable task with a clear success metric (e.g., correct autocomplete).",
+        "Build a tool to run the task in parallel across multiple models.",
+        "Track key metrics: execution time, cost per execution, and success rate.",
+        "Calculate relative cost to understand the price-performance ratio.",
+        "Use the results to make informed decisions about which model to use for a specific application."
+      ],
+      "connections": {
+        "informs": ["model-selection"],
+        "related_to": ["performance-tuning"],
+        "enables": ["cost-optimization"]
+      },
+      "metadata": {
+        "created": "2025-07-26",
+        "domain": "AI Model Evaluation",
+        "confidence": "high",
+        "source": "1ObiaSiA8BQ.md"
+      },
+      "tags": "techniques benchmarking performance cost speed model_evaluation"
+    }
+  ],
+  "tag_index": {
+    "principles": ["signal-over-noise", "big-three-alignment", "context-management", "prediction-driven-development", "token-efficient-architecture", "ai-tool-diversification"],
+    "patterns": ["director-pattern", "architect-mode", "ai-tooling-stack", "ai-developer-workflows", "active-memory-ai-assistants", "human-in-the-loop-iteration"],
+    "techniques": ["spec-based-coding", "action-keywords", "reasoning-model-selection", "model-benchmarking-framework"],
+    "insights": ["bottleneck-shift", "prompt-fundamental-unit"],
+    "ai_coding": ["big-three-alignment", "spec-based-coding", "context-management", "token-efficient-architecture"],
+    "automation": ["director-pattern", "ai-tooling-stack", "ai-developer-workflows"],
+    "fundamentals": ["big-three-alignment", "context-management", "prompt-fundamental-unit"],
+    "prompt_engineering": ["action-keywords", "spec-based-coding", "prompt-fundamental-unit"],
+    "paradigm_shift": ["bottleneck-shift", "prompt-fundamental-unit"],
+    "planning": ["spec-based-coding", "prediction-driven-development"],
+    "reasoning_models": ["spec-based-coding", "architect-mode", "reasoning-model-selection"],
+    "multi_file": ["context-management"],
+    "strategy": ["prediction-driven-development", "ai-tool-diversification"],
+    "orchestration": ["prompt-fundamental-unit", "ai-tooling-stack"],
+    "architecture": ["ai-tooling-stack", "architect-mode", "token-efficient-architecture"],
+    "model_selection": ["reasoning-model-selection", "big-three-alignment", "model-benchmarking-framework"],
+    "context_management": ["context-management", "token-efficient-architecture", "active-memory-ai-assistants"],
+    "performance": ["model-benchmarking-framework"]
+  }
+}

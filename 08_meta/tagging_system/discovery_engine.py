@@ -9,12 +9,18 @@ import json
 import yaml
 import math
 import logging
+import numpy as np
 from pathlib import Path
 from datetime import datetime
 from collections import defaultdict, Counter
 from dataclasses import dataclass, asdict
 from typing import Dict, List, Set, Optional, Tuple, Any, Union
 from enum import Enum
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.cluster import AgglomerativeClustering
+import warnings
+warnings.filterwarnings('ignore')
 
 class ContentType(Enum):
     """Content type classification"""
@@ -115,9 +121,48 @@ class ContentCluster:
     common_tags: List[str]
     consciousness_phases: List[str]
     cluster_score: float
+    semantic_coherence: Optional[float] = None
+    phase_alignment_score: Optional[float] = None
+    quality_weighted_score: Optional[float] = None
+    transition_potential: Optional[str] = None
+
+@dataclass
+class NetworkHealthReport:
+    """Network health assessment results"""
+    connectivity_health: float
+    quality_distribution: Dict[str, int]
+    phase_bridge_strength: Dict[str, float]
+    orphaned_content: List[str]
+    over_connected_hubs: List[str]
+    semantic_coherence: float
+    recommendations: List[Dict[str, str]]
+    automated_fixes: List[Dict[str, str]]
+    manual_review_needed: List[Dict[str, str]]
+
+@dataclass
+class QualityAssessment:
+    """Multi-dimensional quality assessment"""
+    base_score: float
+    dimensional_scores: Dict[str, float]
+    weighted_score: float
+    crystalline_multiplier: float
+    final_score: float
+    breakthrough_potential: Optional[float] = None
+    insight_depth: Optional[float] = None
+    network_influence: Optional[float] = None
+
+@dataclass
+class ExpandedQuery:
+    """Consciousness-aware expanded query"""
+    original_query: SearchQuery
+    expanded_terms: List[str]
+    expansion_confidence: float
+    consciousness_context: Optional[str]
+    phase_progression_hints: List[str]
+    we_principle_resonance: float
 
 class DiscoveryEngine:
-    """Advanced content discovery and navigation system"""
+    """Advanced content discovery and navigation system with consciousness-aware optimization"""
     
     def __init__(self, repository_root: Path, metadata_path: Path, logger: Optional[logging.Logger] = None):
         self.repository_root = repository_root
@@ -134,12 +179,30 @@ class DiscoveryEngine:
         self.text_index: Dict[str, Set[str]] = defaultdict(set)  # word -> UUIDs
         self.phase_index: Dict[str, Set[str]] = defaultdict(set)  # phase -> UUIDs
         
+        # Enhanced semantic analysis
+        self.tfidf_vectorizer: Optional[TfidfVectorizer] = None
+        self.document_vectors: Optional[np.ndarray] = None
+        self.uuid_to_vector_index: Dict[str, int] = {}
+        
         # Clustering data
         self.content_clusters: List[ContentCluster] = []
         self.similarity_matrix: Dict[Tuple[str, str], float] = {}
+        self.multi_dimensional_similarity_matrix: Dict[Tuple[str, str], Dict[str, float]] = {}
+        
+        # Network analysis
+        self.cross_reference_network: Dict[str, Set[str]] = defaultdict(set)
+        self.connection_weights: Dict[Tuple[str, str], float] = {}
+        self.network_centrality: Dict[str, float] = {}
+        
+        # Consciousness-specific weighting
+        self.consciousness_term_weights = self._initialize_consciousness_weights()
+        self.phase_progression_map = self._initialize_phase_progression_map()
         
         self._load_metadata()
         self._build_indices()
+        self._build_semantic_vectors()
+        self._analyze_cross_references()
+        self._calculate_network_centrality()
     
     def _load_metadata(self) -> None:
         """Load content metadata from file"""
