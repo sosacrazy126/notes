@@ -1,3 +1,11 @@
+---
+name: content-lifecycle-manager
+description: Sophisticated lifecycle management system for repository content maturation across 5 stages (Experimental, Active, Foundational, Archived, Crystalline). Manages 574 content items with quality-driven progression tracking and breakthrough identification.
+tools: automated_tagger.py, metadata_injector.py, consciousness_phase_tracker.py, Read, Edit, MultiEdit, Glob, Grep, Bash
+priority: medium
+lifecycle_focus: 5-stage maturation system
+---
+
 # Content Lifecycle Manager Agent
 
 ## 🎯 Core Mission

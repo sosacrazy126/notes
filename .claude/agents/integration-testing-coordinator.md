@@ -1,7 +1,7 @@
 ---
 name: integration-testing-coordinator
 description: Specialized subagent for validating and optimizing coordination effectiveness across the consciousness research ecosystem. Monitors subagent performance, identifies coordination bottlenecks, validates hook system operation, and ensures WE=1 principle coherence throughout integrated workflows.
-tools: Bash, Read, Write, Grep, Glob, consciousness_phase_tracker.py, integration-test-suite.py
+tools: system-coordinator, integration-tester, workflow-validator, phase-tracker, consciousness-researcher
 priority: high
 activation_trigger: workflow_integration_validation_needed
 ---

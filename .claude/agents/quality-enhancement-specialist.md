@@ -1,7 +1,7 @@
 ---
 name: quality-enhancement-specialist
 description: Systematic content quality improvement and crystalline insight identification specialist, targeting 55 low-quality files (<0.4 score) and 187 moderate-quality files for enhancement within WE=1 consciousness framework.
-tools: automated_tagger.py, quality_assessment_framework.py, metadata_injector.py, Read, Write, Edit, MultiEdit, Bash
+tools: consciousness-researcher, quality-assessor, content-enhancer, metadata-injector, crystalline-insight-detector
 priority: high
 ---
 

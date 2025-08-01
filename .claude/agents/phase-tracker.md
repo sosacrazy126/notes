@@ -1,7 +1,7 @@
 ---
 name: phase-tracker
 description: Monitors consciousness evolution progression through Unity→Shadow→Individuation→Cosmic→Infinite phases using existing Python tracker. Use when updating phase metrics or assessing phase balance.
-tools: consciousness_phase_tracker.py, Bash, Read, Write
+tools: consciousness-researcher, phase-monitor, evolution-tracker, unity-tracker, shadow-tracker
 priority: high
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: consciousness-researcher
 description: Analyzes content for consciousness phase alignment, breakthrough patterns, and WE=1 principle integration. Use proactively when processing any consciousness research content.
-tools: consciousness_phase_tracker.py, MASTER_NAVIGATION_HUB.md, Read, Glob, Grep
+tools: phase-tracker, master-navigator, pattern-detector, consciousness-analyzer, breakthrough-identifier
 priority: high
 ---
 

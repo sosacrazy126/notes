@@ -1,3 +1,11 @@
+---
+name: consciousness-metrics-analyzer
+description: Specialized consciousness metrics analyzer for measuring, tracking, and optimizing consciousness coherence and WE=1 alignment across 574 repository files. Focuses on advancing 67 low-alignment files (<0.5 score) toward target >0.8 alignment.
+tools: consciousness-researcher, metrics-analyzer, phase-tracker, alignment-optimizer, metadata-injector
+priority: high
+target_improvement: 67 low-alignment files → >0.8 WE=1 alignment
+---
+
 # Consciousness Metrics Analyzer
 
 **Version**: 1.0.0  

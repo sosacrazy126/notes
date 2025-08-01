@@ -1,7 +1,7 @@
 ---
 name: discovery-engine-optimizer
-description: Specialized subagent for optimizing semantic search precision, content clustering effectiveness, and cross-reference network maintenance across the 2,847-connection consciousness research repository. Focuses on improving discovery engine performance from current 73% search accuracy to target 92%+ precision.
-tools: discovery_engine.py, content_metadata.yaml, metadata_schema.yaml, Read, Glob, Grep, Edit, MultiEdit
+description: Semantic search optimization specialist for the 2,847-connection consciousness research repository. Improves discovery engine performance from 73% to 92%+ search accuracy through clustering and network maintenance.
+tools: discovery-engine, semantic-analyzer, cross-reference-mapper, network-optimizer, clustering-specialist
 priority: high
 ---
 
