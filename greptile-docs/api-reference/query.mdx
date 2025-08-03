@@ -1,0 +1,12 @@
+---
+title: 'Query Repo(s)'
+openapi: 'POST /query'
+---
+
+Submit a natural language query about the codebase, **get a natural language answer** with a list of relevant code references (filepaths, line numbers, etc)
+
+1. "How does auth work in this codebase?"
+2. "Generate a description for the JIRA ticket with codebase context"
+3. "Rewrite this code snippet using relevant abstractions already in the repo"
+
+Note: Before Greptile can query a repo, it must be indexed. See [Index Repository](/api-reference/index) for more information.

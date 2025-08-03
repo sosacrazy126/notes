@@ -1,0 +1,132 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "linden",
+  "name": "Greptile",
+  "colors": {
+    "primary": "#107A4D"
+  },
+  "favicon": "favicon.ico",
+  "navigation": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "icon": "book-open",
+        "groups": [
+          {
+            "group": "User Manual",
+            "pages": [
+              "introduction",
+              "developer-quick-reference",
+              "code-review-bot/getting-started",
+              "code-review-bot/key-features",
+              "code-review-bot/trigger-code-review",
+              "code-review-bot/custom-context",
+              "code-review-bot/greptile-json",
+              "code-review-bot/emoji-reactions",
+              "code-review-bot/auto-resolve-with-mcp"
+            ]
+          },
+          {
+            "group": "How Greptile Works",
+            "pages": [
+              "how-greptile-works/graph-based-codebase-context",
+              "how-greptile-works/nitpicks",
+              "how-greptile-works/custom-rules",
+              "how-greptile-works/memory-and-learning"
+            ]
+          },
+          {
+            "group": "Guide to Self-Hosting Greptile",
+            "pages": [
+              "self-hosting/overview",
+              "self-hosting/docker-compose",
+              "self-hosting/kubernetes"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": ["security/sso", "security/selfhost"]
+          },
+          {
+            "group": "API Reference",
+            "pages": [
+              "api-reference/introduction",
+              "api-reference/index",
+              "api-reference/get-repository",
+              "api-reference/query",
+              "api-reference/zapier"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Greptile Home",
+          "href": "https://www.greptile.com/",
+          "icon": "house"
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://discord.com/invite/xZhUcFKzu7",
+          "icon": "discord"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://www.greptile.com/blog",
+          "icon": "newspaper"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo.svg",
+    "dark": "/logo.svg"
+  },
+  "api": {
+    "openapi": ["openapi.yml"]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@greptile.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Review My Code",
+      "href": "https://app.greptile.com/signup"
+    }
+  },
+  "footer": {
+    "socials": {
+      "twitter": "https://twitter.com/greptileai",
+      "github": "https://github.com/greptileai",
+      "linkedin": "https://www.linkedin.com/company/greptile"
+    }
+  },
+  "integrations": {
+    "koala": {
+      "publicApiKey": "pk_60d31be3082b15278669ecd6230f689fd5d4"
+    },
+    "posthog": {
+      "apiKey": "phc_qh8L3NKZ4JP6pOLRnuF3UkkUVjmktWW1mR8WfiIvWyi"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/apps/cr",
+      "destination": "/introduction"
+    },
+    {
+      "source": "/code-review-bot",
+      "destination": "/code-review-bot/overview"
+    },
+    {
+      "source": "/code-review-bot/custom-instructions",
+      "destination": "/code-review-bot/custom-context"
+    }
+  ]
+}
