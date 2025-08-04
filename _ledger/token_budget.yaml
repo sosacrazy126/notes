@@ -1,0 +1,73 @@
+# Token Budget Configuration
+# Manages token usage across the knowledge base
+
+budget:
+  total_limit: 1000000000  # 1 billion tokens
+  warning_threshold: 0.8   # Alert at 80% usage
+  critical_threshold: 0.95 # Critical at 95% usage
+
+usage:
+  current_total: 0  # Will be calculated
+  last_updated: "2025-08-04"
+  
+  by_category:
+    active:
+      tokens: 0
+      percentage: 0
+    archived:
+      tokens: 0
+      percentage: 0
+    system:
+      tokens: 0
+      percentage: 0
+
+policies:
+  archival:
+    description: "When to move content to archive"
+    rules:
+      - condition: "last_accessed > 180 days"
+        action: "move_to_archive"
+      - condition: "token_count > 100000"
+        action: "evaluate_for_split"
+      - condition: "duplicate_detected"
+        action: "remove_duplicate"
+        
+  compression:
+    description: "When to compress content"
+    rules:
+      - condition: "access_count < 5 AND age > 90 days"
+        action: "compress_gzip"
+      - condition: "category = 'archived'"
+        action: "compress_after_30_days"
+        
+  deletion:
+    description: "When to delete content"
+    rules:
+      - condition: "duplicate AND in_archive"
+        action: "delete_from_active"
+      - condition: "temp_file AND age > 7 days"
+        action: "delete"
+
+token_calculation:
+  method: "tiktoken"  # OpenAI's token counter
+  model: "cl100k_base"  # GPT-4 tokenizer
+  
+  estimates:  # Rough estimates for planning
+    per_line: 10
+    per_paragraph: 50
+    per_page: 500
+    per_file_average: 2500
+
+alerts:
+  - type: "email"
+    enabled: false
+    threshold: "warning"
+    
+  - type: "console"
+    enabled: true
+    threshold: "warning"
+    
+  - type: "file"
+    enabled: true
+    path: "_ledger/alerts.log"
+    threshold: "all"

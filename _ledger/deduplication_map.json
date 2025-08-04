@@ -1,0 +1,1155 @@
+{
+  "duplicates": [
+    {
+      "hash": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/LICENSE.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/LICENSE.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/LICENSE.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/LICENSE.md"
+        ]
+      }
+    },
+    {
+      "hash": "22fa2d4abffff7380a59c5447d2e0b2014ed37c22e1e0000ee576e00f824831b",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/README.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/README.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/README.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/README.md"
+        ]
+      }
+    },
+    {
+      "hash": "25fa1c52b6e065e83f0cb823f4e5215bd5eabecab458e2b8a2d056493947ee4c",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/v0 Prompts and Tools/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/v0 Prompts and Tools/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._v0_Prompts_and_Tools/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._v0_Prompts_and_Tools/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/v0 Prompts and Tools/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._v0_Prompts_and_Tools/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._v0_Prompts_and_Tools/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/v0 Prompts and Tools/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "1ec6d3b7482247f8c1da9c1632116391ad8210ac96d99212da0a9cc2c9d8611d",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Junie/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Junie/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Junie/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Junie/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Junie/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Junie/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Junie/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Junie/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "2b72138555f48f2a81286a00f74d92ec5ff9921d4f339571bc9e7085a93f052f",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Memory Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Memory Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Memory Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Memory Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Memory Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Memory Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Memory Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Memory Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "2a610285f244117721e9200230bdcdbcf735541e5971c121a196579b174b3bcb",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt v1.0.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Agent Prompt v1.0.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Agent Prompt v1.0.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Agent Prompt v1.0.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Agent Prompt v1.0.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Agent Prompt v1.0.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Agent Prompt v1.0.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt v1.0.txt"
+        ]
+      }
+    },
+    {
+      "hash": "a8db1859fac32ab9e1c22c52d1ea52be5fe6119a771a2b0a7b2d97a6dd9ed70b",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Memory Rating Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Memory Rating Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Memory Rating Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Memory Rating Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Memory Rating Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Memory Rating Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Memory Rating Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Memory Rating Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "8c171212485164b1a6440b940771e41355288b2d686114d469180b886d0a359c",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Chat Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Chat Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Chat Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Chat Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Chat Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Chat Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Chat Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Chat Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "05ac10ab37df7c45797a48b3cde13324a584c6aca97c31ea5d8519c1e8434ba5",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Agent Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Agent Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Agent Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Agent Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Agent Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Agent Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "d5e59882d6216d3665edfcd79088214fdd780ca66836de9e9b649f2f3fa38a4b",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt v1.2.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Agent Prompt v1.2.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Agent Prompt v1.2.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Agent Prompt v1.2.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Agent Prompt v1.2.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Agent Prompt v1.2.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Agent Prompt v1.2.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt v1.2.txt"
+        ]
+      }
+    },
+    {
+      "hash": "182c648d75af4f8056621ba90cd12c746db11b3d2d7c8f3f72cb783aaa406986",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase2_planning.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase2_planning.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase2_planning.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase2_planning.md"
+        ]
+      }
+    },
+    {
+      "hash": "cbc3114c0bc9d5a5e0ca6292f9b02ec26654923a1ff10a9d705de415b11ddbf8",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase5_consolidation.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase5_consolidation.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase5_consolidation.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase5_consolidation.md"
+        ]
+      }
+    },
+    {
+      "hash": "4efd796658f64945a7b35815333a5994bf7a6f220778040d71c53e763fc78bbd",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase1_discovery.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase1_discovery.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase1_discovery.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase1_discovery.md"
+        ]
+      }
+    },
+    {
+      "hash": "768db6373b0c381ddd158225e1b466a1ff9273571f60242bdc13d166f22fe0f5",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/final_analysis.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/final_analysis.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/final_analysis.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/final_analysis.md"
+        ]
+      }
+    },
+    {
+      "hash": "2eb8af52a59a08b7f2b120b3ce64f6dff82ad26353a87ec2e174f8a2ecb40622",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase4_synthesis.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase4_synthesis.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase4_synthesis.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase4_synthesis.md"
+        ]
+      }
+    },
+    {
+      "hash": "0254c676dbc61dc87bbe21d0e75d946e75f153023ecfb992d10a9c456f6ff8e7",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase3_analysis.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase3_analysis.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/phase3_analysis.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/phase3_analysis.md"
+        ]
+      }
+    },
+    {
+      "hash": "c8fdb765d77141e8af118852a57fcf5d8e65ff91f91d1e8b8528ec73fc22fdfb",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/metrics.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/metrics.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/phases_output/metrics.md"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/phases_output/metrics.md"
+        ]
+      }
+    },
+    {
+      "hash": "ed9c719313d10f6c26490563a25b29c3551153fe870a561ab8b7c8f0d093a860",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Replit/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Replit/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Replit/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Replit/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Replit/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Replit/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Replit/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Replit/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "d4128dc9b1a8dbcac6e9122314c0355247b3a348e68e4b79dbde7658d281548a",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Lovable/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Lovable/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Lovable/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Lovable/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Lovable/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Lovable/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Lovable/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Lovable/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "95d0115edf48d204ecd6d0721ea786db899d6d9355a371369b4d358327b693da",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/dia/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/dia/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._dia/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._dia/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/dia/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._dia/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._dia/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/dia/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "1a5df4817061bebfbd471d33cd2ba2f6a376f35d2a7e28a25cb3db3bf97fb1cf",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Windsurf/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Windsurf/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Windsurf/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Windsurf/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Windsurf/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Windsurf/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Windsurf/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Windsurf/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "c13fa64374c80dc7b48243f48c94e831ea228da1d1917cb3698521606180cda1",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Manus Agent Tools & Prompt/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Manus_Agent_Tools_&_Prompt/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Manus_Agent_Tools_&_Prompt/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Manus Agent Tools & Prompt/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Manus_Agent_Tools_&_Prompt/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Manus_Agent_Tools_&_Prompt/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "2ee373d3c5f1837e25e750872887c8874d4b1847e56ac0e268d979b0f27675f3",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Agent loop.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Manus Agent Tools & Prompt/Agent loop.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Manus Agent Tools & Prompt/Agent loop.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Agent loop.txt"
+        ]
+      }
+    },
+    {
+      "hash": "091c8eb2bc485a49c11e24b409f6947b39ee3c1895383b96317e0ea93960dd3e",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Modules.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Manus Agent Tools & Prompt/Modules.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Manus_Agent_Tools_&_Prompt/Modules.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Manus_Agent_Tools_&_Prompt/Modules.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Manus Agent Tools & Prompt/Modules.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Manus_Agent_Tools_&_Prompt/Modules.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Manus_Agent_Tools_&_Prompt/Modules.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Modules.txt"
+        ]
+      }
+    },
+    {
+      "hash": "f327447595c5a1f4637e5d01fe6fb62353a7d16cfd242ce44609dc4c34569844",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Warp.dev/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Warp.dev/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Warp.dev/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Warp.dev/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Warp.dev/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Warp.dev/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Warp.dev/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Warp.dev/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "cf3014c72f70ea0486ef100bf49fb782f5a0d9cef7de34c35f51f4c0eff7785f",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Devin AI/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Devin AI/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Devin_AI/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Devin_AI/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Devin AI/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Devin_AI/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Devin_AI/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Devin AI/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "df0ada4b6d7be3289a4ec7f0d1fac2d1221059007a915faa329b6703e2b2bad8",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Open Source prompts/Codex CLI/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Open Source prompts/Codex CLI/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Open_Source_prompts_Codex_CLI/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Open_Source_prompts_Codex_CLI/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Open Source prompts/Codex CLI/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Open_Source_prompts_Codex_CLI/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Open_Source_prompts_Codex_CLI/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Open Source prompts/Codex CLI/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "1c37f28688b8d8a251f7c39be7edda839a66c80dcf11cc5d46a7a1b0ab5629fd",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Open Source prompts/Cline/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Open Source prompts/Cline/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Open_Source_prompts_Cline/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Open_Source_prompts_Cline/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Open Source prompts/Cline/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Open_Source_prompts_Cline/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Open_Source_prompts_Cline/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Open Source prompts/Cline/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "a3a121ab8d8b234e0450fdde523e577ee34d09d12a0fa5f0ae8fa5736ee50994",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Open Source prompts/Bolt/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Open Source prompts/Bolt/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Open_Source_prompts_Bolt/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Open_Source_prompts_Bolt/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Open Source prompts/Bolt/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Open_Source_prompts_Bolt/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Open_Source_prompts_Bolt/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Open Source prompts/Bolt/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "82a4af9d996907d7f4256062ca194df992864baa77b5a807e5a4d507ad0b8608",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Open Source prompts/RooCode/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Open Source prompts/RooCode/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Open_Source_prompts_RooCode/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Open_Source_prompts_RooCode/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Open Source prompts/RooCode/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Open_Source_prompts_RooCode/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Open_Source_prompts_RooCode/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Open Source prompts/RooCode/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "f724d4c6df15229e84ad98f00ecb6db252b30c7fba04e703168ced9fab642e1f",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cluely/Default Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cluely/Default Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cluely/Default Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cluely/Default Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "3abed886b802fced45ed5668dc3cae0780c18ee1db20628a2bacd024b28ce6c2",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cluely/Enterprise Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cluely/Enterprise Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cluely/Enterprise Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Cluely/Enterprise Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "f3614b5025d65de478a46853e7501690f9ff4c7df65b2abf9f0370513fcd2b92",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Same.dev/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Same.dev/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Same.dev/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Same.dev/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Same.dev/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Same.dev/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Same.dev/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Same.dev/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "4d5525e70a8e15ab60368261aca73d1a361887c8ff09844937cffb73efb23cb3",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/VSCode Agent/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/VSCode Agent/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._VSCode_Agent/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._VSCode_Agent/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/VSCode Agent/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._VSCode_Agent/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._VSCode_Agent/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/VSCode Agent/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "2ae97aa8badea4fbdbc9ee63fe2fe83b911fa40128cfa0cd24bbf4d2d9ee61bc",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Trae/Chat Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Trae/Chat Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Trae/Chat Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Trae/Chat Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "1259226e4c31780e56633b036c6cb958c21a2fd0cd34486f85a78c054c18d69c",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Spawn/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Spawn/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Spawn/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/Prompt.txt",
+        "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Spawn/Prompt.txt"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Spawn/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/._Spawn/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/Prompt.txt",
+          "/home/evilbastardxd/Desktop/tools/notes/code_library/production/._Spawn/Prompt.txt"
+        ],
+        "new_additions": [
+          "/home/evilbastardxd/Desktop/tools/notes/new additions/system-prompts-and-models-of-ai-tools/Spawn/Prompt.txt"
+        ]
+      }
+    },
+    {
+      "hash": "2ac79f0ad75270d27848f5dd22cc5864252d282d8e973e95dc73c1374a20ccd2",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/commands/commands/requirements-list.md",
+        "/home/evilbastardxd/Desktop/tools/notes/CustomClaude/commands/requirements-list.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/CustomClaude/commands/requirements-list.md"
+        ],
+        "system": [
+          "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/commands/commands/requirements-list.md"
+        ]
+      }
+    },
+    {
+      "hash": "e13afbd82fae72cf95e09fc2a483b31f097736493e47821b3b1e3c641ac64696",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/commands/commands/requirements-remind.md",
+        "/home/evilbastardxd/Desktop/tools/notes/CustomClaude/commands/requirements-remind.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/CustomClaude/commands/requirements-remind.md"
+        ],
+        "system": [
+          "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/commands/commands/requirements-remind.md"
+        ]
+      }
+    },
+    {
+      "hash": "c119f5cf0ee4b1ad16a7b1b3608f1855f1d61eba86225a8f1d527deefacf553f",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/analysis/technical/analyze_answers/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/analyze_answers.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/analysis/technical/analyze_answers/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/analyze_answers.md"
+        ]
+      }
+    },
+    {
+      "hash": "860d44e44534b269e889eed01a59265357972bb6834628c4082287c5713a5c8b",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/summarization/documents/summarize_micro/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/business/create_micro_summary/system.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/summarization/documents/summarize_micro/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/business/create_micro_summary/system.md"
+        ]
+      }
+    },
+    {
+      "hash": "5cd7f85303e4c4deafd7c68bac86ec2f85a80cb81e1764a317a58d39db98860a",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/summarization/technical/summarize_prompt/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/summarize_prompt.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/summarization/technical/summarize_prompt/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/summarize_prompt.md"
+        ]
+      }
+    },
+    {
+      "hash": "1aea95178d8a074959a1b0b937e30f5f271c6778425c97d53a0a6876242ff39e",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/content/extract_insights/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/extract_insights.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/content/extract_insights/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/extract_insights.md"
+        ]
+      }
+    },
+    {
+      "hash": "2837e7f6e322098f943bdc86f71edf3098650703169589a410a151751a31f7d5",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/content/extract_instructions/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/extract_instructions.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/content/extract_instructions/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/extract_instructions.md"
+        ]
+      }
+    },
+    {
+      "hash": "a260fcec48f8aa0b126bbb534dbb7ac75649356a7726c0df72ed368d6b0c1fa3",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/content/extract_product_features/README.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/content/extract_wisdom/README.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/content/extract_product_features/README.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/content/extract_wisdom/README.md"
+        ]
+      }
+    },
+    {
+      "hash": "06622e86bf2fb45408d6d9a5c5731d35605afd3344efc205033620cd6ef31fbd",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/technical/extract_patterns/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/extract_patterns.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/data_extraction/technical/extract_patterns/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/extract_patterns.md"
+        ]
+      }
+    },
+    {
+      "hash": "aee9312e9d01e6229fdbd42a701b51bbb9181424b225aaf76f9f5a0a09fbd8d7",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/ai/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/ai.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/ai/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/ai.md"
+        ]
+      }
+    },
+    {
+      "hash": "29d393bf16f9a89464ef1f734cfd523e5949c01e5e580039540fd65823bc4a06",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/summarize/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/business/create_summary/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_summary.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/summarize.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/summarize/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/business/create_summary/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_summary.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/summarize.md"
+        ]
+      }
+    },
+    {
+      "hash": "8632b01343b54f6f88d763b18f4518cc91bb271339088a6f97835b8bac7489b2",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/official_pattern_template/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/official_pattern_template.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/official_pattern_template/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/official_pattern_template.md"
+        ]
+      }
+    },
+    {
+      "hash": "22b6a0c620763070708525cac817d7b197ed84db21da1f89b26e58f3f4612762",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/suggest_pattern/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/suggest_pattern.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/suggest_pattern/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/suggest_pattern.md"
+        ]
+      }
+    },
+    {
+      "hash": "76ab1dcaf67ec6483d784489eb39924799733390dd7c6a7f0fcf7684e31acc88",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/provide_guidance/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/provide_guidance.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/provide_guidance/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/provide_guidance.md"
+        ]
+      }
+    },
+    {
+      "hash": "71969052a11b56d74bb295fa6e77c28b67e0a88290995a903cdf1fa1f952e792",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/solve_with_cot/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/solve_with_cot.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/specialized/experimental/solve_with_cot/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/solve_with_cot.md"
+        ]
+      }
+    },
+    {
+      "hash": "ba8e75ab5d9ac19e1fe7523bbc07e082ad79ed9b717f19a946d8f1c68c86dd12",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/improvement/writing/improve_academic_writing/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/improve_academic_writing.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/improvement/writing/improve_academic_writing/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/improve_academic_writing.md"
+        ]
+      }
+    },
+    {
+      "hash": "98288d12a0aa175b91582dc7d750378a3a219330a0ee7b2719556dd3263c87e8",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/improvement/writing/improve_writing/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/improve_writing.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/improvement/writing/improve_writing/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/improve_writing.md"
+        ]
+      }
+    },
+    {
+      "hash": "81a1d238b0087d62a2e0b3cfb74a9fc9f62bd8021c4ce8762ba7432371f46886",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/improvement/technical/improve_prompt/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/improve_prompt.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/improvement/technical/improve_prompt/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/improve_prompt.md"
+        ]
+      }
+    },
+    {
+      "hash": "08ef636c4f3059e2ec11426b2d3431c2d37b28bf23f56d6530129c32b096b3fa",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/documents/create_tags/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_tags.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/documents/create_tags/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_tags.md"
+        ]
+      }
+    },
+    {
+      "hash": "ace268b1372de042bedf3b19e21cce1dca670f8a62ba7798857b05d1e5bb1a87",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/documents/create_recursive_outline/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_recursive_outline.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/documents/create_recursive_outline/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_recursive_outline.md"
+        ]
+      }
+    },
+    {
+      "hash": "81161fa76f781c30d756e9ea1454298d54e7fbea4148bbf28ed976759865b3a0",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/documents/create_diy/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_diy.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/documents/create_diy/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_diy.md"
+        ]
+      }
+    },
+    {
+      "hash": "543cd8ed5a6e2c13a1c3eec99f2040e50e87ca212ce44f9b23fab72bc6915d75",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/documents/create_pattern/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_pattern.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/documents/create_pattern/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_pattern.md"
+        ]
+      }
+    },
+    {
+      "hash": "a1dddc03c03d12eb59c2d3ae3e5d786212befa04241d76b8b41b5d094d29e3b4",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/visualizations/create_visualization/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_visualization.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/visualizations/create_visualization/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_visualization.md"
+        ]
+      }
+    },
+    {
+      "hash": "0c7e0877b252a87faebc4b8f23440908db84bf4bb10bfb77459a48f4230886d1",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/visualizations/create_graph_from_input/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_graph_from_input.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/visualizations/create_graph_from_input/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_graph_from_input.md"
+        ]
+      }
+    },
+    {
+      "hash": "2f9d6a3800a06c9043947babc32d69816b66391ecad63eb01a8e6293b94d2163",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/development/create_command/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_command.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/development/create_command/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_command.md"
+        ]
+      }
+    },
+    {
+      "hash": "dd6921ba824c77098ddfea6bd14c2f2367e25288528b00b79dd700c2501aa627",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/development/create_coding_project/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_coding_project.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/development/create_coding_project/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_coding_project.md"
+        ]
+      }
+    },
+    {
+      "hash": "06b83d83fd4b2e235a14515c6425bb3822879a8dc5062fc76f0505295737b1ce",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/development/create_coding_feature/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_coding_feature.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/development/create_coding_feature/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_coding_feature.md"
+        ]
+      }
+    },
+    {
+      "hash": "ae8aa41e298318fa95a255cc1e86561338e04726bb1006d6fbf8e094b5283b84",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/creative/create_user_story/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_user_story.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/content_creation/creative/create_user_story/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/create_user_story.md"
+        ]
+      }
+    },
+    {
+      "hash": "fe381e0b31b2e3d9b057635fe2fe87361c7fce364da65d9514f77e9c349c17a3",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_code/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_code.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_code/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_code.md"
+        ]
+      }
+    },
+    {
+      "hash": "1bbb0b65cd7b9ad53eb3944af470e248a1a5abc25b5e65ef056f0ae3414a78eb",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_terms/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_terms.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_terms/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_terms.md"
+        ]
+      }
+    },
+    {
+      "hash": "d114e659f1235439319aa824f5a60caa2392fd870812c9dd340a8b1e1bd6f64c",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_docs/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_docs.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_docs/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_docs.md"
+        ]
+      }
+    },
+    {
+      "hash": "2b99f4ccf16b89f46c9572eade077b859c082f5771c298b8598e7b326bf88bdd",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_project/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_project.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_project/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_project.md"
+        ]
+      }
+    },
+    {
+      "hash": "a0147a01ebd041fda71b0278fc86c915e4d9f93e3da9e903918a06cef465100a",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_math/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_math.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/documentation/explain_math/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/explain_math.md"
+        ]
+      }
+    },
+    {
+      "hash": "779450de9f9546c57210e119aafb9dda69e77c7682122f5c7635741c137ec251",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/development/coding_master/system.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/coding_master.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/fabric_patterns/technical/development/coding_master/system.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/coding_master.md"
+        ]
+      }
+    },
+    {
+      "hash": "89e78855ea75766daf555575af55ba58b7e10f79159f0e61a893880fcf4162bf",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/templates/youtube_video.md",
+        "/home/evilbastardxd/Desktop/tools/notes/_NoteCompanion/Templates/youtube_video.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/templates/youtube_video.md",
+          "/home/evilbastardxd/Desktop/tools/notes/_NoteCompanion/Templates/youtube_video.md"
+        ]
+      }
+    },
+    {
+      "hash": "969484d4e0751298624ae364f574a97ffc844fb9889a73880c8062eb8731321c",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/templates/research_paper.md",
+        "/home/evilbastardxd/Desktop/tools/notes/_NoteCompanion/Templates/research_paper.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/templates/research_paper.md",
+          "/home/evilbastardxd/Desktop/tools/notes/_NoteCompanion/Templates/research_paper.md"
+        ]
+      }
+    },
+    {
+      "hash": "08d3778a3f56303098d415da874969962fb908954bceea37bc88724b568b8ba0",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/templates/meeting_note.md",
+        "/home/evilbastardxd/Desktop/tools/notes/_NoteCompanion/Templates/meeting_note.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/templates/meeting_note.md",
+          "/home/evilbastardxd/Desktop/tools/notes/_NoteCompanion/Templates/meeting_note.md"
+        ]
+      }
+    },
+    {
+      "hash": "c91349464b850b600f13d913c7dbc2b82ee5e920a631298a2d02ce5b82ad985b",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/templates/enhance.md",
+        "/home/evilbastardxd/Desktop/tools/notes/_NoteCompanion/Templates/enhance.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/templates/enhance.md",
+          "/home/evilbastardxd/Desktop/tools/notes/_NoteCompanion/Templates/enhance.md"
+        ]
+      }
+    },
+    {
+      "hash": "7c313ab6666a3541dcfb94d7f10aa923b0f38541aacbbfae96d1d704d0ff2678",
+      "files": [
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/ai_agents/agent.md",
+        "/home/evilbastardxd/Desktop/tools/notes/dev_tools/ai_agents/qodo.md"
+      ],
+      "locations": {
+        "active": [
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/ai_agents/agent.md",
+          "/home/evilbastardxd/Desktop/tools/notes/dev_tools/ai_agents/qodo.md"
+        ]
+      }
+    }
+  ]
+}

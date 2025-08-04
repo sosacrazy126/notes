@@ -1,0 +1,73 @@
+# Ledger Content Manifest
+# Generated: 2025-08-04
+# Version: 1.0
+
+metadata:
+  version: "1.0"
+  created: "2025-08-04"
+  last_updated: "2025-08-04"
+  total_files: 0  # Will be updated by scanner
+  total_tokens: 0  # Will be updated by scanner
+  
+categories:
+  active:
+    description: "Active development resources"
+    directories:
+      - "active_work/"
+      - "dev_tools/"
+      - "documentation/"
+      - "code_library/"
+    file_count: 0
+    token_count: 0
+    
+  archived:
+    description: "Historical and reference content"
+    directories:
+      - "_archive/"
+    file_count: 0
+    token_count: 0
+    
+  system:
+    description: "System configuration and metadata"
+    directories:
+      - "_system/"
+      - "_ledger/"
+    file_count: 0
+    token_count: 0
+
+topics:
+  ai_tools:
+    description: "AI development tools and prompts"
+    tags: ["ai", "prompts", "llm", "agents"]
+    
+  development:
+    description: "Software development resources"
+    tags: ["coding", "patterns", "frameworks", "tools"]
+    
+  documentation:
+    description: "Project and code documentation"
+    tags: ["docs", "guides", "api", "readme"]
+    
+  testing:
+    description: "Testing frameworks and strategies"
+    tags: ["test", "qa", "automation", "coverage"]
+    
+  architecture:
+    description: "System design and architecture"
+    tags: ["design", "architecture", "patterns", "structure"]
+
+# Entries will be populated by the manifest generator
+entries: []
+
+# Example entry structure:
+# - file_path: "/path/to/file.md"
+#   content_hash: "sha256:abc123..."
+#   token_count: 2500
+#   size_bytes: 15384
+#   last_modified: "2025-08-04T10:30:00Z"
+#   category: "active"
+#   topics: ["ai_tools", "development"]
+#   location: "active"  # active|archived|git-history
+#   relationships:
+#     - "/related/file1.md"
+#     - "/related/file2.md"
