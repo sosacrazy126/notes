@@ -61,6 +61,39 @@
 - Production Prompts: `dev_tools/external_research/system-prompts-collection/`
 - Fabric Patterns: `dev_tools/fabric_patterns/`
 
+## 🚀 Enhanced @ Functionality
+
+### Architecture & Specifications
+- **Architecture Document**: [Enhanced @ Functionality Architecture](dev_tools/documentation/enhanced_at_functionality_architecture.md)
+- **Technical Specifications**: [Enhanced @ Functionality Specs](dev_tools/patterns/enhanced_at_functionality_specs.md)
+- **Pattern Registry**: [Enhanced @ Pattern Registry](_ledger/patterns/enhanced_at_pattern_registry.md)
+- **Configuration Management**: [Enhanced @ Configuration](_system/claude_config/enhanced_at_configuration.md)
+
+### System Status
+- **Activation Date**: 2025-08-04
+- **Pattern Detection**: 127 patterns detected across 7 categories
+- **Enhancement Coverage**: 70% automatic, 24% suggested, 6% manual
+- **MCP Integration**: Active via `[byterover-mcp]` in `AGENT.md`
+
+### Key Features
+- **Automatic Pattern Detection**: 40% decorator density threshold activation
+- **MCP Tool Integration**: `@mcp_tool()`, `@server.agent()`, `@recursive_agent()`
+- **API Enhancement**: FastAPI, validation, middleware patterns
+- **Testing Framework**: pytest, hypothesis, locust integration
+- **Performance Optimization**: Caching, monitoring, error handling
+
+### Usage
+```bash
+# Check system status
+grep -r "@mcp_tool\|@server\.agent" dev_tools/
+
+# View pattern registry
+cat _ledger/patterns/enhanced_at_pattern_registry.md
+
+# Validate configuration
+python _system/scripts/validate_enhanced_at_config.py
+```
+
 ## 📈 Repository Statistics
 - **Total Size**: 359MB
 - **Markdown Files**: 904
