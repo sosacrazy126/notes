@@ -1,2 +1,42 @@
-.obsidian/
-.aider*
+# Tool Caches and Config
+.aider.tags.cache.v4/
+.augment/
+.kilocode/
+.marscode/
+.notecompanion/
+.claude/
+
+# Python Virtual Environments
+venv/
+env/
+.venv/
+.env/
+__pycache__/
+*.pyc
+
+# Database Files
+*.db
+*.db-shm
+*.db-wal
+piecesdb.json
+
+# Binary Files
+*.wasm
+*.so
+*.so.*
+
+# Obsidian (if not essential)
+_system/.obsidian/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large archives
+*.tar.gz
