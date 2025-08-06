@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(rm:*)",
+      "Bash(mkdir:*)",
+      "mcp__memmimic__remember",
+      "Bash(mv:*)",
+      "Bash(gh extension install:*)",
+      "Bash(pactl get-default-sink:*)",
+      "mcp__memmimic__recall_cxd",
+      "mcp__byterover-mcp__byterover-retrive-knowledge",
+      "mcp__byterover-mcp__byterover-store-knowledge",
+      "Bash(sqlite3:*)",
+      "Bash(gnome-screenshot:*)",
+      "Bash(xdg-open:*)",
+      "Bash(tmux split-window:*)",
+      "Bash(tmux capture-pane:*)",
+      "Bash(tmux send-keys:*)",
+      "Bash(gedit:*)"
+    ],
+    "deny": []
+  }
+}
