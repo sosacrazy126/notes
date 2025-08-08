@@ -1,0 +1,13 @@
+workflows:
+  - path: _ledger/patterns/workflows/rule-to-tag-pipeline.md
+    name: rule-to-tag-pipeline
+    type: workflow
+architectures:
+  - path: _ledger/patterns/architectures/taggable-notes-system.md
+    name: taggable-notes-system
+    type: architecture
+meta:
+  - path: _ledger/patterns/meta/pattern-stitching-architecture.md
+    name: pattern-stitching-architecture
+    type: meta
+
