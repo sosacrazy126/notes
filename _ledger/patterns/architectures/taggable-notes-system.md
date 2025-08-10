@@ -30,3 +30,8 @@ Describe the architecture that turns a messy notes folder into a modular, taggab
 - Everything verifiable via git history
 
 
+
+
+
+
+

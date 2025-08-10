@@ -5,6 +5,11 @@
 .marscode/
 .notecompanion/
 .claude/
+.obsidian/
+.qodo/
+.ropeproject/
+_NoteCompanion/
+.smart-env/
 
 # Python Virtual Environments
 venv/
@@ -20,13 +25,42 @@ __pycache__/
 *.db-wal
 piecesdb.json
 
+# Generated @ Tag System Files
+_ledger/at_tag_index.json
+_system/AT_TAG_QUICK_START.md
+_system/at_tag_aliases.sh
+
 # Binary Files
 *.wasm
 *.so
 *.so.*
 
-# Obsidian (if not essential)
-_system/.obsidian/
+# Temporary/Staging Directories
+thoughts/
+new_additions/
+home/
+test_suite_analysis/
+
+# Workspace Temporary Directories
+workspace/thoughts/
+workspace/*/node_modules/
+workspace/*/.venv/
+workspace/*/.env
+workspace/*/venv/
+workspace/*/.git/
+
+# Temporary Files
+userinput.py
+WARP.md
+*.tmp
+*_temp.md
+*_backup_*
+
+# Generated Reports (keep core reports, ignore temp ones)
+_ledger/reports/*_temp.md
+_ledger/reports/*_draft.md
+_system/logs/*.log
+_system/monitoring/*.tmp
 
 # OS Files
 .DS_Store
@@ -40,3 +74,8 @@ Thumbs.db
 
 # Large archives
 *.tar.gz
+
+
+
+# Ignore Smart Environment folder
+.smart-env
