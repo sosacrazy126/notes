@@ -35,11 +35,20 @@ _system/at_tag_aliases.sh
 *.so
 *.so.*
 
-# Temporary/Staging Directories
+# Temporary/Staging Directories  
 thoughts/
 new_additions/
 home/
 test_suite_analysis/
+.smtcmp_json_db/
+indydevdan/
+mirrorcore/
+run_parallel_optimization.py
+
+# Agent State and Reports
+_system/parallel-agents/state/
+_system/parallel-agents/logs/
+_system/parallel-agents/reports/
 
 # Workspace Temporary Directories
 workspace/thoughts/

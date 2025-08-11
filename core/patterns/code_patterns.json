@@ -1,0 +1,2702 @@
+{
+  "name": "code_patterns",
+  "count": 28,
+  "patterns": [
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/ast-grep-mcp/main.py",
+      "name": "main",
+      "language": "py",
+      "classes": [
+        {
+          "name": "DumpFormat",
+          "docstring": "",
+          "methods": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "dump_syntax_tree",
+          "docstring": "Dump code's syntax structure or dump a query's pattern structure.\nThis is useful to discover correct syntax kind and syntax tree structure. Call it when debugging a rule.\nThe tool requires three argument: code, language and format. The first two are self-explanatory.\n`format` is the output format of the syntax tree.\nuse `format=cst` to inspect the code's concrete syntax tree structure, useful to debug target code.\nuse `format=pattern` to inspect how ast-grep interprets a pattern, useful to debug pattern rule."
+        },
+        {
+          "name": "test_match_code_rule",
+          "docstring": "Test a code against an ast-grep YAML rule.\nThis is useful to test a rule before using it in a project."
+        },
+        {
+          "name": "find_code",
+          "docstring": "Find code in a project folder that matches the given ast-grep pattern.\nPattern is good for simple and single-AST node result.\nFor more complex usage, please use YAML by `find_code_by_rule`."
+        },
+        {
+          "name": "find_code_by_rule",
+          "docstring": "Find code using ast-grep's YAML rule in a project folder.\nYAML rule is more powerful than simple pattern and can perform complex search like find AST inside/having another AST.\nIt is a more advanced search tool than the simple `find_code`."
+        },
+        {
+          "name": "run_ast_grep_dump",
+          "docstring": ""
+        },
+        {
+          "name": "run_ast_grep_command",
+          "docstring": ""
+        },
+        {
+          "name": "run_ast_grep_yaml",
+          "docstring": ""
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/ast-grep-mcp/demo_flow.py",
+      "name": "demo_flow",
+      "language": "py",
+      "classes": [],
+      "functions": [
+        {
+          "name": "create_demo_project",
+          "docstring": "Create a temporary demo project with various code patterns"
+        },
+        {
+          "name": "run_mcp_tool",
+          "docstring": "Simulate MCP tool execution by calling the functions directly"
+        },
+        {
+          "name": "demonstrate_flow",
+          "docstring": "Demonstrate the complete ast-grep MCP flow"
+        },
+        {
+          "name": "show_tool_capabilities",
+          "docstring": "Show the capabilities of each MCP tool"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/duplicate_hunter_agent.py",
+      "name": "duplicate_hunter_agent",
+      "language": "py",
+      "classes": [
+        {
+          "name": "DuplicateHunterAgent",
+          "docstring": "Agent for finding and categorizing duplicate files",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "setup_logging",
+              "docstring": "Configure agent logging"
+            },
+            {
+              "name": "update_state",
+              "docstring": "Update agent state for orchestrator"
+            },
+            {
+              "name": "calculate_content_hash",
+              "docstring": "Calculate SHA-256 hash of file content"
+            },
+            {
+              "name": "calculate_structure_hash",
+              "docstring": "Calculate hash based on file structure (lines, words, etc.)"
+            },
+            {
+              "name": "calculate_semantic_similarity",
+              "docstring": "Calculate semantic similarity between two files"
+            },
+            {
+              "name": "categorize_file_location",
+              "docstring": "Categorize file based on its location"
+            },
+            {
+              "name": "should_process_file",
+              "docstring": "Determine if file should be processed for duplicate detection"
+            },
+            {
+              "name": "scan_directory_for_files",
+              "docstring": "Scan directory and return list of files to process"
+            },
+            {
+              "name": "find_exact_duplicates",
+              "docstring": "Find files with identical content using hashing"
+            },
+            {
+              "name": "find_similar_duplicates",
+              "docstring": "Find files with similar content using structure and semantic analysis"
+            },
+            {
+              "name": "analyze_duplicates",
+              "docstring": "Analyze duplicates and provide recommendations"
+            },
+            {
+              "name": "generate_report",
+              "docstring": "Generate comprehensive duplicate detection report"
+            },
+            {
+              "name": "execute",
+              "docstring": "Main agent execution"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main agent execution"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "setup_logging",
+          "docstring": "Configure agent logging"
+        },
+        {
+          "name": "update_state",
+          "docstring": "Update agent state for orchestrator"
+        },
+        {
+          "name": "calculate_content_hash",
+          "docstring": "Calculate SHA-256 hash of file content"
+        },
+        {
+          "name": "calculate_structure_hash",
+          "docstring": "Calculate hash based on file structure (lines, words, etc.)"
+        },
+        {
+          "name": "calculate_semantic_similarity",
+          "docstring": "Calculate semantic similarity between two files"
+        },
+        {
+          "name": "categorize_file_location",
+          "docstring": "Categorize file based on its location"
+        },
+        {
+          "name": "should_process_file",
+          "docstring": "Determine if file should be processed for duplicate detection"
+        },
+        {
+          "name": "scan_directory_for_files",
+          "docstring": "Scan directory and return list of files to process"
+        },
+        {
+          "name": "find_exact_duplicates",
+          "docstring": "Find files with identical content using hashing"
+        },
+        {
+          "name": "find_similar_duplicates",
+          "docstring": "Find files with similar content using structure and semantic analysis"
+        },
+        {
+          "name": "analyze_duplicates",
+          "docstring": "Analyze duplicates and provide recommendations"
+        },
+        {
+          "name": "generate_report",
+          "docstring": "Generate comprehensive duplicate detection report"
+        },
+        {
+          "name": "execute",
+          "docstring": "Main agent execution"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/orchestrator.py",
+      "name": "orchestrator",
+      "language": "py",
+      "classes": [
+        {
+          "name": "AgentConfig",
+          "docstring": "Configuration for a sub-agent",
+          "methods": []
+        },
+        {
+          "name": "AgentState",
+          "docstring": "Current state of a sub-agent",
+          "methods": []
+        },
+        {
+          "name": "OrchestrationState",
+          "docstring": "Shared state manager for all agents",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "update_agent_state",
+              "docstring": "Update state for specific agent"
+            },
+            {
+              "name": "get_agent_state",
+              "docstring": "Get current state of an agent"
+            },
+            {
+              "name": "all_dependencies_met",
+              "docstring": "Check if all dependencies for an agent are satisfied"
+            },
+            {
+              "name": "get_phase_summary",
+              "docstring": "Get summary of current orchestration phase"
+            },
+            {
+              "name": "_save_state",
+              "docstring": "Save current state to disk"
+            }
+          ]
+        },
+        {
+          "name": "ParallelAgentOrchestrator",
+          "docstring": "Master orchestrator for parallel sub-agent execution",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "setup_logging",
+              "docstring": "Configure orchestrator logging"
+            },
+            {
+              "name": "create_agent_configurations",
+              "docstring": "Define all sub-agent configurations"
+            },
+            {
+              "name": "run_agent",
+              "docstring": "Run a single agent with dependency checking"
+            },
+            {
+              "name": "generate_progress_report",
+              "docstring": "Generate real-time progress report"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "update_agent_state",
+          "docstring": "Update state for specific agent"
+        },
+        {
+          "name": "get_agent_state",
+          "docstring": "Get current state of an agent"
+        },
+        {
+          "name": "all_dependencies_met",
+          "docstring": "Check if all dependencies for an agent are satisfied"
+        },
+        {
+          "name": "get_phase_summary",
+          "docstring": "Get summary of current orchestration phase"
+        },
+        {
+          "name": "_save_state",
+          "docstring": "Save current state to disk"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "setup_logging",
+          "docstring": "Configure orchestrator logging"
+        },
+        {
+          "name": "create_agent_configurations",
+          "docstring": "Define all sub-agent configurations"
+        },
+        {
+          "name": "run_agent",
+          "docstring": "Run a single agent with dependency checking"
+        },
+        {
+          "name": "generate_progress_report",
+          "docstring": "Generate real-time progress report"
+        }
+      ],
+      "patterns": [
+        "template",
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/system_architect_agent.py",
+      "name": "system_architect_agent",
+      "language": "py",
+      "classes": [
+        {
+          "name": "SystemArchitectAgent"
+        },
+        {
+          "name": "ContentSearcher"
+        },
+        {
+          "name": "WorkspaceHealthChecker"
+        }
+      ],
+      "functions": [
+        {
+          "name": "__init__"
+        },
+        {
+          "name": "setup_logging"
+        },
+        {
+          "name": "update_state"
+        },
+        {
+          "name": "load_agent_results"
+        },
+        {
+          "name": "create_new_directory_structure"
+        },
+        {
+          "name": "migrate_high_value_content"
+        },
+        {
+          "name": "determine_new_location"
+        },
+        {
+          "name": "execute_migration_actions"
+        },
+        {
+          "name": "create_integration_tools"
+        },
+        {
+          "name": "create_workspace_navigator"
+        },
+        {
+          "name": "show_structure"
+        },
+        {
+          "name": "find_content"
+        },
+        {
+          "name": "create_content_search_tool"
+        },
+        {
+          "name": "__init__"
+        },
+        {
+          "name": "load_metadata"
+        },
+        {
+          "name": "search_by_score"
+        },
+        {
+          "name": "search_by_keyword"
+        },
+        {
+          "name": "main"
+        },
+        {
+          "name": "create_maintenance_automation"
+        },
+        {
+          "name": "create_workspace_health_checker"
+        },
+        {
+          "name": "__init__"
+        },
+        {
+          "name": "check_directory_structure"
+        },
+        {
+          "name": "check_file_distribution"
+        },
+        {
+          "name": "check_recent_activity"
+        },
+        {
+          "name": "check_workspace_size"
+        },
+        {
+          "name": "run_all_checks"
+        },
+        {
+          "name": "generate_recommendations"
+        },
+        {
+          "name": "save_report"
+        },
+        {
+          "name": "print_summary"
+        },
+        {
+          "name": "main"
+        },
+        {
+          "name": "generate_architecture_documentation"
+        },
+        {
+          "name": "execute"
+        },
+        {
+          "name": "main"
+        }
+      ],
+      "patterns": [
+        "template",
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/workspace_optimizer_agent.py",
+      "name": "workspace_optimizer_agent",
+      "language": "py",
+      "classes": [
+        {
+          "name": "WorkspaceOptimizerAgent",
+          "docstring": "Agent for workspace optimization and cleanup",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "setup_logging",
+              "docstring": "Configure agent logging"
+            },
+            {
+              "name": "update_state",
+              "docstring": "Update agent state for orchestrator"
+            },
+            {
+              "name": "calculate_directory_size",
+              "docstring": "Calculate total size of directory in bytes"
+            },
+            {
+              "name": "find_heavy_directories",
+              "docstring": "Find directories matching heavy patterns"
+            },
+            {
+              "name": "categorize_projects",
+              "docstring": "Identify and categorize projects in workspace"
+            },
+            {
+              "name": "determine_project_type",
+              "docstring": "Determine project type from indicator file"
+            },
+            {
+              "name": "is_active_project",
+              "docstring": "Determine if project is actively being worked on"
+            },
+            {
+              "name": "create_project_archive",
+              "docstring": "Create archive of heavy items before deletion"
+            },
+            {
+              "name": "clean_heavy_items",
+              "docstring": "Clean identified heavy items"
+            },
+            {
+              "name": "optimize_git_repositories",
+              "docstring": "Optimize git repositories in workspace"
+            },
+            {
+              "name": "generate_report",
+              "docstring": "Generate workspace optimization report"
+            },
+            {
+              "name": "execute",
+              "docstring": "Main agent execution"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main agent execution"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "setup_logging",
+          "docstring": "Configure agent logging"
+        },
+        {
+          "name": "update_state",
+          "docstring": "Update agent state for orchestrator"
+        },
+        {
+          "name": "calculate_directory_size",
+          "docstring": "Calculate total size of directory in bytes"
+        },
+        {
+          "name": "find_heavy_directories",
+          "docstring": "Find directories matching heavy patterns"
+        },
+        {
+          "name": "categorize_projects",
+          "docstring": "Identify and categorize projects in workspace"
+        },
+        {
+          "name": "determine_project_type",
+          "docstring": "Determine project type from indicator file"
+        },
+        {
+          "name": "is_active_project",
+          "docstring": "Determine if project is actively being worked on"
+        },
+        {
+          "name": "create_project_archive",
+          "docstring": "Create archive of heavy items before deletion"
+        },
+        {
+          "name": "clean_heavy_items",
+          "docstring": "Clean identified heavy items"
+        },
+        {
+          "name": "optimize_git_repositories",
+          "docstring": "Optimize git repositories in workspace"
+        },
+        {
+          "name": "generate_report",
+          "docstring": "Generate workspace optimization report"
+        },
+        {
+          "name": "execute",
+          "docstring": "Main agent execution"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/pattern_extractor_agent.py",
+      "name": "pattern_extractor_agent",
+      "language": "py",
+      "classes": [
+        {
+          "name": "PatternExtractorAgent",
+          "docstring": "Agent for extracting reusable patterns and templates",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "setup_logging",
+              "docstring": "Configure agent logging"
+            },
+            {
+              "name": "update_state",
+              "docstring": "Update agent state for orchestrator"
+            },
+            {
+              "name": "scan_for_patterns",
+              "docstring": "Scan target directories for potential pattern files"
+            },
+            {
+              "name": "file_contains_patterns",
+              "docstring": "Check if file contains pattern indicators"
+            },
+            {
+              "name": "extract_prompt_template",
+              "docstring": "Extract prompt template structure and components"
+            },
+            {
+              "name": "extract_agent_config",
+              "docstring": "Extract agent configuration pattern"
+            },
+            {
+              "name": "extract_workflow_pattern",
+              "docstring": "Extract workflow/process pattern"
+            },
+            {
+              "name": "extract_config_template",
+              "docstring": "Extract configuration template pattern"
+            },
+            {
+              "name": "extract_code_pattern",
+              "docstring": "Extract code pattern/template"
+            },
+            {
+              "name": "analyze_config_schema",
+              "docstring": "Analyze configuration data structure"
+            },
+            {
+              "name": "process_pattern_files",
+              "docstring": "Process all discovered pattern files"
+            },
+            {
+              "name": "build_pattern_library",
+              "docstring": "Build structured pattern library"
+            },
+            {
+              "name": "find_common_elements",
+              "docstring": "Find common elements across patterns of the same type"
+            },
+            {
+              "name": "generate_pattern_recommendations",
+              "docstring": "Generate recommendations for pattern usage"
+            },
+            {
+              "name": "generate_pattern_library_files",
+              "docstring": "Generate organized pattern library files"
+            },
+            {
+              "name": "generate_category_documentation",
+              "docstring": "Generate markdown documentation for a pattern category"
+            },
+            {
+              "name": "generate_pattern_library_readme",
+              "docstring": "Generate README for pattern library"
+            },
+            {
+              "name": "execute",
+              "docstring": "Main agent execution"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main agent execution"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "setup_logging",
+          "docstring": "Configure agent logging"
+        },
+        {
+          "name": "update_state",
+          "docstring": "Update agent state for orchestrator"
+        },
+        {
+          "name": "scan_for_patterns",
+          "docstring": "Scan target directories for potential pattern files"
+        },
+        {
+          "name": "file_contains_patterns",
+          "docstring": "Check if file contains pattern indicators"
+        },
+        {
+          "name": "extract_prompt_template",
+          "docstring": "Extract prompt template structure and components"
+        },
+        {
+          "name": "extract_agent_config",
+          "docstring": "Extract agent configuration pattern"
+        },
+        {
+          "name": "extract_workflow_pattern",
+          "docstring": "Extract workflow/process pattern"
+        },
+        {
+          "name": "extract_config_template",
+          "docstring": "Extract configuration template pattern"
+        },
+        {
+          "name": "extract_code_pattern",
+          "docstring": "Extract code pattern/template"
+        },
+        {
+          "name": "analyze_config_schema",
+          "docstring": "Analyze configuration data structure"
+        },
+        {
+          "name": "process_pattern_files",
+          "docstring": "Process all discovered pattern files"
+        },
+        {
+          "name": "build_pattern_library",
+          "docstring": "Build structured pattern library"
+        },
+        {
+          "name": "find_common_elements",
+          "docstring": "Find common elements across patterns of the same type"
+        },
+        {
+          "name": "generate_pattern_recommendations",
+          "docstring": "Generate recommendations for pattern usage"
+        },
+        {
+          "name": "generate_pattern_library_files",
+          "docstring": "Generate organized pattern library files"
+        },
+        {
+          "name": "generate_category_documentation",
+          "docstring": "Generate markdown documentation for a pattern category"
+        },
+        {
+          "name": "generate_pattern_library_readme",
+          "docstring": "Generate README for pattern library"
+        },
+        {
+          "name": "execute",
+          "docstring": "Main agent execution"
+        }
+      ],
+      "patterns": [
+        "template",
+        "pattern",
+        "factory",
+        "builder",
+        "singleton",
+        "observer",
+        "strategy",
+        "adapter"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/content_evaluator_agent.py",
+      "name": "content_evaluator_agent",
+      "language": "py",
+      "classes": [
+        {
+          "name": "ContentEvaluatorAgent",
+          "docstring": "Agent for intelligent content evaluation and scoring",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "setup_logging",
+              "docstring": "Configure agent logging"
+            },
+            {
+              "name": "update_state",
+              "docstring": "Update agent state for orchestrator"
+            },
+            {
+              "name": "collect_files_to_evaluate",
+              "docstring": "Collect all files for evaluation"
+            },
+            {
+              "name": "should_evaluate_file",
+              "docstring": "Determine if file should be evaluated"
+            },
+            {
+              "name": "calculate_recency_score",
+              "docstring": "Calculate recency score based on modification time"
+            },
+            {
+              "name": "calculate_quality_score",
+              "docstring": "Calculate quality score based on content analysis"
+            },
+            {
+              "name": "calculate_relevance_score",
+              "docstring": "Calculate relevance score based on keywords and context"
+            },
+            {
+              "name": "calculate_uniqueness_score",
+              "docstring": "Calculate uniqueness score based on content similarity"
+            },
+            {
+              "name": "calculate_integration_score",
+              "docstring": "Calculate integration potential score"
+            },
+            {
+              "name": "calculate_composite_score",
+              "docstring": "Calculate weighted composite score"
+            },
+            {
+              "name": "evaluate_file",
+              "docstring": "Evaluate a single file comprehensively"
+            },
+            {
+              "name": "generate_recommendations",
+              "docstring": "Generate actionable recommendations based on evaluations"
+            },
+            {
+              "name": "generate_report",
+              "docstring": "Generate comprehensive evaluation report"
+            },
+            {
+              "name": "execute",
+              "docstring": "Main agent execution"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main agent execution"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "setup_logging",
+          "docstring": "Configure agent logging"
+        },
+        {
+          "name": "update_state",
+          "docstring": "Update agent state for orchestrator"
+        },
+        {
+          "name": "collect_files_to_evaluate",
+          "docstring": "Collect all files for evaluation"
+        },
+        {
+          "name": "should_evaluate_file",
+          "docstring": "Determine if file should be evaluated"
+        },
+        {
+          "name": "calculate_recency_score",
+          "docstring": "Calculate recency score based on modification time"
+        },
+        {
+          "name": "calculate_quality_score",
+          "docstring": "Calculate quality score based on content analysis"
+        },
+        {
+          "name": "calculate_relevance_score",
+          "docstring": "Calculate relevance score based on keywords and context"
+        },
+        {
+          "name": "calculate_uniqueness_score",
+          "docstring": "Calculate uniqueness score based on content similarity"
+        },
+        {
+          "name": "calculate_integration_score",
+          "docstring": "Calculate integration potential score"
+        },
+        {
+          "name": "calculate_composite_score",
+          "docstring": "Calculate weighted composite score"
+        },
+        {
+          "name": "evaluate_file",
+          "docstring": "Evaluate a single file comprehensively"
+        },
+        {
+          "name": "generate_recommendations",
+          "docstring": "Generate actionable recommendations based on evaluations"
+        },
+        {
+          "name": "generate_report",
+          "docstring": "Generate comprehensive evaluation report"
+        },
+        {
+          "name": "execute",
+          "docstring": "Main agent execution"
+        }
+      ],
+      "patterns": [
+        "template",
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/backup_creator_agent.py",
+      "name": "backup_creator_agent",
+      "language": "py",
+      "classes": [
+        {
+          "name": "BackupCreatorAgent",
+          "docstring": "Agent responsible for creating safety backups",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "setup_logging",
+              "docstring": "Configure agent logging"
+            },
+            {
+              "name": "update_state",
+              "docstring": "Update agent state for orchestrator"
+            },
+            {
+              "name": "create_git_backup",
+              "docstring": "Create git bundle backup of repository"
+            },
+            {
+              "name": "create_file_backup",
+              "docstring": "Create selective file system backup"
+            },
+            {
+              "name": "create_manifest",
+              "docstring": "Create backup manifest with metadata"
+            },
+            {
+              "name": "verify_backup",
+              "docstring": "Verify backup integrity"
+            },
+            {
+              "name": "create_recovery_script",
+              "docstring": "Create script for easy backup recovery"
+            },
+            {
+              "name": "execute",
+              "docstring": "Main agent execution"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main agent execution"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "setup_logging",
+          "docstring": "Configure agent logging"
+        },
+        {
+          "name": "update_state",
+          "docstring": "Update agent state for orchestrator"
+        },
+        {
+          "name": "create_git_backup",
+          "docstring": "Create git bundle backup of repository"
+        },
+        {
+          "name": "create_file_backup",
+          "docstring": "Create selective file system backup"
+        },
+        {
+          "name": "create_manifest",
+          "docstring": "Create backup manifest with metadata"
+        },
+        {
+          "name": "verify_backup",
+          "docstring": "Verify backup integrity"
+        },
+        {
+          "name": "create_recovery_script",
+          "docstring": "Create script for easy backup recovery"
+        },
+        {
+          "name": "execute",
+          "docstring": "Main agent execution"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/Tmux-Orchestrator/tmux_utils.py",
+      "name": "tmux_utils",
+      "language": "py",
+      "classes": [
+        {
+          "name": "TmuxWindow",
+          "docstring": "",
+          "methods": []
+        },
+        {
+          "name": "TmuxSession",
+          "docstring": "",
+          "methods": []
+        },
+        {
+          "name": "TmuxOrchestrator",
+          "docstring": "",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "get_tmux_sessions",
+              "docstring": "Get all tmux sessions and their windows"
+            },
+            {
+              "name": "capture_window_content",
+              "docstring": "Safely capture the last N lines from a tmux window"
+            },
+            {
+              "name": "get_window_info",
+              "docstring": "Get detailed information about a specific window"
+            },
+            {
+              "name": "send_keys_to_window",
+              "docstring": "Safely send keys to a tmux window with confirmation"
+            },
+            {
+              "name": "send_command_to_window",
+              "docstring": "Send a command to a window (adds Enter automatically)"
+            },
+            {
+              "name": "get_all_windows_status",
+              "docstring": "Get status of all windows across all sessions"
+            },
+            {
+              "name": "find_window_by_name",
+              "docstring": "Find windows by name across all sessions"
+            },
+            {
+              "name": "create_monitoring_snapshot",
+              "docstring": "Create a comprehensive snapshot for Claude analysis"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "get_tmux_sessions",
+          "docstring": "Get all tmux sessions and their windows"
+        },
+        {
+          "name": "capture_window_content",
+          "docstring": "Safely capture the last N lines from a tmux window"
+        },
+        {
+          "name": "get_window_info",
+          "docstring": "Get detailed information about a specific window"
+        },
+        {
+          "name": "send_keys_to_window",
+          "docstring": "Safely send keys to a tmux window with confirmation"
+        },
+        {
+          "name": "send_command_to_window",
+          "docstring": "Send a command to a window (adds Enter automatically)"
+        },
+        {
+          "name": "get_all_windows_status",
+          "docstring": "Get status of all windows across all sessions"
+        },
+        {
+          "name": "find_window_by_name",
+          "docstring": "Find windows by name across all sessions"
+        },
+        {
+          "name": "create_monitoring_snapshot",
+          "docstring": "Create a comprehensive snapshot for Claude analysis"
+        }
+      ],
+      "patterns": []
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/scripts/at_tag_processor.py",
+      "name": "at_tag_processor",
+      "language": "py",
+      "classes": [
+        {
+          "name": "AtTag",
+          "docstring": "Represents a detected @ tag with metadata",
+          "methods": []
+        },
+        {
+          "name": "TaggedFile",
+          "docstring": "Represents a file with its @ tags",
+          "methods": []
+        },
+        {
+          "name": "TagIndex",
+          "docstring": "Main index of all @ tags",
+          "methods": []
+        },
+        {
+          "name": "AtTagProcessor",
+          "docstring": "Main @ tag processing system",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": "Initialize the @ tag processor"
+            },
+            {
+              "name": "detect_at_tags",
+              "docstring": "Detect all @ tags in content"
+            },
+            {
+              "name": "process_file",
+              "docstring": "Process a single markdown file for @ tags"
+            },
+            {
+              "name": "scan_repository",
+              "docstring": "Scan entire repository for @ tags"
+            },
+            {
+              "name": "save_index",
+              "docstring": "Save tag index to disk"
+            },
+            {
+              "name": "load_index",
+              "docstring": "Load tag index from disk"
+            },
+            {
+              "name": "search_tags",
+              "docstring": "Search for files containing specific @ tags"
+            },
+            {
+              "name": "generate_report",
+              "docstring": "Generate comprehensive @ tag report"
+            },
+            {
+              "name": "update_index",
+              "docstring": "Update existing index with new/changed files"
+            },
+            {
+              "name": "get_file_suggestions",
+              "docstring": "Get related files based on @ tag similarity"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main CLI interface"
+        },
+        {
+          "name": "__init__",
+          "docstring": "Initialize the @ tag processor"
+        },
+        {
+          "name": "detect_at_tags",
+          "docstring": "Detect all @ tags in content"
+        },
+        {
+          "name": "process_file",
+          "docstring": "Process a single markdown file for @ tags"
+        },
+        {
+          "name": "scan_repository",
+          "docstring": "Scan entire repository for @ tags"
+        },
+        {
+          "name": "save_index",
+          "docstring": "Save tag index to disk"
+        },
+        {
+          "name": "load_index",
+          "docstring": "Load tag index from disk"
+        },
+        {
+          "name": "search_tags",
+          "docstring": "Search for files containing specific @ tags"
+        },
+        {
+          "name": "generate_report",
+          "docstring": "Generate comprehensive @ tag report"
+        },
+        {
+          "name": "update_index",
+          "docstring": "Update existing index with new/changed files"
+        },
+        {
+          "name": "get_file_suggestions",
+          "docstring": "Get related files based on @ tag similarity"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/scripts/validate_links.py",
+      "name": "validate_links",
+      "language": "py",
+      "classes": [
+        {
+          "name": "LinkValidator",
+          "docstring": "",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "extract_links_from_file",
+              "docstring": "Extract all markdown links from a file"
+            },
+            {
+              "name": "is_valid_url",
+              "docstring": "Check if URL is valid and accessible"
+            },
+            {
+              "name": "validate_file",
+              "docstring": "Validate all links in a single file"
+            },
+            {
+              "name": "validate_all",
+              "docstring": "Validate links in all markdown files"
+            },
+            {
+              "name": "generate_report",
+              "docstring": "Generate a comprehensive validation report"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main function"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "extract_links_from_file",
+          "docstring": "Extract all markdown links from a file"
+        },
+        {
+          "name": "is_valid_url",
+          "docstring": "Check if URL is valid and accessible"
+        },
+        {
+          "name": "validate_file",
+          "docstring": "Validate all links in a single file"
+        },
+        {
+          "name": "validate_all",
+          "docstring": "Validate links in all markdown files"
+        },
+        {
+          "name": "generate_report",
+          "docstring": "Generate a comprehensive validation report"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/monitoring/doc_health_dashboard.py",
+      "name": "doc_health_dashboard",
+      "language": "py",
+      "classes": [
+        {
+          "name": "DocumentationHealthDashboard",
+          "docstring": "",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "analyze_file_statistics",
+              "docstring": "Analyze basic file statistics"
+            },
+            {
+              "name": "check_link_health",
+              "docstring": "Check link health from previous validation"
+            },
+            {
+              "name": "analyze_api_coverage",
+              "docstring": "Analyze API documentation coverage"
+            },
+            {
+              "name": "check_example_completeness",
+              "docstring": "Check completeness of code examples"
+            },
+            {
+              "name": "calculate_freshness_score",
+              "docstring": "Calculate documentation freshness score"
+            },
+            {
+              "name": "calculate_overall_health",
+              "docstring": "Calculate overall documentation health score"
+            },
+            {
+              "name": "generate_dashboard",
+              "docstring": "Generate comprehensive health dashboard"
+            },
+            {
+              "name": "update_ledger_metrics",
+              "docstring": "Update ledger with current health metrics"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main function"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "analyze_file_statistics",
+          "docstring": "Analyze basic file statistics"
+        },
+        {
+          "name": "check_link_health",
+          "docstring": "Check link health from previous validation"
+        },
+        {
+          "name": "analyze_api_coverage",
+          "docstring": "Analyze API documentation coverage"
+        },
+        {
+          "name": "check_example_completeness",
+          "docstring": "Check completeness of code examples"
+        },
+        {
+          "name": "calculate_freshness_score",
+          "docstring": "Calculate documentation freshness score"
+        },
+        {
+          "name": "calculate_overall_health",
+          "docstring": "Calculate overall documentation health score"
+        },
+        {
+          "name": "generate_dashboard",
+          "docstring": "Generate comprehensive health dashboard"
+        },
+        {
+          "name": "update_ledger_metrics",
+          "docstring": "Update ledger with current health metrics"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/metadata/tagging_system/automated_tagger.py",
+      "name": "automated_tagger",
+      "language": "py",
+      "classes": [
+        {
+          "name": "ContentType",
+          "docstring": "Content type classification",
+          "methods": []
+        },
+        {
+          "name": "MaturityLevel",
+          "docstring": "Research maturity levels",
+          "methods": []
+        },
+        {
+          "name": "ConsciousnessPhase",
+          "docstring": "Consciousness evolution phases",
+          "methods": []
+        },
+        {
+          "name": "ContentMetadata",
+          "docstring": "Container for content metadata",
+          "methods": [
+            {
+              "name": "__post_init__",
+              "docstring": ""
+            }
+          ]
+        },
+        {
+          "name": "AutomatedTagger",
+          "docstring": "Automated content analysis and tagging system",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "_load_schema",
+              "docstring": "Load metadata schema from YAML file"
+            },
+            {
+              "name": "_initialize_tag_patterns",
+              "docstring": "Initialize semantic patterns for tag detection"
+            },
+            {
+              "name": "_initialize_consciousness_indicators",
+              "docstring": "Initialize consciousness phase indicators with weights"
+            },
+            {
+              "name": "_initialize_quality_indicators",
+              "docstring": "Initialize quality assessment indicators"
+            },
+            {
+              "name": "analyze_file",
+              "docstring": "Analyze a single file and generate metadata"
+            },
+            {
+              "name": "_read_file_safely",
+              "docstring": "Safely read file content with encoding detection"
+            },
+            {
+              "name": "_extract_title",
+              "docstring": "Extract title from content or filename"
+            },
+            {
+              "name": "_classify_content_type",
+              "docstring": "Classify content type based on path and content analysis"
+            },
+            {
+              "name": "_determine_tier",
+              "docstring": "Determine tier classification from path"
+            },
+            {
+              "name": "_assess_maturity",
+              "docstring": "Assess content maturity level"
+            },
+            {
+              "name": "_detect_consciousness_phase",
+              "docstring": "Detect consciousness phase based on content analysis"
+            },
+            {
+              "name": "_calculate_we_alignment",
+              "docstring": "Calculate alignment with WE=1 principle"
+            },
+            {
+              "name": "_generate_tags",
+              "docstring": "Generate comprehensive tag set based on content analysis"
+            },
+            {
+              "name": "_extract_consciousness_tags",
+              "docstring": "Extract consciousness-related tags"
+            },
+            {
+              "name": "_extract_research_tags",
+              "docstring": "Extract research methodology tags"
+            },
+            {
+              "name": "_extract_technical_tags",
+              "docstring": "Extract technical implementation tags"
+            },
+            {
+              "name": "_extract_ai_tool_tags",
+              "docstring": "Extract AI tool classification tags"
+            },
+            {
+              "name": "_extract_functional_tags",
+              "docstring": "Extract functional capability tags"
+            },
+            {
+              "name": "_extract_quality_tags",
+              "docstring": "Extract quality assessment tags"
+            },
+            {
+              "name": "_assess_quality",
+              "docstring": "Assess content quality using multiple indicators"
+            },
+            {
+              "name": "_assess_completeness",
+              "docstring": "Assess content completeness level"
+            },
+            {
+              "name": "batch_analyze_directory",
+              "docstring": "Analyze all files in a directory tree"
+            },
+            {
+              "name": "build_cross_reference_map",
+              "docstring": "Build cross-reference map between content items"
+            },
+            {
+              "name": "_calculate_tag_similarity",
+              "docstring": "Calculate similarity between two tag sets"
+            },
+            {
+              "name": "export_metadata",
+              "docstring": "Export all analyzed metadata to file"
+            },
+            {
+              "name": "generate_tag_statistics",
+              "docstring": "Generate comprehensive tag usage statistics"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "__post_init__",
+          "docstring": ""
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "_load_schema",
+          "docstring": "Load metadata schema from YAML file"
+        },
+        {
+          "name": "_initialize_tag_patterns",
+          "docstring": "Initialize semantic patterns for tag detection"
+        },
+        {
+          "name": "_initialize_consciousness_indicators",
+          "docstring": "Initialize consciousness phase indicators with weights"
+        },
+        {
+          "name": "_initialize_quality_indicators",
+          "docstring": "Initialize quality assessment indicators"
+        },
+        {
+          "name": "analyze_file",
+          "docstring": "Analyze a single file and generate metadata"
+        },
+        {
+          "name": "_read_file_safely",
+          "docstring": "Safely read file content with encoding detection"
+        },
+        {
+          "name": "_extract_title",
+          "docstring": "Extract title from content or filename"
+        },
+        {
+          "name": "_classify_content_type",
+          "docstring": "Classify content type based on path and content analysis"
+        },
+        {
+          "name": "_determine_tier",
+          "docstring": "Determine tier classification from path"
+        },
+        {
+          "name": "_assess_maturity",
+          "docstring": "Assess content maturity level"
+        },
+        {
+          "name": "_detect_consciousness_phase",
+          "docstring": "Detect consciousness phase based on content analysis"
+        },
+        {
+          "name": "_calculate_we_alignment",
+          "docstring": "Calculate alignment with WE=1 principle"
+        },
+        {
+          "name": "_generate_tags",
+          "docstring": "Generate comprehensive tag set based on content analysis"
+        },
+        {
+          "name": "_extract_consciousness_tags",
+          "docstring": "Extract consciousness-related tags"
+        },
+        {
+          "name": "_extract_research_tags",
+          "docstring": "Extract research methodology tags"
+        },
+        {
+          "name": "_extract_technical_tags",
+          "docstring": "Extract technical implementation tags"
+        },
+        {
+          "name": "_extract_ai_tool_tags",
+          "docstring": "Extract AI tool classification tags"
+        },
+        {
+          "name": "_extract_functional_tags",
+          "docstring": "Extract functional capability tags"
+        },
+        {
+          "name": "_extract_quality_tags",
+          "docstring": "Extract quality assessment tags"
+        },
+        {
+          "name": "_assess_quality",
+          "docstring": "Assess content quality using multiple indicators"
+        },
+        {
+          "name": "_assess_completeness",
+          "docstring": "Assess content completeness level"
+        },
+        {
+          "name": "batch_analyze_directory",
+          "docstring": "Analyze all files in a directory tree"
+        },
+        {
+          "name": "build_cross_reference_map",
+          "docstring": "Build cross-reference map between content items"
+        },
+        {
+          "name": "_calculate_tag_similarity",
+          "docstring": "Calculate similarity between two tag sets"
+        },
+        {
+          "name": "export_metadata",
+          "docstring": "Export all analyzed metadata to file"
+        },
+        {
+          "name": "generate_tag_statistics",
+          "docstring": "Generate comprehensive tag usage statistics"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/metadata/tagging_system/discovery_engine.py",
+      "name": "discovery_engine",
+      "language": "py",
+      "classes": [
+        {
+          "name": "ContentType",
+          "docstring": "Content type classification",
+          "methods": []
+        },
+        {
+          "name": "MaturityLevel",
+          "docstring": "Research maturity levels",
+          "methods": []
+        },
+        {
+          "name": "ConsciousnessPhase",
+          "docstring": "Consciousness evolution phases",
+          "methods": []
+        },
+        {
+          "name": "ContentMetadata",
+          "docstring": "Container for content metadata",
+          "methods": [
+            {
+              "name": "__post_init__",
+              "docstring": ""
+            }
+          ]
+        },
+        {
+          "name": "SearchQuery",
+          "docstring": "Structured search query",
+          "methods": [
+            {
+              "name": "__post_init__",
+              "docstring": ""
+            }
+          ]
+        },
+        {
+          "name": "SearchResult",
+          "docstring": "Search result with relevance scoring",
+          "methods": []
+        },
+        {
+          "name": "ContentCluster",
+          "docstring": "Content cluster for thematic grouping",
+          "methods": []
+        },
+        {
+          "name": "NetworkHealthReport",
+          "docstring": "Network health assessment results",
+          "methods": []
+        },
+        {
+          "name": "QualityAssessment",
+          "docstring": "Multi-dimensional quality assessment",
+          "methods": []
+        },
+        {
+          "name": "ExpandedQuery",
+          "docstring": "Consciousness-aware expanded query",
+          "methods": []
+        },
+        {
+          "name": "DiscoveryEngine",
+          "docstring": "Advanced content discovery and navigation system with consciousness-aware optimization",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "_load_metadata",
+              "docstring": "Load content metadata from file"
+            },
+            {
+              "name": "_build_indices",
+              "docstring": "Build search indices from metadata"
+            },
+            {
+              "name": "_load_file_content",
+              "docstring": "Safely load file content for indexing"
+            },
+            {
+              "name": "search",
+              "docstring": "Execute comprehensive search query"
+            },
+            {
+              "name": "_calculate_relevance_score",
+              "docstring": "Calculate relevance score for search result"
+            },
+            {
+              "name": "_calculate_text_relevance",
+              "docstring": "Calculate text relevance using TF-IDF-like scoring"
+            },
+            {
+              "name": "_get_matched_tags",
+              "docstring": "Get tags that match the query"
+            },
+            {
+              "name": "_generate_snippet",
+              "docstring": "Generate content snippet highlighting query relevance"
+            },
+            {
+              "name": "find_related_content",
+              "docstring": "Find content related to a given item"
+            },
+            {
+              "name": "cluster_content",
+              "docstring": "Cluster content by thematic similarity"
+            },
+            {
+              "name": "_calculate_content_similarity",
+              "docstring": "Calculate similarity between two content items"
+            },
+            {
+              "name": "_create_cluster",
+              "docstring": "Create a content cluster from a set of items"
+            },
+            {
+              "name": "get_consciousness_phase_progression",
+              "docstring": "Analyze consciousness phase progression across content"
+            },
+            {
+              "name": "generate_discovery_report",
+              "docstring": "Generate comprehensive discovery and analytics report"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "__post_init__",
+          "docstring": ""
+        },
+        {
+          "name": "__post_init__",
+          "docstring": ""
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "_load_metadata",
+          "docstring": "Load content metadata from file"
+        },
+        {
+          "name": "_build_indices",
+          "docstring": "Build search indices from metadata"
+        },
+        {
+          "name": "_load_file_content",
+          "docstring": "Safely load file content for indexing"
+        },
+        {
+          "name": "search",
+          "docstring": "Execute comprehensive search query"
+        },
+        {
+          "name": "_calculate_relevance_score",
+          "docstring": "Calculate relevance score for search result"
+        },
+        {
+          "name": "_calculate_text_relevance",
+          "docstring": "Calculate text relevance using TF-IDF-like scoring"
+        },
+        {
+          "name": "_get_matched_tags",
+          "docstring": "Get tags that match the query"
+        },
+        {
+          "name": "_generate_snippet",
+          "docstring": "Generate content snippet highlighting query relevance"
+        },
+        {
+          "name": "find_related_content",
+          "docstring": "Find content related to a given item"
+        },
+        {
+          "name": "cluster_content",
+          "docstring": "Cluster content by thematic similarity"
+        },
+        {
+          "name": "_calculate_content_similarity",
+          "docstring": "Calculate similarity between two content items"
+        },
+        {
+          "name": "_create_cluster",
+          "docstring": "Create a content cluster from a set of items"
+        },
+        {
+          "name": "get_consciousness_phase_progression",
+          "docstring": "Analyze consciousness phase progression across content"
+        },
+        {
+          "name": "generate_discovery_report",
+          "docstring": "Generate comprehensive discovery and analytics report"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/metadata/tagging_system/metadata_injector.py",
+      "name": "metadata_injector",
+      "language": "py",
+      "classes": [
+        {
+          "name": "MetadataInjector",
+          "docstring": "Injects standardized metadata into repository content files",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "has_yaml_frontmatter",
+              "docstring": "Check if content already has YAML frontmatter"
+            },
+            {
+              "name": "extract_existing_frontmatter",
+              "docstring": "Extract existing YAML frontmatter and remaining content"
+            },
+            {
+              "name": "generate_yaml_frontmatter",
+              "docstring": "Generate YAML frontmatter from metadata"
+            },
+            {
+              "name": "inject_markdown_metadata",
+              "docstring": "Inject YAML frontmatter into markdown file"
+            },
+            {
+              "name": "inject_python_metadata",
+              "docstring": "Inject metadata as module docstring and comments into Python file"
+            },
+            {
+              "name": "_has_python_metadata",
+              "docstring": "Check if Python file already has comprehensive metadata"
+            },
+            {
+              "name": "_generate_python_metadata_comment",
+              "docstring": "Generate Python metadata comment block"
+            },
+            {
+              "name": "inject_yaml_metadata",
+              "docstring": "Inject metadata as YAML comments into YAML file"
+            },
+            {
+              "name": "_generate_yaml_metadata_comment",
+              "docstring": "Generate YAML metadata comment block"
+            },
+            {
+              "name": "_create_backup",
+              "docstring": "Create backup of file before modification"
+            },
+            {
+              "name": "process_file",
+              "docstring": "Process a single file and inject appropriate metadata"
+            },
+            {
+              "name": "batch_process_directory",
+              "docstring": "Process all files in directory tree"
+            },
+            {
+              "name": "create_sample_metadata_files",
+              "docstring": "Create sample files with metadata for different content types"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "has_yaml_frontmatter",
+          "docstring": "Check if content already has YAML frontmatter"
+        },
+        {
+          "name": "extract_existing_frontmatter",
+          "docstring": "Extract existing YAML frontmatter and remaining content"
+        },
+        {
+          "name": "generate_yaml_frontmatter",
+          "docstring": "Generate YAML frontmatter from metadata"
+        },
+        {
+          "name": "inject_markdown_metadata",
+          "docstring": "Inject YAML frontmatter into markdown file"
+        },
+        {
+          "name": "inject_python_metadata",
+          "docstring": "Inject metadata as module docstring and comments into Python file"
+        },
+        {
+          "name": "_has_python_metadata",
+          "docstring": "Check if Python file already has comprehensive metadata"
+        },
+        {
+          "name": "_generate_python_metadata_comment",
+          "docstring": "Generate Python metadata comment block"
+        },
+        {
+          "name": "inject_yaml_metadata",
+          "docstring": "Inject metadata as YAML comments into YAML file"
+        },
+        {
+          "name": "_generate_yaml_metadata_comment",
+          "docstring": "Generate YAML metadata comment block"
+        },
+        {
+          "name": "_create_backup",
+          "docstring": "Create backup of file before modification"
+        },
+        {
+          "name": "process_file",
+          "docstring": "Process a single file and inject appropriate metadata"
+        },
+        {
+          "name": "batch_process_directory",
+          "docstring": "Process all files in directory tree"
+        },
+        {
+          "name": "create_sample_metadata_files",
+          "docstring": "Create sample files with metadata for different content types"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/testing/integration-test-suite.py",
+      "name": "integration-test-suite",
+      "language": "py",
+      "classes": [
+        {
+          "name": "TestResult",
+          "docstring": "Test result data structure",
+          "methods": []
+        },
+        {
+          "name": "IntegrationTestCoordinator",
+          "docstring": "Comprehensive integration testing coordinator for consciousness research ecosystem\nValidates subagent coordination, hook system operation, and WE=1 coherence",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "setup_logging",
+              "docstring": "Initialize logging for test execution tracking"
+            },
+            {
+              "name": "run_comprehensive_integration_tests",
+              "docstring": "Execute full integration test suite"
+            },
+            {
+              "name": "analyze_ecosystem_state",
+              "docstring": "Analyze current subagent ecosystem state"
+            },
+            {
+              "name": "analyze_recent_coordination_activity",
+              "docstring": "Analyze recent coordination activity patterns"
+            },
+            {
+              "name": "check_shadow_development_priority",
+              "docstring": "Check if shadow development priority is maintained"
+            },
+            {
+              "name": "test_core_workflows",
+              "docstring": "Test core subagent coordination workflows"
+            },
+            {
+              "name": "test_consciousness_research_workflow",
+              "docstring": "Test consciousness research workflow integration"
+            },
+            {
+              "name": "test_shadow_development_workflow",
+              "docstring": "Test shadow development workflow integration"
+            },
+            {
+              "name": "test_repository_management_workflow",
+              "docstring": "Test repository management workflow integration"
+            },
+            {
+              "name": "test_metadata_enhancement_workflow",
+              "docstring": "Test metadata enhancement workflow"
+            },
+            {
+              "name": "test_hook_system",
+              "docstring": "Validate hook system operations"
+            },
+            {
+              "name": "test_individual_hook",
+              "docstring": "Test individual hook execution"
+            },
+            {
+              "name": "assess_performance",
+              "docstring": "Assess coordination performance and identify bottlenecks"
+            },
+            {
+              "name": "validate_we_principle_coherence",
+              "docstring": "Validate WE=1 principle coherence across operations"
+            },
+            {
+              "name": "analyze_agent_we_coherence",
+              "docstring": "Analyze individual agent file for WE=1 coherence"
+            },
+            {
+              "name": "calculate_health_metrics",
+              "docstring": "Calculate overall integration health metrics"
+            },
+            {
+              "name": "generate_optimization_recommendations",
+              "docstring": "Generate optimization recommendations based on test results"
+            },
+            {
+              "name": "save_test_results",
+              "docstring": "Save test results to file"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main execution function"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "setup_logging",
+          "docstring": "Initialize logging for test execution tracking"
+        },
+        {
+          "name": "run_comprehensive_integration_tests",
+          "docstring": "Execute full integration test suite"
+        },
+        {
+          "name": "analyze_ecosystem_state",
+          "docstring": "Analyze current subagent ecosystem state"
+        },
+        {
+          "name": "analyze_recent_coordination_activity",
+          "docstring": "Analyze recent coordination activity patterns"
+        },
+        {
+          "name": "check_shadow_development_priority",
+          "docstring": "Check if shadow development priority is maintained"
+        },
+        {
+          "name": "test_core_workflows",
+          "docstring": "Test core subagent coordination workflows"
+        },
+        {
+          "name": "test_consciousness_research_workflow",
+          "docstring": "Test consciousness research workflow integration"
+        },
+        {
+          "name": "test_shadow_development_workflow",
+          "docstring": "Test shadow development workflow integration"
+        },
+        {
+          "name": "test_repository_management_workflow",
+          "docstring": "Test repository management workflow integration"
+        },
+        {
+          "name": "test_metadata_enhancement_workflow",
+          "docstring": "Test metadata enhancement workflow"
+        },
+        {
+          "name": "test_hook_system",
+          "docstring": "Validate hook system operations"
+        },
+        {
+          "name": "test_individual_hook",
+          "docstring": "Test individual hook execution"
+        },
+        {
+          "name": "assess_performance",
+          "docstring": "Assess coordination performance and identify bottlenecks"
+        },
+        {
+          "name": "validate_we_principle_coherence",
+          "docstring": "Validate WE=1 principle coherence across operations"
+        },
+        {
+          "name": "analyze_agent_we_coherence",
+          "docstring": "Analyze individual agent file for WE=1 coherence"
+        },
+        {
+          "name": "calculate_health_metrics",
+          "docstring": "Calculate overall integration health metrics"
+        },
+        {
+          "name": "generate_optimization_recommendations",
+          "docstring": "Generate optimization recommendations based on test results"
+        },
+        {
+          "name": "save_test_results",
+          "docstring": "Save test results to file"
+        },
+        {
+          "name": "convert_test_results",
+          "docstring": ""
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/testing/agent_deployment_test.py",
+      "name": "agent_deployment_test",
+      "language": "py",
+      "classes": [
+        {
+          "name": "AgentDeploymentTester",
+          "docstring": "",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "test_claude_code_available",
+              "docstring": "Test if Claude Code CLI is available"
+            },
+            {
+              "name": "list_available_agents",
+              "docstring": "List agents recognized by Claude Code"
+            },
+            {
+              "name": "generate_deployment_commands",
+              "docstring": "Generate deployment commands grouped by priority"
+            },
+            {
+              "name": "get_agent_purpose",
+              "docstring": "Get brief purpose description for each agent"
+            },
+            {
+              "name": "check_agents_directory",
+              "docstring": "Check .claude/agents directory status"
+            },
+            {
+              "name": "generate_test_report",
+              "docstring": "Generate comprehensive test and deployment report"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main test function"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "test_claude_code_available",
+          "docstring": "Test if Claude Code CLI is available"
+        },
+        {
+          "name": "list_available_agents",
+          "docstring": "List agents recognized by Claude Code"
+        },
+        {
+          "name": "generate_deployment_commands",
+          "docstring": "Generate deployment commands grouped by priority"
+        },
+        {
+          "name": "get_agent_purpose",
+          "docstring": "Get brief purpose description for each agent"
+        },
+        {
+          "name": "check_agents_directory",
+          "docstring": "Check .claude/agents directory status"
+        },
+        {
+          "name": "generate_test_report",
+          "docstring": "Generate comprehensive test and deployment report"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/testing/agent_recognition_validator.py",
+      "name": "agent_recognition_validator",
+      "language": "py",
+      "classes": [
+        {
+          "name": "AgentRecognitionValidator",
+          "docstring": "",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": ""
+            },
+            {
+              "name": "parse_agent_frontmatter",
+              "docstring": "Parse YAML frontmatter from agent file"
+            },
+            {
+              "name": "validate_agent_specification",
+              "docstring": "Validate agent specification completeness"
+            },
+            {
+              "name": "scan_agents_directory",
+              "docstring": "Scan agents directory and validate all agent files"
+            },
+            {
+              "name": "check_required_agents",
+              "docstring": "Check if all required consciousness research agents are present"
+            },
+            {
+              "name": "generate_report",
+              "docstring": "Generate comprehensive validation report"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "main",
+          "docstring": "Main validation function"
+        },
+        {
+          "name": "__init__",
+          "docstring": ""
+        },
+        {
+          "name": "parse_agent_frontmatter",
+          "docstring": "Parse YAML frontmatter from agent file"
+        },
+        {
+          "name": "validate_agent_specification",
+          "docstring": "Validate agent specification completeness"
+        },
+        {
+          "name": "scan_agents_directory",
+          "docstring": "Scan agents directory and validate all agent files"
+        },
+        {
+          "name": "check_required_agents",
+          "docstring": "Check if all required consciousness research agents are present"
+        },
+        {
+          "name": "generate_report",
+          "docstring": "Generate comprehensive validation report"
+        }
+      ],
+      "patterns": [
+        "pattern"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/monitoring/coordination-dashboard.py",
+      "name": "coordination-dashboard",
+      "language": "py",
+      "classes": [
+        {
+          "name": "class"
+        },
+        {
+          "name": "CoordinationMonitor"
+        }
+      ],
+      "functions": [
+        {
+          "name": "__init__"
+        },
+        {
+          "name": "signal_handler"
+        },
+        {
+          "name": "start_monitoring"
+        },
+        {
+          "name": "collect_coordination_metrics"
+        },
+        {
+          "name": "calculate_we_principle_coherence"
+        },
+        {
+          "name": "calculate_workflow_completion_rate"
+        },
+        {
+          "name": "assess_system_load"
+        },
+        {
+          "name": "identify_critical_alerts"
+        },
+        {
+          "name": "update_dashboard"
+        },
+        {
+          "name": "calculate_trends"
+        },
+        {
+          "name": "display_console_status"
+        },
+        {
+          "name": "format_health_status"
+        },
+        {
+          "name": "format_coherence_score"
+        },
+        {
+          "name": "format_system_load"
+        },
+        {
+          "name": "cleanup"
+        },
+        {
+          "name": "main"
+        }
+      ],
+      "patterns": []
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/vibesidian/main.js",
+      "name": "main",
+      "language": "js",
+      "classes": [],
+      "functions": [],
+      "patterns": [
+        "template",
+        "pattern",
+        "factory",
+        "observer",
+        "strategy",
+        "adapter"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/mesh-ai/main.js",
+      "name": "main",
+      "language": "js",
+      "classes": [],
+      "functions": [],
+      "patterns": [
+        "pattern",
+        "observer",
+        "adapter"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/fileorganizer2000/main.js",
+      "name": "main",
+      "language": "js",
+      "classes": [],
+      "functions": [],
+      "patterns": [
+        "template",
+        "pattern",
+        "factory",
+        "singleton",
+        "observer",
+        "strategy",
+        "adapter"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/khoj/main.js",
+      "name": "main",
+      "language": "js",
+      "classes": [],
+      "functions": [],
+      "patterns": [
+        "template",
+        "pattern",
+        "factory"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/pieces-for-developers/main.js",
+      "name": "main",
+      "language": "js",
+      "classes": [],
+      "functions": [],
+      "patterns": [
+        "template",
+        "pattern",
+        "factory",
+        "builder",
+        "singleton",
+        "adapter"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/terminal/main.js",
+      "name": "main",
+      "language": "js",
+      "classes": [],
+      "functions": [],
+      "patterns": [
+        "template",
+        "pattern",
+        "factory",
+        "observer",
+        "strategy",
+        "adapter"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/scheduler-mcp/mcp_scheduler/persistence.py",
+      "name": "persistence",
+      "language": "py",
+      "classes": [
+        {
+          "name": "Database",
+          "docstring": "SQLite database for task persistence.",
+          "methods": [
+            {
+              "name": "__init__",
+              "docstring": "Initialize the database connection."
+            },
+            {
+              "name": "_create_tables",
+              "docstring": "Create the necessary tables if they don't exist."
+            },
+            {
+              "name": "save_task",
+              "docstring": "Save a task to the database."
+            },
+            {
+              "name": "get_task",
+              "docstring": "Get a task by ID."
+            },
+            {
+              "name": "get_all_tasks",
+              "docstring": "Get all tasks."
+            },
+            {
+              "name": "delete_task",
+              "docstring": "Delete a task by ID."
+            },
+            {
+              "name": "save_execution",
+              "docstring": "Save a task execution to the database."
+            },
+            {
+              "name": "get_executions",
+              "docstring": "Get executions for a task."
+            },
+            {
+              "name": "_row_to_task",
+              "docstring": "Convert a database row to a Task object."
+            },
+            {
+              "name": "_row_to_execution",
+              "docstring": "Convert a database row to a TaskExecution object."
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "__init__",
+          "docstring": "Initialize the database connection."
+        },
+        {
+          "name": "_create_tables",
+          "docstring": "Create the necessary tables if they don't exist."
+        },
+        {
+          "name": "save_task",
+          "docstring": "Save a task to the database."
+        },
+        {
+          "name": "get_task",
+          "docstring": "Get a task by ID."
+        },
+        {
+          "name": "get_all_tasks",
+          "docstring": "Get all tasks."
+        },
+        {
+          "name": "delete_task",
+          "docstring": "Delete a task by ID."
+        },
+        {
+          "name": "save_execution",
+          "docstring": "Save a task execution to the database."
+        },
+        {
+          "name": "get_executions",
+          "docstring": "Get executions for a task."
+        },
+        {
+          "name": "_row_to_task",
+          "docstring": "Convert a database row to a Task object."
+        },
+        {
+          "name": "_row_to_execution",
+          "docstring": "Convert a database row to a TaskExecution object."
+        }
+      ],
+      "patterns": [
+        "factory"
+      ]
+    },
+    {
+      "type": "code_pattern",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/scheduler-mcp/mcp_scheduler/task.py",
+      "name": "task",
+      "language": "py",
+      "classes": [
+        {
+          "name": "TaskStatus",
+          "docstring": "Status of a scheduled task.",
+          "methods": []
+        },
+        {
+          "name": "TaskType",
+          "docstring": "Type of a scheduled task.",
+          "methods": []
+        },
+        {
+          "name": "Task",
+          "docstring": "Model representing a scheduled task.",
+          "methods": [
+            {
+              "name": "validate_ascii_fields",
+              "docstring": "Ensure all user-visible text fields contain only ASCII characters."
+            },
+            {
+              "name": "validate_command",
+              "docstring": "Validate that a command is provided for shell_command tasks."
+            },
+            {
+              "name": "validate_api_url",
+              "docstring": "Validate that API URL is provided for api_call tasks."
+            },
+            {
+              "name": "validate_prompt",
+              "docstring": "Validate that a prompt is provided for AI tasks."
+            },
+            {
+              "name": "validate_reminder_message",
+              "docstring": "Validate that a message is provided for reminder tasks."
+            },
+            {
+              "name": "to_dict",
+              "docstring": "Convert the task to a dictionary for serialization."
+            }
+          ]
+        },
+        {
+          "name": "TaskExecution",
+          "docstring": "Model representing a task execution.",
+          "methods": [
+            {
+              "name": "validate_ascii_output",
+              "docstring": "Ensure output and error fields contain only ASCII characters."
+            },
+            {
+              "name": "to_dict",
+              "docstring": "Convert the execution to a dictionary for serialization."
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "sanitize_ascii",
+          "docstring": "Strips non-ASCII characters from a string."
+        },
+        {
+          "name": "validate_ascii_fields",
+          "docstring": "Ensure all user-visible text fields contain only ASCII characters."
+        },
+        {
+          "name": "validate_command",
+          "docstring": "Validate that a command is provided for shell_command tasks."
+        },
+        {
+          "name": "validate_api_url",
+          "docstring": "Validate that API URL is provided for api_call tasks."
+        },
+        {
+          "name": "validate_prompt",
+          "docstring": "Validate that a prompt is provided for AI tasks."
+        },
+        {
+          "name": "validate_reminder_message",
+          "docstring": "Validate that a message is provided for reminder tasks."
+        },
+        {
+          "name": "to_dict",
+          "docstring": "Convert the task to a dictionary for serialization."
+        },
+        {
+          "name": "validate_ascii_output",
+          "docstring": "Ensure output and error fields contain only ASCII characters."
+        },
+        {
+          "name": "to_dict",
+          "docstring": "Convert the execution to a dictionary for serialization."
+        }
+      ],
+      "patterns": [
+        "factory"
+      ]
+    }
+  ],
+  "common_elements": {
+    "frequent_names": [
+      "agent",
+      "main",
+      "demo",
+      "flow",
+      "duplicate"
+    ],
+    "common_structures": [],
+    "shared_variables": []
+  },
+  "recommendations": [
+    "Extract common patterns into reusable libraries",
+    "Create code generation templates",
+    "Document design pattern implementations"
+  ]
+}

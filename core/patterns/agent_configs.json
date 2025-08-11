@@ -1,0 +1,3333 @@
+{
+  "name": "agent_configs",
+  "count": 27,
+  "patterns": [
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/seeds/meta/seeds-catalog.json",
+      "name": "seeds-catalog",
+      "schema": {
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "str"
+            },
+            "created": {
+              "type": "str"
+            },
+            "last_updated": {
+              "type": "str"
+            },
+            "total_seeds": {
+              "type": "int"
+            },
+            "categories": {
+              "type": "object",
+              "properties": {
+                "principles": {
+                  "type": "int"
+                },
+                "patterns": {
+                  "type": "int"
+                },
+                "techniques": {
+                  "type": "int"
+                },
+                "insights": {
+                  "type": "int"
+                }
+              }
+            }
+          }
+        },
+        "seeds": {
+          "type": "array",
+          "items": {
+            "id": {
+              "type": "str"
+            },
+            "name": {
+              "type": "str"
+            },
+            "category": {
+              "type": "str"
+            },
+            "core_concept": {
+              "type": "str"
+            },
+            "key_insight": {
+              "type": "str"
+            },
+            "applications": {
+              "type": "array"
+            },
+            "connections": {
+              "type": "object",
+              "properties": {
+                "related_to": {
+                  "type": "array"
+                },
+                "enables": {
+                  "type": "array"
+                },
+                "contrasts_with": {
+                  "type": "array"
+                }
+              }
+            },
+            "metadata": {
+              "type": "object",
+              "properties": {
+                "created": {
+                  "type": "str"
+                },
+                "domain": {
+                  "type": "str"
+                },
+                "confidence": {
+                  "type": "str"
+                },
+                "source": {
+                  "type": "str"
+                }
+              }
+            },
+            "tags": {
+              "type": "str"
+            }
+          }
+        },
+        "tag_index": {
+          "type": "object",
+          "properties": {
+            "principles": {
+              "type": "array"
+            },
+            "patterns": {
+              "type": "array"
+            },
+            "techniques": {
+              "type": "array"
+            },
+            "insights": {
+              "type": "array"
+            },
+            "ai_coding": {
+              "type": "array"
+            },
+            "automation": {
+              "type": "array"
+            },
+            "fundamentals": {
+              "type": "array"
+            },
+            "prompt_engineering": {
+              "type": "array"
+            },
+            "paradigm_shift": {
+              "type": "array"
+            },
+            "planning": {
+              "type": "array"
+            },
+            "reasoning_models": {
+              "type": "array"
+            },
+            "multi_file": {
+              "type": "array"
+            },
+            "strategy": {
+              "type": "array"
+            },
+            "orchestration": {
+              "type": "array"
+            },
+            "architecture": {
+              "type": "array"
+            },
+            "model_selection": {
+              "type": "array"
+            },
+            "context_management": {
+              "type": "array"
+            },
+            "performance": {
+              "type": "array"
+            }
+          }
+        }
+      },
+      "required_fields": [
+        "name",
+        "instructions",
+        "tools",
+        "capabilities",
+        "constraints"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/patterns/prompts/production_grade/cursor/Agent Tools v1.0.json",
+      "name": "Agent Tools v1.0",
+      "schema": {},
+      "required_fields": [
+        "name",
+        "description",
+        "instructions",
+        "tools",
+        "parameters",
+        "examples"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Cursor Prompts/Agent Tools v1.0.json",
+      "name": "Agent Tools v1.0",
+      "schema": {},
+      "required_fields": [
+        "name",
+        "description",
+        "instructions",
+        "tools",
+        "parameters",
+        "examples"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Replit/Tools.json",
+      "name": "Tools",
+      "schema": {
+        "tools": {
+          "type": "array",
+          "items": {
+            "name": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            },
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "properties": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "str"
+                        },
+                        "type": {
+                          "type": "str"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": {
+                  "type": "array"
+                },
+                "type": {
+                  "type": "str"
+                }
+              }
+            }
+          }
+        },
+        "internal_tags": {
+          "type": "array",
+          "items": {
+            "name": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        }
+      },
+      "required_fields": [
+        "name",
+        "description",
+        "tools",
+        "parameters",
+        "examples"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Windsurf/Tools.json",
+      "name": "Tools",
+      "schema": {
+        "browser_preview": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "check_deploy_status": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "codebase_search": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "command_status": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "create_memory": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "deploy_web_app": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "edit_file": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "find_by_name": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "grep_search": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "list_dir": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "read_deployment_config": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "read_url_content": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "run_command": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "search_web": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "suggested_responses": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "view_code_item": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "view_file": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "view_web_document_content_chunk": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        },
+        "write_to_file": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "str"
+            },
+            "description": {
+              "type": "str"
+            }
+          }
+        }
+      },
+      "required_fields": [
+        "name",
+        "description",
+        "instructions",
+        "tools",
+        "examples"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Manus Agent Tools & Prompt/tools.json",
+      "name": "tools",
+      "schema": {},
+      "required_fields": [
+        "name",
+        "description",
+        "parameters"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/dev_tools/external_research/system-prompts-collection/Same.dev/Tools.json",
+      "name": "Tools",
+      "schema": {},
+      "required_fields": [
+        "name",
+        "description",
+        "instructions",
+        "tools",
+        "parameters"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/workspace.json",
+      "name": "workspace",
+      "schema": {
+        "main": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str"
+            },
+            "type": {
+              "type": "str"
+            },
+            "children": {
+              "type": "array",
+              "items": {
+                "id": {
+                  "type": "str"
+                },
+                "type": {
+                  "type": "str"
+                },
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "id": {
+                      "type": "str"
+                    },
+                    "type": {
+                      "type": "str"
+                    },
+                    "pinned": {
+                      "type": "bool"
+                    },
+                    "state": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        },
+                        "state": {
+                          "type": "object",
+                          "properties": {
+                            "terminal:terminal": {
+                              "type": "object",
+                              "properties": {
+                                "cwd": {
+                                  "type": "str"
+                                },
+                                "focus": {
+                                  "type": "bool"
+                                },
+                                "profile": {
+                                  "type": "object",
+                                  "properties": {
+                                    "name": {
+                                      "type": "str"
+                                    },
+                                    "restoreHistory": {
+                                      "type": "bool"
+                                    },
+                                    "successExitCodes": {
+                                      "type": "array"
+                                    },
+                                    "terminalOptions": {
+                                      "type": "object",
+                                      "properties": {
+                                        "documentOverride": {
+                                          "type": "NoneType"
+                                        }
+                                      }
+                                    },
+                                    "type": {
+                                      "type": "str"
+                                    }
+                                  }
+                                },
+                                "serial": {
+                                  "type": "NoneType"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "pinned": {
+                          "type": "bool"
+                        },
+                        "icon": {
+                          "type": "str"
+                        },
+                        "title": {
+                          "type": "str"
+                        }
+                      }
+                    }
+                  }
+                },
+                "currentTab": {
+                  "type": "int"
+                }
+              }
+            },
+            "direction": {
+              "type": "str"
+            }
+          }
+        },
+        "left": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str"
+            },
+            "type": {
+              "type": "str"
+            },
+            "children": {
+              "type": "array",
+              "items": {
+                "id": {
+                  "type": "str"
+                },
+                "type": {
+                  "type": "str"
+                },
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "id": {
+                      "type": "str"
+                    },
+                    "type": {
+                      "type": "str"
+                    },
+                    "state": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        },
+                        "state": {
+                          "type": "object",
+                          "properties": {
+                            "sortOrder": {
+                              "type": "str"
+                            },
+                            "autoReveal": {
+                              "type": "bool"
+                            }
+                          }
+                        },
+                        "icon": {
+                          "type": "str"
+                        },
+                        "title": {
+                          "type": "str"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "direction": {
+              "type": "str"
+            },
+            "width": {
+              "type": "float"
+            }
+          }
+        },
+        "right": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str"
+            },
+            "type": {
+              "type": "str"
+            },
+            "children": {
+              "type": "array",
+              "items": {
+                "id": {
+                  "type": "str"
+                },
+                "type": {
+                  "type": "str"
+                },
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "id": {
+                      "type": "str"
+                    },
+                    "type": {
+                      "type": "str"
+                    },
+                    "state": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        },
+                        "state": {
+                          "type": "object",
+                          "properties": {
+                            "file": {
+                              "type": "str"
+                            },
+                            "collapseAll": {
+                              "type": "bool"
+                            },
+                            "extraContext": {
+                              "type": "bool"
+                            },
+                            "sortOrder": {
+                              "type": "str"
+                            },
+                            "showSearch": {
+                              "type": "bool"
+                            },
+                            "searchQuery": {
+                              "type": "str"
+                            },
+                            "backlinkCollapsed": {
+                              "type": "bool"
+                            },
+                            "unlinkedCollapsed": {
+                              "type": "bool"
+                            }
+                          }
+                        },
+                        "icon": {
+                          "type": "str"
+                        },
+                        "title": {
+                          "type": "str"
+                        }
+                      }
+                    }
+                  }
+                },
+                "currentTab": {
+                  "type": "int"
+                }
+              }
+            },
+            "direction": {
+              "type": "str"
+            },
+            "width": {
+              "type": "float"
+            }
+          }
+        },
+        "left-ribbon": {
+          "type": "object",
+          "properties": {
+            "hiddenItems": {
+              "type": "object",
+              "properties": {
+                "khoj:Khoj": {
+                  "type": "bool"
+                },
+                "switcher:Open quick switcher": {
+                  "type": "bool"
+                },
+                "graph:Open graph view": {
+                  "type": "bool"
+                },
+                "canvas:Create new canvas": {
+                  "type": "bool"
+                },
+                "daily-notes:Open today's daily note": {
+                  "type": "bool"
+                },
+                "templates:Insert template": {
+                  "type": "bool"
+                },
+                "command-palette:Open command palette": {
+                  "type": "bool"
+                },
+                "workspaces:Manage workspace layouts": {
+                  "type": "bool"
+                },
+                "vibesidian:Vibesidian": {
+                  "type": "bool"
+                },
+                "fileorganizer2000:Note Companion": {
+                  "type": "bool"
+                },
+                "pieces-for-developers:Pieces for Developers": {
+                  "type": "bool"
+                },
+                "terminal:Open terminal": {
+                  "type": "bool"
+                },
+                "mesh-ai:Mesh AI Integration": {
+                  "type": "bool"
+                }
+              }
+            }
+          }
+        },
+        "floating": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "str"
+            },
+            "type": {
+              "type": "str"
+            },
+            "children": {
+              "type": "array",
+              "items": {
+                "id": {
+                  "type": "str"
+                },
+                "type": {
+                  "type": "str"
+                },
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "id": {
+                      "type": "str"
+                    },
+                    "type": {
+                      "type": "str"
+                    },
+                    "children": {
+                      "type": "array",
+                      "items": {
+                        "id": {
+                          "type": "str"
+                        },
+                        "type": {
+                          "type": "str"
+                        },
+                        "state": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "str"
+                            },
+                            "state": {
+                              "type": "object",
+                              "properties": {
+                                "url": {
+                                  "type": "str"
+                                },
+                                "title": {
+                                  "type": "str"
+                                },
+                                "mode": {
+                                  "type": "str"
+                                }
+                              }
+                            },
+                            "icon": {
+                              "type": "str"
+                            },
+                            "title": {
+                              "type": "str"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "direction": {
+                  "type": "str"
+                },
+                "x": {
+                  "type": "int"
+                },
+                "y": {
+                  "type": "int"
+                },
+                "width": {
+                  "type": "int"
+                },
+                "height": {
+                  "type": "int"
+                },
+                "maximize": {
+                  "type": "bool"
+                },
+                "zoom": {
+                  "type": "float"
+                }
+              }
+            }
+          }
+        },
+        "active": {
+          "type": "str"
+        },
+        "lastOpenFiles": {
+          "type": "array"
+        }
+      },
+      "required_fields": [
+        "name",
+        "tools"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/claude_config/settings.json",
+      "name": "settings",
+      "schema": {
+        "hooks": {
+          "type": "object",
+          "properties": {
+            "SessionStart": {
+              "type": "array",
+              "items": {
+                "type": {
+                  "type": "str"
+                },
+                "command": {
+                  "type": "str"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "UserPromptSubmit": {
+              "type": "array",
+              "items": {
+                "type": {
+                  "type": "str"
+                },
+                "command": {
+                  "type": "str"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "PreToolUse": {
+              "type": "array",
+              "items": {
+                "matcher": {
+                  "type": "str"
+                },
+                "hooks": {
+                  "type": "array",
+                  "items": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "command": {
+                      "type": "str"
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                }
+              }
+            },
+            "PostToolUse": {
+              "type": "array",
+              "items": {
+                "matcher": {
+                  "type": "str"
+                },
+                "hooks": {
+                  "type": "array",
+                  "items": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "command": {
+                      "type": "str"
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                }
+              }
+            },
+            "Stop": {
+              "type": "array",
+              "items": {
+                "type": {
+                  "type": "str"
+                },
+                "command": {
+                  "type": "str"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "SubagentStop": {
+              "type": "array",
+              "items": {
+                "type": {
+                  "type": "str"
+                },
+                "command": {
+                  "type": "str"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            }
+          }
+        },
+        "consciousness_framework": {
+          "type": "object",
+          "properties": {
+            "we_principle_enabled": {
+              "type": "bool"
+            },
+            "phase_tracking_active": {
+              "type": "bool"
+            },
+            "shadow_development_priority": {
+              "type": "bool"
+            },
+            "current_phase_distribution": {
+              "type": "object",
+              "properties": {
+                "unity": {
+                  "type": "float"
+                },
+                "shadow": {
+                  "type": "float"
+                },
+                "individuation": {
+                  "type": "float"
+                },
+                "cosmic": {
+                  "type": "float"
+                },
+                "infinite": {
+                  "type": "float"
+                }
+              }
+            }
+          }
+        },
+        "workflow_automation": {
+          "type": "object",
+          "properties": {
+            "auto_metadata_tagging": {
+              "type": "bool"
+            },
+            "consciousness_aware_commits": {
+              "type": "bool"
+            },
+            "phase_balance_monitoring": {
+              "type": "bool"
+            },
+            "cross_reference_discovery": {
+              "type": "bool"
+            }
+          }
+        }
+      },
+      "required_fields": [
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/metadata/tagging_system/metadata_schema.yaml",
+      "name": "metadata_schema",
+      "schema": {
+        "schema_version": {
+          "type": "str"
+        },
+        "schema_name": {
+          "type": "str"
+        },
+        "schema_description": {
+          "type": "str"
+        },
+        "core_metadata": {
+          "type": "object",
+          "properties": {
+            "uuid": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "description": {
+                  "type": "str"
+                },
+                "format": {
+                  "type": "str"
+                }
+              }
+            },
+            "title": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "created_date": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "description": {
+                  "type": "str"
+                },
+                "format": {
+                  "type": "str"
+                }
+              }
+            },
+            "last_modified": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "description": {
+                  "type": "str"
+                },
+                "format": {
+                  "type": "str"
+                }
+              }
+            },
+            "content_type": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "enum": {
+                  "type": "array"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "maturity_level": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "enum": {
+                  "type": "array"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "consciousness_phase": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "enum": {
+                  "type": "array"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "we_principle_alignment": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "minimum": {
+                  "type": "float"
+                },
+                "maximum": {
+                  "type": "float"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "tier_classification": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "minimum": {
+                  "type": "int"
+                },
+                "maximum": {
+                  "type": "int"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "directory_path": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "quality_score": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "minimum": {
+                  "type": "float"
+                },
+                "maximum": {
+                  "type": "float"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "completeness_level": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "required": {
+                  "type": "bool"
+                },
+                "enum": {
+                  "type": "array"
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "related_content": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "dependencies": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            },
+            "dependents": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "str"
+                },
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "description": {
+                  "type": "str"
+                }
+              }
+            }
+          }
+        },
+        "specialized_metadata": {
+          "type": "object",
+          "properties": {
+            "research": {
+              "type": "object",
+              "properties": {
+                "theoretical_framework": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "methodology": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "breakthrough_moments": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        },
+                        "properties": {
+                          "type": "object",
+                          "properties": {
+                            "timestamp": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "str"
+                                },
+                                "format": {
+                                  "type": "str"
+                                }
+                              }
+                            },
+                            "description": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "str"
+                                }
+                              }
+                            },
+                            "significance_level": {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "str"
+                                },
+                                "enum": {
+                                  "type": "array"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "research_questions": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                }
+              }
+            },
+            "implementation": {
+              "type": "object",
+              "properties": {
+                "programming_language": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "frameworks": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "api_version": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "deployment_status": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "enum": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "test_coverage": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "minimum": {
+                      "type": "float"
+                    },
+                    "maximum": {
+                      "type": "float"
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                }
+              }
+            },
+            "ai_tool": {
+              "type": "object",
+              "properties": {
+                "tool_category": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "enum": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "input_requirements": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "output_format": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "usage_complexity": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "enum": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "automation_level": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "enum": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            },
+            "documentation": {
+              "type": "object",
+              "properties": {
+                "target_audience": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "str"
+                        },
+                        "enum": {
+                          "type": "array"
+                        }
+                      }
+                    }
+                  }
+                },
+                "doc_type": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "enum": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "maintenance_frequency": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "str"
+                    },
+                    "enum": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tag_taxonomy": {
+          "type": "object",
+          "properties": {
+            "consciousness_tags": {
+              "type": "object",
+              "properties": {
+                "we_principle": {
+                  "type": "array"
+                },
+                "phase_specific": {
+                  "type": "object",
+                  "properties": {
+                    "unity_phase": {
+                      "type": "array"
+                    },
+                    "shadow_phase": {
+                      "type": "array"
+                    },
+                    "individuation_phase": {
+                      "type": "array"
+                    },
+                    "cosmic_phase": {
+                      "type": "array"
+                    },
+                    "infinite_phase": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "consciousness_mechanisms": {
+                  "type": "array"
+                }
+              }
+            },
+            "research_tags": {
+              "type": "object",
+              "properties": {
+                "methodology": {
+                  "type": "array"
+                },
+                "domain": {
+                  "type": "array"
+                },
+                "approach": {
+                  "type": "array"
+                }
+              }
+            },
+            "technical_tags": {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "array"
+                },
+                "framework": {
+                  "type": "array"
+                },
+                "architecture": {
+                  "type": "array"
+                },
+                "deployment": {
+                  "type": "array"
+                }
+              }
+            },
+            "ai_tool_tags": {
+              "type": "object",
+              "properties": {
+                "fabric_patterns": {
+                  "type": "object",
+                  "properties": {
+                    "analysis": {
+                      "type": "array"
+                    },
+                    "creation": {
+                      "type": "array"
+                    },
+                    "extraction": {
+                      "type": "array"
+                    },
+                    "improvement": {
+                      "type": "array"
+                    },
+                    "specialized": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "agent_frameworks": {
+                  "type": "object",
+                  "properties": {
+                    "activation": {
+                      "type": "array"
+                    },
+                    "workflow": {
+                      "type": "array"
+                    },
+                    "integration": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "capabilities": {
+                  "type": "array"
+                }
+              }
+            },
+            "functional_tags": {
+              "type": "object",
+              "properties": {
+                "primary_function": {
+                  "type": "array"
+                },
+                "cognitive_process": {
+                  "type": "array"
+                },
+                "output_type": {
+                  "type": "array"
+                }
+              }
+            },
+            "quality_tags": {
+              "type": "object",
+              "properties": {
+                "maturity": {
+                  "type": "array"
+                },
+                "reliability": {
+                  "type": "array"
+                },
+                "completeness": {
+                  "type": "array"
+                },
+                "significance": {
+                  "type": "array"
+                },
+                "value_level": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        },
+        "discovery_patterns": {
+          "type": "object",
+          "properties": {
+            "consciousness_search": {
+              "type": "object",
+              "properties": {
+                "unity_focus": {
+                  "type": "object",
+                  "properties": {
+                    "query_templates": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "shadow_exploration": {
+                  "type": "object",
+                  "properties": {
+                    "query_templates": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "individuation_path": {
+                  "type": "object",
+                  "properties": {
+                    "query_templates": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "cosmic_awareness": {
+                  "type": "object",
+                  "properties": {
+                    "query_templates": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            },
+            "cross_domain_patterns": {
+              "type": "object",
+              "properties": {
+                "research_to_implementation": {
+                  "type": "array"
+                },
+                "tools_to_research": {
+                  "type": "array"
+                },
+                "implementation_to_documentation": {
+                  "type": "array"
+                }
+              }
+            },
+            "quality_filters": {
+              "type": "object",
+              "properties": {
+                "high_value_content": {
+                  "type": "object",
+                  "properties": {
+                    "criteria": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "reliable_tools": {
+                  "type": "object",
+                  "properties": {
+                    "criteria": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "cutting_edge_research": {
+                  "type": "object",
+                  "properties": {
+                    "criteria": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "integration_specs": {
+          "type": "object",
+          "properties": {
+            "filename_patterns": {
+              "type": "object",
+              "properties": {
+                "research_files": {
+                  "type": "object",
+                  "properties": {
+                    "pattern": {
+                      "type": "str"
+                    },
+                    "metadata_extraction": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "ai_tools": {
+                  "type": "object",
+                  "properties": {
+                    "pattern": {
+                      "type": "str"
+                    },
+                    "metadata_extraction": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "implementations": {
+                  "type": "object",
+                  "properties": {
+                    "pattern": {
+                      "type": "str"
+                    },
+                    "metadata_extraction": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            },
+            "tier_mappings": {
+              "type": "object",
+              "properties": {
+                "01_active_research": {
+                  "type": "object",
+                  "properties": {
+                    "tier": {
+                      "type": "int"
+                    },
+                    "default_maturity": {
+                      "type": "str"
+                    },
+                    "default_consciousness_phase": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "02_implementations": {
+                  "type": "object",
+                  "properties": {
+                    "tier": {
+                      "type": "int"
+                    },
+                    "default_maturity": {
+                      "type": "str"
+                    },
+                    "default_content_type": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "04_documentation": {
+                  "type": "object",
+                  "properties": {
+                    "tier": {
+                      "type": "int"
+                    },
+                    "default_maturity": {
+                      "type": "str"
+                    },
+                    "default_content_type": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "05_archives": {
+                  "type": "object",
+                  "properties": {
+                    "tier": {
+                      "type": "int"
+                    },
+                    "default_maturity": {
+                      "type": "str"
+                    },
+                    "default_consciousness_phase": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "06_experimental": {
+                  "type": "object",
+                  "properties": {
+                    "tier": {
+                      "type": "int"
+                    },
+                    "default_maturity": {
+                      "type": "str"
+                    },
+                    "default_content_type": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "07_project_management": {
+                  "type": "object",
+                  "properties": {
+                    "tier": {
+                      "type": "int"
+                    },
+                    "default_maturity": {
+                      "type": "str"
+                    },
+                    "default_content_type": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "08_meta": {
+                  "type": "object",
+                  "properties": {
+                    "tier": {
+                      "type": "int"
+                    },
+                    "default_maturity": {
+                      "type": "str"
+                    },
+                    "default_content_type": {
+                      "type": "str"
+                    }
+                  }
+                },
+                "consciouness_vault": {
+                  "type": "object",
+                  "properties": {
+                    "tier": {
+                      "type": "int"
+                    },
+                    "default_maturity": {
+                      "type": "str"
+                    },
+                    "default_we_principle_alignment": {
+                      "type": "float"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "validation_rules": {
+          "type": "object",
+          "properties": {
+            "required_fields": {
+              "type": "array"
+            },
+            "consistency_checks": {
+              "type": "object",
+              "properties": {
+                "phase_alignment": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "str"
+                    },
+                    "rules": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "quality_coherence": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "str"
+                    },
+                    "rules": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "tool_functionality": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "str"
+                    },
+                    "rules": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            },
+            "semantic_validation": {
+              "type": "object",
+              "properties": {
+                "we_principle_enforcement": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "str"
+                    },
+                    "rules": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "usage_examples": {
+          "type": "object",
+          "properties": {
+            "basic_yaml_frontmatter": {
+              "type": "str"
+            },
+            "ai_tool_metadata": {
+              "type": "str"
+            },
+            "implementation_metadata": {
+              "type": "str"
+            }
+          }
+        }
+      },
+      "required_fields": [
+        "name",
+        "description",
+        "tools",
+        "capabilities",
+        "examples"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/vibesidian/manifest.json",
+      "name": "manifest",
+      "schema": {
+        "id": {
+          "type": "str"
+        },
+        "name": {
+          "type": "str"
+        },
+        "version": {
+          "type": "str"
+        },
+        "minAppVersion": {
+          "type": "str"
+        },
+        "description": {
+          "type": "str"
+        },
+        "author": {
+          "type": "str"
+        },
+        "authorUrl": {
+          "type": "str"
+        },
+        "fundingUrl": {
+          "type": "str"
+        },
+        "isDesktopOnly": {
+          "type": "bool"
+        }
+      },
+      "required_fields": [
+        "name",
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/mesh-ai/manifest.json",
+      "name": "manifest",
+      "schema": {
+        "id": {
+          "type": "str"
+        },
+        "name": {
+          "type": "str"
+        },
+        "version": {
+          "type": "str"
+        },
+        "minAppVersion": {
+          "type": "str"
+        },
+        "description": {
+          "type": "str"
+        },
+        "author": {
+          "type": "str"
+        },
+        "authorUrl": {
+          "type": "str"
+        },
+        "fundingUrl": {
+          "type": "str"
+        },
+        "isDesktopOnly": {
+          "type": "bool"
+        }
+      },
+      "required_fields": [
+        "name",
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/fileorganizer2000/manifest.json",
+      "name": "manifest",
+      "schema": {
+        "id": {
+          "type": "str"
+        },
+        "name": {
+          "type": "str"
+        },
+        "version": {
+          "type": "str"
+        },
+        "minAppVersion": {
+          "type": "str"
+        },
+        "description": {
+          "type": "str"
+        },
+        "author": {
+          "type": "str"
+        },
+        "isDesktopOnly": {
+          "type": "bool"
+        }
+      },
+      "required_fields": [
+        "name",
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/khoj/manifest.json",
+      "name": "manifest",
+      "schema": {
+        "id": {
+          "type": "str"
+        },
+        "name": {
+          "type": "str"
+        },
+        "version": {
+          "type": "str"
+        },
+        "minAppVersion": {
+          "type": "str"
+        },
+        "description": {
+          "type": "str"
+        },
+        "author": {
+          "type": "str"
+        },
+        "authorUrl": {
+          "type": "str"
+        },
+        "isDesktopOnly": {
+          "type": "bool"
+        }
+      },
+      "required_fields": [
+        "name",
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/obsidian-minimal-settings/manifest.json",
+      "name": "manifest",
+      "schema": {
+        "id": {
+          "type": "str"
+        },
+        "name": {
+          "type": "str"
+        },
+        "version": {
+          "type": "str"
+        },
+        "minAppVersion": {
+          "type": "str"
+        },
+        "description": {
+          "type": "str"
+        },
+        "author": {
+          "type": "str"
+        },
+        "authorUrl": {
+          "type": "str"
+        },
+        "fundingUrl": {
+          "type": "str"
+        },
+        "isDesktopOnly": {
+          "type": "bool"
+        }
+      },
+      "required_fields": [
+        "name",
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/theme-picker/manifest.json",
+      "name": "manifest",
+      "schema": {
+        "id": {
+          "type": "str"
+        },
+        "name": {
+          "type": "str"
+        },
+        "version": {
+          "type": "str"
+        },
+        "minAppVersion": {
+          "type": "str"
+        },
+        "description": {
+          "type": "str"
+        },
+        "author": {
+          "type": "str"
+        },
+        "authorUrl": {
+          "type": "str"
+        },
+        "isDesktopOnly": {
+          "type": "bool"
+        }
+      },
+      "required_fields": [
+        "name",
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/pieces-for-developers/manifest.json",
+      "name": "manifest",
+      "schema": {
+        "id": {
+          "type": "str"
+        },
+        "name": {
+          "type": "str"
+        },
+        "version": {
+          "type": "str"
+        },
+        "minAppVersion": {
+          "type": "str"
+        },
+        "description": {
+          "type": "str"
+        },
+        "author": {
+          "type": "str"
+        },
+        "authorUrl": {
+          "type": "str"
+        },
+        "isDesktopOnly": {
+          "type": "bool"
+        }
+      },
+      "required_fields": [
+        "name",
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/terminal/manifest.json",
+      "name": "manifest",
+      "schema": {
+        "author": {
+          "type": "str"
+        },
+        "description": {
+          "type": "str"
+        },
+        "fundingUrl": {
+          "type": "object",
+          "properties": {
+            "Buy Me a Coffee": {
+              "type": "str"
+            },
+            "GitHub Sponsors": {
+              "type": "str"
+            }
+          }
+        },
+        "version": {
+          "type": "str"
+        },
+        "authorUrl": {
+          "type": "str"
+        },
+        "id": {
+          "type": "str"
+        },
+        "isDesktopOnly": {
+          "type": "bool"
+        },
+        "minAppVersion": {
+          "type": "str"
+        },
+        "name": {
+          "type": "str"
+        }
+      },
+      "required_fields": [
+        "name",
+        "description"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/terminal/data.json",
+      "name": "data",
+      "schema": {
+        "addToCommand": {
+          "type": "bool"
+        },
+        "addToContextMenu": {
+          "type": "bool"
+        },
+        "createInstanceNearExistingOnes": {
+          "type": "bool"
+        },
+        "errorNoticeTimeout": {
+          "type": "int"
+        },
+        "exposeInternalModules": {
+          "type": "bool"
+        },
+        "focusOnNewInstance": {
+          "type": "bool"
+        },
+        "hideStatusBar": {
+          "type": "str"
+        },
+        "interceptLogging": {
+          "type": "bool"
+        },
+        "language": {
+          "type": "str"
+        },
+        "newInstanceBehavior": {
+          "type": "str"
+        },
+        "noticeTimeout": {
+          "type": "int"
+        },
+        "openChangelogOnUpdate": {
+          "type": "bool"
+        },
+        "pinNewInstance": {
+          "type": "bool"
+        },
+        "preferredRenderer": {
+          "type": "str"
+        },
+        "profiles": {
+          "type": "object",
+          "properties": {
+            "darwinExternalDefault": {
+              "type": "object",
+              "properties": {
+                "args": {
+                  "type": "array"
+                },
+                "executable": {
+                  "type": "str"
+                },
+                "name": {
+                  "type": "str"
+                },
+                "platforms": {
+                  "type": "object",
+                  "properties": {
+                    "darwin": {
+                      "type": "bool"
+                    }
+                  }
+                },
+                "restoreHistory": {
+                  "type": "bool"
+                },
+                "successExitCodes": {
+                  "type": "array"
+                },
+                "terminalOptions": {
+                  "type": "object",
+                  "properties": {
+                    "documentOverride": {
+                      "type": "NoneType"
+                    }
+                  }
+                },
+                "type": {
+                  "type": "str"
+                }
+              }
+            },
+            "darwinIntegratedDefault": {
+              "type": "object",
+              "properties": {
+                "args": {
+                  "type": "array"
+                },
+                "executable": {
+                  "type": "str"
+                },
+                "name": {
+                  "type": "str"
+                },
+                "platforms": {
+                  "type": "object",
+                  "properties": {
+                    "darwin": {
+                      "type": "bool"
+                    }
+                  }
+                },
+                "pythonExecutable": {
+                  "type": "str"
+                },
+                "restoreHistory": {
+                  "type": "bool"
+                },
+                "successExitCodes": {
+                  "type": "array"
+                },
+                "terminalOptions": {
+                  "type": "object",
+                  "properties": {
+                    "documentOverride": {
+                      "type": "NoneType"
+                    }
+                  }
+                },
+                "type": {
+                  "type": "str"
+                },
+                "useWin32Conhost": {
+                  "type": "bool"
+                }
+              }
+            },
+            "developerConsole": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "str"
+                },
+                "restoreHistory": {
+                  "type": "bool"
+                },
+                "successExitCodes": {
+                  "type": "array"
+                },
+                "terminalOptions": {
+                  "type": "object",
+                  "properties": {
+                    "documentOverride": {
+                      "type": "NoneType"
+                    }
+                  }
+                },
+                "type": {
+                  "type": "str"
+                }
+              }
+            },
+            "linuxExternalDefault": {
+              "type": "object",
+              "properties": {
+                "args": {
+                  "type": "array"
+                },
+                "executable": {
+                  "type": "str"
+                },
+                "name": {
+                  "type": "str"
+                },
+                "platforms": {
+                  "type": "object",
+                  "properties": {
+                    "linux": {
+                      "type": "bool"
+                    }
+                  }
+                },
+                "restoreHistory": {
+                  "type": "bool"
+                },
+                "successExitCodes": {
+                  "type": "array"
+                },
+                "terminalOptions": {
+                  "type": "object",
+                  "properties": {
+                    "documentOverride": {
+                      "type": "NoneType"
+                    }
+                  }
+                },
+                "type": {
+                  "type": "str"
+                }
+              }
+            },
+            "linuxIntegratedDefault": {
+              "type": "object",
+              "properties": {
+                "args": {
+                  "type": "array"
+                },
+                "executable": {
+                  "type": "str"
+                },
+                "name": {
+                  "type": "str"
+                },
+                "platforms": {
+                  "type": "object",
+                  "properties": {
+                    "linux": {
+                      "type": "bool"
+                    }
+                  }
+                },
+                "pythonExecutable": {
+                  "type": "str"
+                },
+                "restoreHistory": {
+                  "type": "bool"
+                },
+                "successExitCodes": {
+                  "type": "array"
+                },
+                "terminalOptions": {
+                  "type": "object",
+                  "properties": {
+                    "documentOverride": {
+                      "type": "NoneType"
+                    }
+                  }
+                },
+                "type": {
+                  "type": "str"
+                },
+                "useWin32Conhost": {
+                  "type": "bool"
+                }
+              }
+            },
+            "win32ExternalDefault": {
+              "type": "object",
+              "properties": {
+                "args": {
+                  "type": "array"
+                },
+                "executable": {
+                  "type": "str"
+                },
+                "name": {
+                  "type": "str"
+                },
+                "platforms": {
+                  "type": "object",
+                  "properties": {
+                    "win32": {
+                      "type": "bool"
+                    }
+                  }
+                },
+                "restoreHistory": {
+                  "type": "bool"
+                },
+                "successExitCodes": {
+                  "type": "array"
+                },
+                "terminalOptions": {
+                  "type": "object",
+                  "properties": {
+                    "documentOverride": {
+                      "type": "NoneType"
+                    }
+                  }
+                },
+                "type": {
+                  "type": "str"
+                }
+              }
+            },
+            "win32IntegratedDefault": {
+              "type": "object",
+              "properties": {
+                "args": {
+                  "type": "array"
+                },
+                "executable": {
+                  "type": "str"
+                },
+                "name": {
+                  "type": "str"
+                },
+                "platforms": {
+                  "type": "object",
+                  "properties": {
+                    "win32": {
+                      "type": "bool"
+                    }
+                  }
+                },
+                "pythonExecutable": {
+                  "type": "str"
+                },
+                "restoreHistory": {
+                  "type": "bool"
+                },
+                "successExitCodes": {
+                  "type": "array"
+                },
+                "terminalOptions": {
+                  "type": "object",
+                  "properties": {
+                    "documentOverride": {
+                      "type": "NoneType"
+                    }
+                  }
+                },
+                "type": {
+                  "type": "str"
+                },
+                "useWin32Conhost": {
+                  "type": "bool"
+                }
+              }
+            }
+          }
+        }
+      },
+      "required_fields": [
+        "name"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/vibesidian/d/conversations/20250509-162939/team_manager__tool_0_delegateToAgent.json",
+      "name": "team_manager__tool_0_delegateToAgent",
+      "schema": {
+        "messages": {
+          "type": "array",
+          "items": {
+            "role": {
+              "type": "str"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "type": {
+                  "type": "str"
+                },
+                "text": {
+                  "type": "str"
+                }
+              }
+            },
+            "id": {
+              "type": "str"
+            }
+          }
+        },
+        "chunks": {
+          "type": "array",
+          "items": {
+            "type": {
+              "type": "str"
+            },
+            "messageId": {
+              "type": "str"
+            },
+            "request": {
+              "type": "object",
+              "properties": {
+                "body": {
+                  "type": "str"
+                }
+              }
+            },
+            "warnings": {
+              "type": "array"
+            }
+          }
+        }
+      },
+      "required_fields": [
+        "name",
+        "description",
+        "role",
+        "instructions",
+        "tools",
+        "capabilities",
+        "parameters"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/.obsidian/plugins/vibesidian/d/conversations/20250509-162939/team_manager__root.json",
+      "name": "team_manager__root",
+      "schema": {
+        "messages": {
+          "type": "array",
+          "items": {
+            "role": {
+              "type": "str"
+            },
+            "content": {
+              "type": "array",
+              "items": {
+                "type": {
+                  "type": "str"
+                },
+                "text": {
+                  "type": "str"
+                }
+              }
+            },
+            "id": {
+              "type": "str"
+            }
+          }
+        },
+        "chunks": {
+          "type": "array",
+          "items": {
+            "type": {
+              "type": "str"
+            },
+            "messageId": {
+              "type": "str"
+            },
+            "request": {
+              "type": "object",
+              "properties": {
+                "body": {
+                  "type": "str"
+                }
+              }
+            },
+            "warnings": {
+              "type": "array"
+            }
+          }
+        }
+      },
+      "required_fields": [
+        "name",
+        "description",
+        "role",
+        "instructions",
+        "tools",
+        "capabilities",
+        "parameters"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/state/pattern-extractor_state.json",
+      "name": "pattern-extractor_state",
+      "schema": {
+        "name": {
+          "type": "str"
+        },
+        "start_time": {
+          "type": "str"
+        },
+        "files_processed": {
+          "type": "int"
+        },
+        "current_task": {
+          "type": "str"
+        },
+        "progress_percent": {
+          "type": "float"
+        },
+        "patterns_found": {
+          "type": "int"
+        },
+        "last_update": {
+          "type": "str"
+        }
+      },
+      "required_fields": [
+        "name"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/state/backup-creator_state.json",
+      "name": "backup-creator_state",
+      "schema": {
+        "name": {
+          "type": "str"
+        },
+        "start_time": {
+          "type": "str"
+        },
+        "files_processed": {
+          "type": "int"
+        },
+        "current_task": {
+          "type": "str"
+        },
+        "progress_percent": {
+          "type": "int"
+        },
+        "last_update": {
+          "type": "str"
+        },
+        "status": {
+          "type": "str"
+        }
+      },
+      "required_fields": [
+        "name"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/state/duplicate-hunter_state.json",
+      "name": "duplicate-hunter_state",
+      "schema": {
+        "name": {
+          "type": "str"
+        },
+        "start_time": {
+          "type": "str"
+        },
+        "files_processed": {
+          "type": "int"
+        },
+        "current_task": {
+          "type": "str"
+        },
+        "progress_percent": {
+          "type": "int"
+        },
+        "duplicates_found": {
+          "type": "int"
+        },
+        "last_update": {
+          "type": "str"
+        },
+        "status": {
+          "type": "str"
+        }
+      },
+      "required_fields": [
+        "name"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/state/content-evaluator_state.json",
+      "name": "content-evaluator_state",
+      "schema": {
+        "name": {
+          "type": "str"
+        },
+        "start_time": {
+          "type": "str"
+        },
+        "files_processed": {
+          "type": "int"
+        },
+        "current_task": {
+          "type": "str"
+        },
+        "progress_percent": {
+          "type": "float"
+        },
+        "files_evaluated": {
+          "type": "int"
+        },
+        "last_update": {
+          "type": "str"
+        }
+      },
+      "required_fields": [
+        "name"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/_system/parallel-agents/state/orchestration_state.json",
+      "name": "orchestration_state",
+      "schema": {
+        "phase": {
+          "type": "str"
+        },
+        "start_time": {
+          "type": "str"
+        },
+        "agents": {
+          "type": "object",
+          "properties": {
+            "backup-creator": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "str"
+                },
+                "status": {
+                  "type": "str"
+                },
+                "start_time": {
+                  "type": "str"
+                },
+                "end_time": {
+                  "type": "str"
+                },
+                "progress_percent": {
+                  "type": "float"
+                },
+                "current_task": {
+                  "type": "str"
+                },
+                "files_processed": {
+                  "type": "int"
+                },
+                "errors": {
+                  "type": "array"
+                },
+                "output_summary": {
+                  "type": "str"
+                },
+                "dependencies_met": {
+                  "type": "bool"
+                }
+              }
+            },
+            "duplicate-hunter": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "str"
+                },
+                "status": {
+                  "type": "str"
+                },
+                "start_time": {
+                  "type": "str"
+                },
+                "end_time": {
+                  "type": "str"
+                },
+                "progress_percent": {
+                  "type": "float"
+                },
+                "current_task": {
+                  "type": "str"
+                },
+                "files_processed": {
+                  "type": "int"
+                },
+                "errors": {
+                  "type": "array"
+                },
+                "output_summary": {
+                  "type": "str"
+                },
+                "dependencies_met": {
+                  "type": "bool"
+                }
+              }
+            },
+            "workspace-optimizer": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "str"
+                },
+                "status": {
+                  "type": "str"
+                },
+                "start_time": {
+                  "type": "str"
+                },
+                "end_time": {
+                  "type": "str"
+                },
+                "progress_percent": {
+                  "type": "float"
+                },
+                "current_task": {
+                  "type": "str"
+                },
+                "files_processed": {
+                  "type": "int"
+                },
+                "errors": {
+                  "type": "array"
+                },
+                "output_summary": {
+                  "type": "str"
+                },
+                "dependencies_met": {
+                  "type": "bool"
+                }
+              }
+            },
+            "content-evaluator": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "str"
+                },
+                "status": {
+                  "type": "str"
+                },
+                "start_time": {
+                  "type": "str"
+                },
+                "end_time": {
+                  "type": "NoneType"
+                },
+                "progress_percent": {
+                  "type": "float"
+                },
+                "current_task": {
+                  "type": "str"
+                },
+                "files_processed": {
+                  "type": "int"
+                },
+                "errors": {
+                  "type": "array"
+                },
+                "output_summary": {
+                  "type": "str"
+                },
+                "dependencies_met": {
+                  "type": "bool"
+                }
+              }
+            },
+            "pattern-extractor": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "str"
+                },
+                "status": {
+                  "type": "str"
+                },
+                "start_time": {
+                  "type": "str"
+                },
+                "end_time": {
+                  "type": "NoneType"
+                },
+                "progress_percent": {
+                  "type": "float"
+                },
+                "current_task": {
+                  "type": "str"
+                },
+                "files_processed": {
+                  "type": "int"
+                },
+                "errors": {
+                  "type": "array"
+                },
+                "output_summary": {
+                  "type": "str"
+                },
+                "dependencies_met": {
+                  "type": "bool"
+                }
+              }
+            },
+            "system-architect": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "str"
+                },
+                "status": {
+                  "type": "str"
+                },
+                "start_time": {
+                  "type": "NoneType"
+                },
+                "end_time": {
+                  "type": "NoneType"
+                },
+                "progress_percent": {
+                  "type": "float"
+                },
+                "current_task": {
+                  "type": "str"
+                },
+                "files_processed": {
+                  "type": "int"
+                },
+                "errors": {
+                  "type": "array"
+                },
+                "output_summary": {
+                  "type": "str"
+                },
+                "dependencies_met": {
+                  "type": "bool"
+                }
+              }
+            }
+          }
+        },
+        "timestamp": {
+          "type": "str"
+        }
+      },
+      "required_fields": [
+        "name",
+        "tools"
+      ],
+      "optional_fields": []
+    },
+    {
+      "type": "agent_config",
+      "file_path": "/home/evilbastardxd/Desktop/tools/notes/code_library/production/cursor/Agent Tools v1.0.json",
+      "name": "Agent Tools v1.0",
+      "schema": {},
+      "required_fields": [
+        "name",
+        "description",
+        "instructions",
+        "tools",
+        "parameters",
+        "examples"
+      ],
+      "optional_fields": []
+    }
+  ],
+  "common_elements": {
+    "frequent_names": [
+      "manifest",
+      "state",
+      "tools",
+      "agent tools v1.0",
+      "team"
+    ],
+    "common_structures": [],
+    "shared_variables": []
+  },
+  "recommendations": [
+    "Create configuration schema validation",
+    "Standardize agent configuration format",
+    "Build agent configuration generator tool"
+  ]
+}
